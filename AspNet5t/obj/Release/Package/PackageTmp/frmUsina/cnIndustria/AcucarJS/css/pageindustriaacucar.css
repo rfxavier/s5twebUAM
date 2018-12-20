@@ -1,0 +1,32 @@
+﻿.dx-datagrid {
+    font: 9px verdana;
+}
+
+.dx-button-success {
+    background-color: #a9d08e !important;
+    border-color: #a9d08e !important;
+}
+
+.foradogrid {
+    font: 9px verdana;
+    font-weight: bold;
+    border-width: thin;
+    border-style: solid;
+    padding: 2px;
+    width: 191px;
+    text-align: center;
+}
+
+.bordasgrid {
+    border-width: thin;
+    border-style: solid;
+}
+.mediamoagem {
+    font-size: 14px;
+    font-family: 'Helvetica Neue','Segoe UI',Helvetica,Verdana,sans-serif;    
+}
+.mediamoagembold {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Helvetica Neue','Segoe UI',Helvetica,Verdana,sans-serif;
+}

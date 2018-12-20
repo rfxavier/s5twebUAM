@@ -1,0 +1,568 @@
+﻿<cf:project defaultNamespace="S5T" xmlns:cf="http://www.softfluent.com/codefluent/2005/1">
+  <cf:entity name="AppRelatorio" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="pNomeFormArgumento">FormArgRelProduto</cf:instanceValue>
+      <cf:instanceValue name="pNomeRelatorio">RelProduto</cf:instanceValue>
+      <cf:instanceValue name="pTituloRelatorio">RELACAO DE PRODUTOS</cf:instanceValue>
+      <cf:instanceValue name="pSequencia">10</cf:instanceValue>
+      <cf:instanceValue name="pNomeRdlc">S5TWin.RelProduto.rdlc</cf:instanceValue>
+      <cf:instanceValue name="pNomeDataSet">dsProduto</cf:instanceValue>
+      <cf:instanceValue name="sCategoria">Estoque</cf:instanceValue>
+      <cf:instanceValue name="pCategoriaRelatorio">Estoque</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="1">
+      <cf:instanceValue name="pId">2</cf:instanceValue>
+      <cf:instanceValue name="pNomeFormArgumento">FormArgRelProduto</cf:instanceValue>
+      <cf:instanceValue name="pNomeRelatorio">RelProdutoGrupo</cf:instanceValue>
+      <cf:instanceValue name="pTituloRelatorio">RELACAO DE PRODUTOS POR GRUPO</cf:instanceValue>
+      <cf:instanceValue name="pSequencia">20</cf:instanceValue>
+      <cf:instanceValue name="pNomeRdlc">S5TWin.RelProdutoGrupo.rdlc</cf:instanceValue>
+      <cf:instanceValue name="pNomeDataSet">dsProduto</cf:instanceValue>
+      <cf:instanceValue name="sCategoria">Estoque</cf:instanceValue>
+      <cf:instanceValue name="pCategoriaRelatorio">Estoque</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="2">
+      <cf:instanceValue name="pId">3</cf:instanceValue>
+      <cf:instanceValue name="pNomeFormArgumento">FormArgRelProduto</cf:instanceValue>
+      <cf:instanceValue name="pNomeRelatorio">RelProdutoGrupo2</cf:instanceValue>
+      <cf:instanceValue name="pNomeRdlc">S5TWin.RelProdutoGrupo.rdlc</cf:instanceValue>
+      <cf:instanceValue name="pNomeDataSet">dsProduto</cf:instanceValue>
+      <cf:instanceValue name="sCategoria">Contabilidade</cf:instanceValue>
+      <cf:instanceValue name="pTituloRelatorio">RELACAO DE PRODUTOS POR GRUPO CONTABIL</cf:instanceValue>
+      <cf:instanceValue name="pSequencia">30</cf:instanceValue>
+      <cf:instanceValue name="pCategoriaRelatorio">Contabilidade</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="3">
+      <cf:instanceValue name="pId">4</cf:instanceValue>
+      <cf:instanceValue name="pNomeFormArgumento">FormArgRelTitulo</cf:instanceValue>
+      <cf:instanceValue name="pNomeRelatorio">RelTituloSintetico</cf:instanceValue>
+      <cf:instanceValue name="pCategoriaRelatorio">Financeiro</cf:instanceValue>
+      <cf:instanceValue name="sCategoria">Financeiro</cf:instanceValue>
+      <cf:instanceValue name="pTituloRelatorio">RELACAO SINTETICA DE TITULOS</cf:instanceValue>
+      <cf:instanceValue name="pSequencia">40</cf:instanceValue>
+      <cf:instanceValue name="pNomeRdlc">S5TWin.RelTituloSintetico.rdlc</cf:instanceValue>
+      <cf:instanceValue name="pNomeDataSet">DataSetTitulo</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="4">
+      <cf:instanceValue name="pId">5</cf:instanceValue>
+      <cf:instanceValue name="pNomeFormArgumento">FormArgRelTitulo</cf:instanceValue>
+      <cf:instanceValue name="pNomeRelatorio">RelTituloAnalitico</cf:instanceValue>
+      <cf:instanceValue name="pNomeRdlc">S5TWin.RelTituloAnalitico.rdlc</cf:instanceValue>
+      <cf:instanceValue name="pNomeDataSet">DataSetTitulo</cf:instanceValue>
+      <cf:instanceValue name="sCategoria">Financeiro</cf:instanceValue>
+      <cf:instanceValue name="pTituloRelatorio">RELACAO ANALITICA DE TITULOS</cf:instanceValue>
+      <cf:instanceValue name="pSequencia">50</cf:instanceValue>
+      <cf:instanceValue name="pCategoriaRelatorio">Financeiro</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="5">
+      <cf:instanceValue name="pId">6</cf:instanceValue>
+      <cf:instanceValue name="pNomeFormArgumento">FormArgRelRecibo</cf:instanceValue>
+      <cf:instanceValue name="pNomeRelatorio">RelRecibo</cf:instanceValue>
+      <cf:instanceValue name="pSequencia">60</cf:instanceValue>
+      <cf:instanceValue name="sCategoria">Fechamento_Mensal</cf:instanceValue>
+      <cf:instanceValue name="pCategoriaRelatorio">Fechamento Mensal</cf:instanceValue>
+      <cf:instanceValue name="pNomeRdlc">S5TWin</cf:instanceValue>
+      <cf:instanceValue name="pNomeDataSet">ds</cf:instanceValue>
+      <cf:instanceValue name="pTituloRelatorio">RECIBO FECHAMENTO</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="6">
+      <cf:instanceValue name="pId">6</cf:instanceValue>
+      <cf:instanceValue name="pNomeFormArgumento">FormArgRelRecibo</cf:instanceValue>
+      <cf:instanceValue name="pNomeRelatorio">RelRecibo</cf:instanceValue>
+      <cf:instanceValue name="pSequencia">60</cf:instanceValue>
+      <cf:instanceValue name="sCategoria">Fechamento_Mensal</cf:instanceValue>
+      <cf:instanceValue name="pCategoriaRelatorio">Fechamento Mensal</cf:instanceValue>
+      <cf:instanceValue name="pNomeRdlc">S5TWin</cf:instanceValue>
+      <cf:instanceValue name="pNomeDataSet">ds</cf:instanceValue>
+      <cf:instanceValue name="pTituloRelatorio">RECIBO FECHAMENTO</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="7">
+      <cf:instanceValue name="pId">7</cf:instanceValue>
+      <cf:instanceValue name="pCategoriaRelatorio">Servico</cf:instanceValue>
+      <cf:instanceValue name="pNomeDataSet">ds</cf:instanceValue>
+      <cf:instanceValue name="pNomeFormArgumento">FormArgRelServico</cf:instanceValue>
+      <cf:instanceValue name="pNomeRdlc">RelDxServico</cf:instanceValue>
+      <cf:instanceValue name="pNomeRelatorio">RelServico</cf:instanceValue>
+      <cf:instanceValue name="pSequencia">70</cf:instanceValue>
+      <cf:instanceValue name="pTituloRelatorio">RELATORIO DE SERVICO</cf:instanceValue>
+      <cf:instanceValue name="sCategoria">Servico</cf:instanceValue>
+      <cf:instanceValue name="pcCategoriaRelatorio">SERVIÇO</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="Cadastro" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">1</cf:instanceValue>
+      <cf:instanceValue name="pNome">RENATO XAVIER</cf:instanceValue>
+      <cf:instanceValue name="oCadastrosTipo"><pId>1</pId><pId>2</pId></cf:instanceValue>
+      <cf:instanceValue name="oEmpresas"><pId>1</pId></cf:instanceValue>
+      <cf:instanceValue name="pCpfCnpj">950.048.906-68</cf:instanceValue>
+      <cf:instanceValue name="pDataNascimento">13/04/1972 00:00:00</cf:instanceValue>
+      <cf:instanceValue name="pEnderBairro">PARAISO DO BOSQUE</cf:instanceValue>
+      <cf:instanceValue name="pEnderLogradouro">R.AZARIAS M.QUEIROZ</cf:instanceValue>
+      <cf:instanceValue name="pEnderNumero">660</cf:instanceValue>
+      <cf:instanceValue name="pPFPJ">F</cf:instanceValue>
+      <cf:instanceValue name="pCep">37950-000</cf:instanceValue>
+      <cf:instanceValue name="xLoginReg">ADMIN</cf:instanceValue>
+      <cf:instanceValue name="oCidade">1</cf:instanceValue>
+      <cf:instanceValue name="pFlgSexo">M</cf:instanceValue>
+      <cf:instanceValue name="pRgIe">M4041476</cf:instanceValue>
+      <cf:instanceValue name="pEmail">renatoferreiraxavier@gmail.com</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="1">
+      <cf:instanceValue name="pId">2</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">2</cf:instanceValue>
+      <cf:instanceValue name="pNome">RAPHAEL BRIGAGAO</cf:instanceValue>
+      <cf:instanceValue name="oEmpresas"><pId>1</pId></cf:instanceValue>
+      <cf:instanceValue name="pCpfCnpj">733.789.221-76</cf:instanceValue>
+      <cf:instanceValue name="pDataNascimento">16/10/1987 00:00:00</cf:instanceValue>
+      <cf:instanceValue name="pEnderAuxNumero" value="" />
+      <cf:instanceValue name="pEnderBairro">SUMARE</cf:instanceValue>
+      <cf:instanceValue name="pEnderLogradouro">R.DOS LAGOS</cf:instanceValue>
+      <cf:instanceValue name="pEnderNumero">442</cf:instanceValue>
+      <cf:instanceValue name="pPFPJ">F</cf:instanceValue>
+      <cf:instanceValue name="pCep">16252-231</cf:instanceValue>
+      <cf:instanceValue name="xLoginReg">ADMIN</cf:instanceValue>
+      <cf:instanceValue name="oCidade">1</cf:instanceValue>
+      <cf:instanceValue name="pFlgSexo">M</cf:instanceValue>
+      <cf:instanceValue name="pRgIe">2977269</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="2">
+      <cf:instanceValue name="pId">3</cf:instanceValue>
+      <cf:instanceValue name="pNome">ANDERSON COLOMBAROLI</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">3</cf:instanceValue>
+      <cf:instanceValue name="oEmpresas"><pId>1</pId></cf:instanceValue>
+      <cf:instanceValue name="pPFPJ">F</cf:instanceValue>
+      <cf:instanceValue name="pEnderLogradouro">R.EUROPA</cf:instanceValue>
+      <cf:instanceValue name="pEnderBairro">JARDIM EUROPA</cf:instanceValue>
+      <cf:instanceValue name="pEnderNumero">201</cf:instanceValue>
+      <cf:instanceValue name="pCpfCnpj">421.344.889-48</cf:instanceValue>
+      <cf:instanceValue name="pDataNascimento">16/05/1977 00:00:00</cf:instanceValue>
+      <cf:instanceValue name="xLoginReg">ADMIN</cf:instanceValue>
+      <cf:instanceValue name="pCep">37950-000</cf:instanceValue>
+      <cf:instanceValue name="oCidade">1</cf:instanceValue>
+      <cf:instanceValue name="pFlgSexo">M</cf:instanceValue>
+      <cf:instanceValue name="pRgIe">429434121</cf:instanceValue>
+      <cf:instanceValue name="pEmail">anderson@4tsistemas.com.br</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="3">
+      <cf:instanceValue name="pId">4</cf:instanceValue>
+      <cf:instanceValue name="pNome">SANDRO SILVEIRA</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">4</cf:instanceValue>
+      <cf:instanceValue name="oEmpresas"><pId>1</pId></cf:instanceValue>
+      <cf:instanceValue name="pPFPJ">F</cf:instanceValue>
+      <cf:instanceValue name="pEnderLogradouro">R.FORMOSA</cf:instanceValue>
+      <cf:instanceValue name="pEnderBairro">VILA FORMOSA</cf:instanceValue>
+      <cf:instanceValue name="pEnderNumero">48</cf:instanceValue>
+      <cf:instanceValue name="pCpfCnpj">216.642.612-30</cf:instanceValue>
+      <cf:instanceValue name="pDataNascimento">10/03/1976 00:00:00</cf:instanceValue>
+      <cf:instanceValue name="xLoginReg">ADMIN</cf:instanceValue>
+      <cf:instanceValue name="pCep">37950-000</cf:instanceValue>
+      <cf:instanceValue name="oCidade">1</cf:instanceValue>
+      <cf:instanceValue name="pFlgSexo">M</cf:instanceValue>
+      <cf:instanceValue name="pRgIe">418757896</cf:instanceValue>
+      <cf:instanceValue name="pEmail">sandro@4tsistemas.com.br</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="4">
+      <cf:instanceValue name="pId">5</cf:instanceValue>
+      <cf:instanceValue name="pNome">LUIZ GUILHERME MARQUES</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">5</cf:instanceValue>
+      <cf:instanceValue name="oEmpresas"><pId>1</pId></cf:instanceValue>
+      <cf:instanceValue name="pPFPJ">F</cf:instanceValue>
+      <cf:instanceValue name="pEnderLogradouro">R.PAINEIRAS</cf:instanceValue>
+      <cf:instanceValue name="pEnderBairro">JARDIM DAS PAINEIRAS</cf:instanceValue>
+      <cf:instanceValue name="pEnderNumero">102</cf:instanceValue>
+      <cf:instanceValue name="pCpfCnpj">330.258.454-73</cf:instanceValue>
+      <cf:instanceValue name="pDataNascimento">30/12/1982 00:00:00</cf:instanceValue>
+      <cf:instanceValue name="xLoginReg">ADMIN</cf:instanceValue>
+      <cf:instanceValue name="pCep">37950-000</cf:instanceValue>
+      <cf:instanceValue name="oCidade">1</cf:instanceValue>
+      <cf:instanceValue name="pFlgSexo">M</cf:instanceValue>
+      <cf:instanceValue name="pRgIe">403289440</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="5">
+      <cf:instanceValue name="pId">6</cf:instanceValue>
+      <cf:instanceValue name="pNome">ANDREY VOLTE A SORRIR</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">6</cf:instanceValue>
+      <cf:instanceValue name="oEmpresas"><pId>1</pId></cf:instanceValue>
+      <cf:instanceValue name="pPFPJ">F</cf:instanceValue>
+      <cf:instanceValue name="pEnderLogradouro">R.AMADOR BUENO</cf:instanceValue>
+      <cf:instanceValue name="pEnderBairro">CENTRO</cf:instanceValue>
+      <cf:instanceValue name="pEnderNumero">58</cf:instanceValue>
+      <cf:instanceValue name="pCpfCnpj">584.080.455-04</cf:instanceValue>
+      <cf:instanceValue name="pDataNascimento">12/11/1980 00:00:00</cf:instanceValue>
+      <cf:instanceValue name="xLoginReg">ADMIN</cf:instanceValue>
+      <cf:instanceValue name="pCep">37950-000</cf:instanceValue>
+      <cf:instanceValue name="oCidade">1</cf:instanceValue>
+      <cf:instanceValue name="pFlgSexo">M</cf:instanceValue>
+      <cf:instanceValue name="pRgIe">403289440</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="6">
+      <cf:instanceValue name="pId">7</cf:instanceValue>
+      <cf:instanceValue name="pNome">CARLOS EDUARDO DE OLIVEIRA</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">7</cf:instanceValue>
+      <cf:instanceValue name="oEmpresas"><pId>1</pId></cf:instanceValue>
+      <cf:instanceValue name="pPFPJ">F</cf:instanceValue>
+      <cf:instanceValue name="pEnderLogradouro">R.BERNARDETE</cf:instanceValue>
+      <cf:instanceValue name="pEnderBairro">JARDIM BERNARDETE</cf:instanceValue>
+      <cf:instanceValue name="pEnderNumero">211</cf:instanceValue>
+      <cf:instanceValue name="pCpfCnpj">433.721.519-09</cf:instanceValue>
+      <cf:instanceValue name="pDataNascimento">12/05/1979 00:00:00</cf:instanceValue>
+      <cf:instanceValue name="xLoginReg">ADMIN</cf:instanceValue>
+      <cf:instanceValue name="pCep">37950-000</cf:instanceValue>
+      <cf:instanceValue name="oCidade">1</cf:instanceValue>
+      <cf:instanceValue name="pFlgSexo">M</cf:instanceValue>
+      <cf:instanceValue name="pRgIe">418757896</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="7">
+      <cf:instanceValue name="pId">8</cf:instanceValue>
+      <cf:instanceValue name="pNome">MATRIZ DA EMPRESA</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">8</cf:instanceValue>
+      <cf:instanceValue name="oEmpresas"><pId>1</pId></cf:instanceValue>
+      <cf:instanceValue name="pPFPJ">J</cf:instanceValue>
+      <cf:instanceValue name="oCidade">1</cf:instanceValue>
+      <cf:instanceValue name="pEnderLogradouro">R.JOANA</cf:instanceValue>
+      <cf:instanceValue name="pEnderBairro">CENTRO</cf:instanceValue>
+      <cf:instanceValue name="pEnderNumero">312</cf:instanceValue>
+      <cf:instanceValue name="pCpfCnpj">02.789.432/0001-59</cf:instanceValue>
+      <cf:instanceValue name="pDataNascimento">12/08/1980 00:00:00</cf:instanceValue>
+      <cf:instanceValue name="xLoginReg">ADMIN</cf:instanceValue>
+      <cf:instanceValue name="pCep">37950-000</cf:instanceValue>
+      <cf:instanceValue name="pRgIe">6479889640020</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="8">
+      <cf:instanceValue name="pId">9</cf:instanceValue>
+      <cf:instanceValue name="pNome">FILIAL 1 DA EMPRESA</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">9</cf:instanceValue>
+      <cf:instanceValue name="oEmpresas"><pId>1</pId></cf:instanceValue>
+      <cf:instanceValue name="pPFPJ">J</cf:instanceValue>
+      <cf:instanceValue name="oCidade">1</cf:instanceValue>
+      <cf:instanceValue name="pEnderLogradouro">R.MARQUES</cf:instanceValue>
+      <cf:instanceValue name="pEnderBairro">CENTRO</cf:instanceValue>
+      <cf:instanceValue name="pEnderNumero">553</cf:instanceValue>
+      <cf:instanceValue name="pCpfCnpj">02.789.432/0001-59</cf:instanceValue>
+      <cf:instanceValue name="pDataNascimento">15/10/1985 00:00:00</cf:instanceValue>
+      <cf:instanceValue name="xLoginReg">ADMIN</cf:instanceValue>
+      <cf:instanceValue name="pCep">37950-000</cf:instanceValue>
+      <cf:instanceValue name="pRgIe">6479889640020</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="9">
+      <cf:instanceValue name="pId">10</cf:instanceValue>
+      <cf:instanceValue name="pNome">ASSOC. COM. IND. AGROP. E DE SERV. DE S.S. PARAISO</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">10</cf:instanceValue>
+      <cf:instanceValue name="oEmpresas"><pId>1</pId></cf:instanceValue>
+      <cf:instanceValue name="pPFPJ">J</cf:instanceValue>
+      <cf:instanceValue name="pEndereco">AV. OLIVEIRA RESENDE, 1.350</cf:instanceValue>
+      <cf:instanceValue name="oCidade">1</cf:instanceValue>
+      <cf:instanceValue name="pEnderLogradouro">AV. OLIVEIRA RESENDE</cf:instanceValue>
+      <cf:instanceValue name="pEnderBairro">BRAS</cf:instanceValue>
+      <cf:instanceValue name="pEnderNumero">1.350</cf:instanceValue>
+      <cf:instanceValue name="pCpfCnpj">19.829.498/0001-28</cf:instanceValue>
+      <cf:instanceValue name="pNomeFantasia">ACISSP</cf:instanceValue>
+      <cf:instanceValue name="pTelefone">(35)3539-4400</cf:instanceValue>
+      <cf:instanceValue name="pFax">(35)3539-4407</cf:instanceValue>
+      <cf:instanceValue name="xLoginReg">ADMIN</cf:instanceValue>
+      <cf:instanceValue name="pCep">37950-000</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="CadastroTipo" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="pDescricao">USUARIO</cf:instanceValue>
+      <cf:instanceValue name="pFlgCadastro">USU</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="Cidade" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">1</cf:instanceValue>
+      <cf:instanceValue name="pCodigoIbge">3164704</cf:instanceValue>
+      <cf:instanceValue name="pNome">SAO SEBASTIAO DO PARAISO</cf:instanceValue>
+      <cf:instanceValue name="oUF">1</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="Empresa" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">1</cf:instanceValue>
+      <cf:instanceValue name="pNome">4T SISTEMAS LTDA</cf:instanceValue>
+      <cf:instanceValue name="sSimplesNacionalCategoria">EppIcmsSobFaturamento</cf:instanceValue>
+      <cf:instanceValue name="pSimplesNacionalValorAliquotaCreditoICMS">3</cf:instanceValue>
+      <cf:instanceValue name="sCodigoRegimeTributario">SimplesNacional</cf:instanceValue>
+      <cf:instanceValue name="sCodigoRegimeTributarioNormal">NaoSeAplica</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="Filial" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">1</cf:instanceValue>
+      <cf:instanceValue name="pNome">MATRIZ</cf:instanceValue>
+      <cf:instanceValue name="oEmpresa">1</cf:instanceValue>
+      <cf:instanceValue name="oCadastro">10</cf:instanceValue>
+      <cf:instanceValue name="sTipo">Matriz</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="1">
+      <cf:instanceValue name="pId">2</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">2</cf:instanceValue>
+      <cf:instanceValue name="pNome">FILIAL 1</cf:instanceValue>
+      <cf:instanceValue name="oEmpresa">1</cf:instanceValue>
+      <cf:instanceValue name="sTipo">Filial</cf:instanceValue>
+      <cf:instanceValue name="oCadastro">9</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="FilialConfig" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="sTipo">PaisPadraoCodigo</cf:instanceValue>
+      <cf:instanceValue name="pConteudo">1</cf:instanceValue>
+      <cf:instanceValue name="oFilial">1</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">2</cf:instanceValue>
+      <cf:instanceValue name="sTipo">PaisPadraoCodigo</cf:instanceValue>
+      <cf:instanceValue name="pConteudo">1</cf:instanceValue>
+      <cf:instanceValue name="oFilial">2</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="IdRole" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="Id">1</cf:instanceValue>
+      <cf:instanceValue name="Name">AdmMaster</cf:instanceValue>
+      <cf:instanceValue name="Users"><Id>1</Id></cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="1">
+      <cf:instanceValue name="Id">2</cf:instanceValue>
+      <cf:instanceValue name="Name">Admin BI4T</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="2">
+      <cf:instanceValue name="Id">3</cf:instanceValue>
+      <cf:instanceValue name="Name">Cenario Colheita de Cana</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="3">
+      <cf:instanceValue name="Id">4</cf:instanceValue>
+      <cf:instanceValue name="Name">Entrada de Cana</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="4">
+      <cf:instanceValue name="Id">5</cf:instanceValue>
+      <cf:instanceValue name="Name">Entrada de Cana Mapa</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="5">
+      <cf:instanceValue name="Id">6</cf:instanceValue>
+      <cf:instanceValue name="Name">Entrada de Cana por Origem</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="6">
+      <cf:instanceValue name="Id">7</cf:instanceValue>
+      <cf:instanceValue name="Name">Entrada de Cana por Propriedade</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="7">
+      <cf:instanceValue name="Id">8</cf:instanceValue>
+      <cf:instanceValue name="Name">Mapa de Entrada por Propriedade</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="8">
+      <cf:instanceValue name="Id">9</cf:instanceValue>
+      <cf:instanceValue name="Name">Pivot Entrada de Cana</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="9">
+      <cf:instanceValue name="Id">10</cf:instanceValue>
+      <cf:instanceValue name="Name">Relatorio Entradas por Propriedade</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="10">
+      <cf:instanceValue name="Id">11</cf:instanceValue>
+      <cf:instanceValue name="Name">Cenario Oficina Automotiva</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="11">
+      <cf:instanceValue name="Id">12</cf:instanceValue>
+      <cf:instanceValue name="Name">Resumo Oficina</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="12">
+      <cf:instanceValue name="Id">13</cf:instanceValue>
+      <cf:instanceValue name="Name">Detalhamento Oficina</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="13">
+      <cf:instanceValue name="Id">14</cf:instanceValue>
+      <cf:instanceValue name="Name">Cenario Entrada Cana Mobile</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="14">
+      <cf:instanceValue name="Id">15</cf:instanceValue>
+      <cf:instanceValue name="Name">Moagem de Cana Hora</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="15">
+      <cf:instanceValue name="Id">16</cf:instanceValue>
+      <cf:instanceValue name="Name">Certificado de Cana Hora</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="IdUser" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="Id">1</cf:instanceValue>
+      <cf:instanceValue name="UserName">admin@4t.com.br</cf:instanceValue>
+      <cf:instanceValue name="CreationDateUTC">2014-12-23 13:20:27</cf:instanceValue>
+      <cf:instanceValue name="Email">admin@4t.com.br</cf:instanceValue>
+      <cf:instanceValue name="EmailConfirmed">False</cf:instanceValue>
+      <cf:instanceValue name="PhoneNumberConfirmed">False</cf:instanceValue>
+      <cf:instanceValue name="Password">AIu7vPIjWA0rCXMB6qtwRCWX/8nIzMPqyAgpKZdfzx2gkY7MfYCezR5QyXG8BHxSvA==</cf:instanceValue>
+      <cf:instanceValue name="LastPasswordChangeDate">2014-12-23 13:20:26</cf:instanceValue>
+      <cf:instanceValue name="AccessFailedCount">0</cf:instanceValue>
+      <cf:instanceValue name="LockoutEnabled">1</cf:instanceValue>
+      <cf:instanceValue name="SecurityStamp">bf31cefa-3766-4472-ac59-ffd5fb0b3b5f</cf:instanceValue>
+      <cf:instanceValue name="TwoFactorEnabled">False</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="Pais" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">1</cf:instanceValue>
+      <cf:instanceValue name="pCodigoIbge">1058</cf:instanceValue>
+      <cf:instanceValue name="pNome">BRASIL</cf:instanceValue>
+      <cf:instanceValue name="pSigla">BRA</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="Sistema" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">1</cf:instanceValue>
+      <cf:instanceValue name="pNome">SISTEMA INTEGRADO DE GESTAO EMPRESARIAL</cf:instanceValue>
+      <cf:instanceValue name="oEmpresas"><pId>1</pId></cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="UF" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">1</cf:instanceValue>
+      <cf:instanceValue name="pCodigoIbge">31</cf:instanceValue>
+      <cf:instanceValue name="pDescricao">MINAS GERAIS</cf:instanceValue>
+      <cf:instanceValue name="pSigla">MG</cf:instanceValue>
+      <cf:instanceValue name="oPais">1</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="Usuario" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">1</cf:instanceValue>
+      <cf:instanceValue name="pLogin">ADMIN</cf:instanceValue>
+      <cf:instanceValue name="pSenha">b</cf:instanceValue>
+      <cf:instanceValue name="oFiliais"><pId>1</pId><pId>2</pId></cf:instanceValue>
+      <cf:instanceValue name="pFlgAdmin">S</cf:instanceValue>
+    </cf:instance>
+    <cf:instance sortOrder="1">
+      <cf:instanceValue name="pId">2</cf:instanceValue>
+      <cf:instanceValue name="pCodigo">2</cf:instanceValue>
+      <cf:instanceValue name="pLogin">RENATO</cf:instanceValue>
+      <cf:instanceValue name="pSenha">r</cf:instanceValue>
+      <cf:instanceValue name="oFiliais"><pId>1</pId><pId>2</pId></cf:instanceValue>
+      <cf:instanceValue name="pFlgAdmin">N</cf:instanceValue>
+      <cf:instanceValue name="oCadastro">1</cf:instanceValue>
+      <cf:instanceValue name="oAppRelatorios"><pId>1</pId><pId>2</pId><pId>3</pId><pId>4</pId><pId>5</pId><pId>6</pId><pId>7</pId></cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+  <cf:entity name="WebSiteMap" namespace="S5T">
+    <cf:instance>
+      <cf:instanceValue name="pId">1</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCana/Cana/cnEntCanaEntradasCana.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Colheita de Cana</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Entrada de Cana</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">2</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCana/CanaPorOrigem/cnEntCanaEntradasCanaPorOrigem.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Colheita de Cana</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Entrada de Cana por Origem</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">3</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCana/CanaPorPropriedade/cnEntCanaEntradasCanaPorPropDualGeralFrente.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Colheita de Cana</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Entrada de Cana por Propriedade</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">4</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCana/CanaMapa/cnEntCanaEntradasCanaMapa.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Colheita de Cana</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Mapa de Entrada por Municipio</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">5</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCana/CanaMapaPropriedades/cnEntCanaEntradasCanaMapaPropriedades.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Colheita de Cana</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Mapa de Entrada por Propriedade</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">6</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCana/PivotEntradaCana/pivotEntradaCana.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Colheita de Cana</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Pivot Entrada de Cana</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">7</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCana/RelEntradasPropriedades/relEntradasPropriedades.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Colheita de Cana</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Relatorio Entradas por Propriedade</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">8</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCana/ColheitaCertificados/cnEntCanaColheitaCertificados.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Colheita de Cana</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Informacoes Gerais</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">9</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCana/PlanejamentoColheita/cnEntCanaPlanejamentoColheitaMapa.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Colheita de Cana</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Planejamento de Colheita</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">10</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCana/AcompProdutividade1Corte/cnEntCanaAcompProdutividade1Corte.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Colheita de Cana</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Acomp  Produtividade 1o Corte</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">11</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCana/AcompProdutividadeDCorte/cnEntCanaAcompProdutividadeDCorte.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Colheita de Cana</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Acomp  Produtividade Demais Cortes</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">12</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnOficina/Resumo/cnOficinaResumoDualGeralFrente.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Oficina Automotiva</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Resumo Oficina</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">13</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnOficina/Detalhamento/cnOficinaDetalhamentoTriGeralCmFr.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Oficina Automotiva</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Detalhamento Oficina</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">14</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnOficina/ResumoEquip/cnOficinaResumoEquipamentos.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Oficina Automotiva</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Resumo dos Equipamentos na Oficina</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">15</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCanaMob/EntradaCanaHora/cnEntCanaMobEntradasCanaHoraDualGeralFrente.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Entrada Cana Mobile</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Entrada de Cana Hora</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">16</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCanaMob/MoagemCanaHora/cnEntCanaMobMoagemCanaHora.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Entrada Cana Mobile</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Moagem de Cana Hora</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">17</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnEntCanaMob/CertificadoHora/cnEntCanaMobEntradasCertificadoHora.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Cenario Entrada Cana Mobile</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Certificado de Cana Hora</cf:instanceValue>
+    </cf:instance>
+    <cf:instance>
+      <cf:instanceValue name="pId">18</cf:instanceValue>
+      <cf:instanceValue name="pRelPath">~/frmUsina/cnAcesso/LogAcessoBI/LogAcessos.aspx</cf:instanceValue>
+      <cf:instanceValue name="pNode">Acesso</cf:instanceValue>
+      <cf:instanceValue name="pDescription">Log de Acesso ao BI</cf:instanceValue>
+    </cf:instance>
+  </cf:entity>
+</cf:project>

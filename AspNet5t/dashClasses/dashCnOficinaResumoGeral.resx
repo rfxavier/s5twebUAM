@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CustomSqlQuery1.Sql" xml:space="preserve">
+    <value>SELECT 0 as "COD_CLASSE_MECANICA",
+       'GERAL' as "DSC_CLASSE_MECANICA",
+       ROUND(SUM("V_RESUMO_OFICINA_DISP"."QTD_MANUT"),0) as "QTD_MANUT", 
+       ROUND(SUM("V_RESUMO_OFICINA_DISP"."QTDE_EQUIP"),0) as "QTD_EQUIP", 
+       ROUND((1 - (SUM("V_RESUMO_OFICINA_DISP"."QTD_MANUT") / SUM("V_RESUMO_OFICINA_DISP"."QTDE_EQUIP"))) * 100,2)  as "DISP"
+from "BI4T"."V_RESUMO_OFICINA_DISP" "V_RESUMO_OFICINA_DISP"
+</value>
+  </data>
+  <data name="dataSource2.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iZHNVQU1PZmljaW5hRGlzcEdFUkFMIj48VmlldyBOYW1lPSJkc1VBTU9maWNpbmFEaXNwR0VSQUwiPjxGaWVsZCBOYW1lPSJDT0RfQ0xBU1NFX01FQ0FOSUNBIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJEU0NfQ0xBU1NFX01FQ0FOSUNBIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlFURF9NQU5VVCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUVREX0VRVUlQIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJESVNQIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="CustomSqlQuery2.Sql" xml:space="preserve">
+    <value>SELECT "V_RESUMO_OFICINA_DISP"."COD_CLASSE_MECANICA" as "COD_CLASSE_MECANICA",
+       "V_RESUMO_OFICINA_DISP"."DSC_CLASSE_MECANICA" as "DSC_CLASSE_MECANICA",
+       SUM("BI4T"."V_RESUMO_OFICINA_DISP"."QTD_MANUT") as "QTD_MANUT",
+       SUM("BI4T"."V_RESUMO_OFICINA_DISP"."QTDE_EQUIP") as "QTD_EQUIP",
+       ROUND(((SUM("BI4T"."V_RESUMO_OFICINA_DISP"."QTDE_EQUIP") - SUM("BI4T"."V_RESUMO_OFICINA_DISP"."QTD_MANUT")) * 100) /
+             SUM("BI4T"."V_RESUMO_OFICINA_DISP"."QTDE_EQUIP")) as "DISP"
+  FROM "BI4T"."V_RESUMO_OFICINA_DISP" "V_RESUMO_OFICINA_DISP"
+ GROUP BY "V_RESUMO_OFICINA_DISP"."COD_CLASSE_MECANICA",
+          "V_RESUMO_OFICINA_DISP"."DSC_CLASSE_MECANICA"
+
+</value>
+  </data>
+  <data name="dataSource3.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iZHNVQU1PZmljaW5hRGlzcENNIj48VmlldyBOYW1lPSJkc1VBTU9maWNpbmFEaXNwQ00iPjxGaWVsZCBOYW1lPSJDT0RfQ0xBU1NFX01FQ0FOSUNBIiBUeXBlPSJJbnQxNiIgLz48RmllbGQgTmFtZT0iRFNDX0NMQVNTRV9NRUNBTklDQSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJRVERfTUFOVVQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlFURF9FUVVJUCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRElTUCIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="CustomSqlQuery3.Sql" xml:space="preserve">
+    <value>SELECT "V_RESUMO_OFICINA"."COD_CLASSE_MECANICA" as "COD_CLASSE_MECANICA",
+       "V_RESUMO_OFICINA"."DSC_CLASSE_MECANICA" as "DSC_CLASSE_MECANICA",
+       "V_RESUMO_OFICINA"."COD_CLASSE_OPERACIONAL" as "COD_CLASSE_OPERACIONAL",
+       "V_RESUMO_OFICINA"."DSC_CLASSE_OPERACIONAL" as "DSC_CLASSE_OPERACIONAL",
+       "V_RESUMO_OFICINA"."NUMERO_EQUIPAMENTO_FROTA" as "NUMERO_EQUIPAMENTO_FROTA",
+       "V_RESUMO_OFICINA"."DSC_EQUIPAMENTO_FROTA" as "DSC_EQUIPAMENTO_FROTA", 
+       "V_RESUMO_OFICINA"."NUMERO_OS" as "NUMERO_OS", 
+       "V_RESUMO_OFICINA"."DATAHORAABERTURA" as "DATAHORAABERTURA",
+       "V_RESUMO_OFICINA"."HORAS_PARADA" as "HORAS_PARADA", 
+       "V_RESUMO_OFICINA"."COD_SETOR" as "COD_SETOR",
+       "V_RESUMO_OFICINA"."DSC_SETOR" as "DSC_SETOR", 
+       "V_RESUMO_OFICINA"."DATAHORAFECHAMENTO" as "DATAHORAFECHAMENTO", 
+       "V_RESUMO_OFICINA"."PROGNOSTICO" as "PROGNOSTICO",
+       "V_RESUMO_OFICINA"."COD_FRENTE" as "COD_FRENTE", 
+       "V_RESUMO_OFICINA"."DSC_FRENTE" as "DSC_FRENTE",
+       "V_RESUMO_OFICINA"."DATAHORAPREVISTA" as "DATAHORAPREVISTA", 
+       "V_RESUMO_OFICINA"."DISP" as "DISP",
+       "V_RESUMO_OFICINA"."LOCAL" as "LOCAL", 
+       (SELECT SUM("CM"."QTD_MANUT") FROM "BI4T"."V_RESUMO_OFICINA_DISP" "CM" 
+        WHERE "CM"."COD_CLASSE_MECANICA" = "V_RESUMO_OFICINA"."COD_CLASSE_MECANICA") AS "QTD_MANUT"
+  from "BI4T"."V_RESUMO_OFICINA" "V_RESUMO_OFICINA"</value>
+  </data>
+  <data name="dataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iZHNVQU1PZmljaW5hIj48VmlldyBOYW1lPSJkc1VBTU9maWNpbmEiPjxGaWVsZCBOYW1lPSJDT0RfQ0xBU1NFX01FQ0FOSUNBIiBUeXBlPSJJbnQxNiIgLz48RmllbGQgTmFtZT0iRFNDX0NMQVNTRV9NRUNBTklDQSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDT0RfQ0xBU1NFX09QRVJBQ0lPTkFMIiBUeXBlPSJJbnQxNiIgLz48RmllbGQgTmFtZT0iRFNDX0NMQVNTRV9PUEVSQUNJT05BTCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOVU1FUk9fRVFVSVBBTUVOVE9fRlJPVEEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRFNDX0VRVUlQQU1FTlRPX0ZST1RBIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik5VTUVST19PUyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRBVEFIT1JBQUJFUlRVUkEiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJIT1JBU19QQVJBREEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkNPRF9TRVRPUiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEU0NfU0VUT1IiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iREFUQUhPUkFGRUNIQU1FTlRPIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iUFJPR05PU1RJQ08iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ09EX0ZSRU5URSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEU0NfRlJFTlRFIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRBVEFIT1JBUFJFVklTVEEiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJESVNQIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJMT0NBTCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJRVERfTUFOVVQiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="DataConnection1.ParametersSerializable" xml:space="preserve">
+    <value>PFBhcmFtZXRlcnM+DQogIDxQYXJhbWV0ZXIgTmFtZT0ic2VydmVyIiBWYWx1ZT0ibG9jYWxob3N0IiAvPg0KICA8UGFyYW1ldGVyIE5hbWU9ImRhdGFiYXNlIiBWYWx1ZT0iIiAvPg0KICA8UGFyYW1ldGVyIE5hbWU9InJlYWQgb25seSIgVmFsdWU9IjEiIC8+DQogIDxQYXJhbWV0ZXIgTmFtZT0iZ2VuZXJhdGVDb25uZWN0aW9uSGVscGVyIiBWYWx1ZT0iZmFsc2UiIC8+DQo8L1BhcmFtZXRlcnM+</value>
+  </data>
+</root>

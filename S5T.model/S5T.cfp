@@ -1,0 +1,1109 @@
+﻿<cf:project defaultNamespace="S5T" xmlns:cf="http://www.softfluent.com/codefluent/2005/1" xmlns:cfx="http://www.softfluent.com/codefluent/modeler/2008/1" xmlns:cfmy="http://www.softfluent.com/codefluent/producers.mysql/2012/1" xmlns:cfom="http://www.softfluent.com/codefluent/producers.model/2005/1" xmlns:cfasp="http://www.softfluent.com/codefluent/producers.aspnet/2011/1" xmlns:cfaz="http://www.softfluent.com/codefluent/producers.sqlazure/2011/1" xmlns:cfps="http://www.softfluent.com/codefluent/producers.sqlserver/2005/1" defaultKeyPropertyTypeName="long" maxParameterNameLength="62" defaultConcurrencyMode="None" persistencePropertyNameFormat="{1}" defaultProducerProductionFlags="Default, Overwrite, RemoveDates" createDefaultMethodForms="true" createDefaultApplication="false" createDefaultHints="false" productionFlags="Default, Overwrite, RemoveDates" defaultInstancesPartName="Instances.cfp">
+  <cf:import path="Default.Surface.cfp" />
+  <cf:import path="Instances.cfp" overwrite="false" />
+  <cf:producer enabled="false" name="MySQL" typeName="CodeFluent.Producers.MySQL.MySQLProducer, CodeFluent.Producers.MySQL">
+    <cf:configuration targetDirectory="..\S5TBom\Persistence\MySql" cfx:targetProject="..\S5TBom\S5TBom.vbproj" cfx:targetProjectLayout="Update" targetVersion="MySQL55" connectionString="Database=s5tuam;Server=localhost;User ID=root;Password=manager;AllowUserVariables=true" useLocalTransactions="false" produceInstances="true" storeName="" defaultSchema="s5tuam" />
+  </cf:producer>
+  <cf:producer name="Business Object Model (BOM)" typeName="CodeFluent.Producers.CodeDom.CodeDomProducer, CodeFluent.Producers.CodeDom">
+    <cf:configuration compileWithVisualStudio="true" compile="false" codeDomProviderTypeName="VisualBasic" targetDirectory="..\S5TBom\Classes" cfx:targetProject="..\S5TBom\S5TBom.vbproj" cfx:targetProjectLayout="Update" runtimeResourceBaseName="S5T" />
+  </cf:producer>
+  <cf:entity name="Usuario" namespace="S5T" categoryPath="/S5T" persistenceName="usuario">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pCodigo" nullable="false" typeName="int" collectionKey="false" unique="true" />
+    <cf:property name="pLogin" collectionKey="true" maxLength="20" />
+    <cf:property name="pSenha" typeName="password" collectionKey="false" />
+    <cf:property name="pFlgAdmin" maxLength="1" />
+    <cf:property name="sStatus" typeName="{0}.UsuarioStatus" />
+    <cf:property name="xDataHoraReg" typeName="datetime" />
+    <cf:property name="xLoginReg" maxLength="30" />
+    <cf:property name="oFiliais" typeName="{0}.FilialCollection" relationPropertyName="oUsuarios" collectionKey="false" persistenceName="ofiliais" />
+    <cf:property name="oCadastro" typeName="{0}.Cadastro" relationPropertyName="oUsuario" />
+    <cf:property name="oAppRelatorios" typeName="{0}.AppRelatorioCollection" relationPropertyName="oUsuarios" />
+    <cf:property name="oMenuPermissoes" typeName="{0}.MenuPermissaoCollection" relationPropertyName="oUsuario" />
+    <cf:property name="oIdUser" typeName="{0}.IdUser" relationPropertyName="oUsuario" />
+    <cf:method name="LoadByCodigo" body="loadone (int parCodigo) where pCodigo = @parCodigo" />
+    <cf:method name="LoadByLogin" body="load (string parLogin) where pLogin like @parLogin" />
+    <cf:rule typeName="OnBeforeDelete" />
+    <cf:rule typeName="OnBeforeSave" />
+    <cf:method name="LoadMaxCodigo" body="LOADONE ORDER BY pCodigo DESC" maxCount="1" />
+    <cf:method name="DeleteLinkCadastro" language="VisualBasic" methodType="BodySnippet" memberAttributes="Static, Public"><![CDATA[DeleteLinkCadastroPartial(parUsuario)]]><cf:rule typeName="Transaction" /><cf:parameter typeName="S5T.Usuario" name="parUsuario" modelNullable="False" /></cf:method>
+  </cf:entity>
+  <cf:enumeration name="UsuarioStatus" namespace="S5T" categoryPath="/S5T">
+    <cf:enumerationValue name="Ativo" value="1" />
+    <cf:enumerationValue name="Bloqueado" value="2" />
+  </cf:enumeration>
+  <cf:entity name="Cadastro" namespace="S5T" categoryPath="/S5T" persistenceName="cadastro">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pNome" entityDisplay="true" collectionKey="false" />
+    <cf:property name="pCodigo" typeName="int" collectionKey="true" />
+    <cf:property name="oEmpresas" typeName="{0}.EmpresaCollection" relationPropertyName="oCadastros" collectionKey="false" persistenceName="oempresas" />
+    <cf:property name="pPFPJ" maxLength="1" />
+    <cf:property name="pEndereco" />
+    <cf:property name="oCidade" typeName="{0}.Cidade" relationPropertyName="oCadastros" />
+    <cf:property name="pEnderLogradouro" />
+    <cf:property name="pEnderComplemento" />
+    <cf:property name="pEnderBairro" />
+    <cf:property name="pEnderNumero" />
+    <cf:property name="pEnderAuxLogradouro" />
+    <cf:property name="pEnderAuxNumero" />
+    <cf:property name="pEnderAuxBairro" />
+    <cf:property name="pEnderAuxComplemento" />
+    <cf:property name="pEnderecoAux" />
+    <cf:property name="pEmail">
+      <cf:rule typeName="EmailValidate">
+        <cf:message cultureName="pt-BR" name="Failed">[TxtEmail] Email inválido</cf:message>
+      </cf:rule>
+    </cf:property>
+    <cf:property name="oCidadeAux" typeName="{0}.Cidade" relationPropertyName="CadastrosAux" />
+    <cf:property name="pCpfCnpj" unique="false" maxLength="20" />
+    <cf:property name="pDataNascimento" typeName="date" />
+    <cf:property name="pRgIe" />
+    <cf:property name="pNomeFantasia" />
+    <cf:property name="pFlgSexo" />
+    <cf:property name="pDataCadastro" typeName="date" />
+    <cf:property name="pDataBaixa" typeName="date" />
+    <cf:property name="pTelefone" />
+    <cf:property name="pTelefoneAux" />
+    <cf:property name="pCelular" />
+    <cf:property name="pFax" />
+    <cf:property name="xDataHoraReg" typeName="datetime" />
+    <cf:property name="xLoginReg" maxLength="30" />
+    <cf:property name="oUsuario" typeName="{0}.Usuario" relationPropertyName="oCadastro" />
+    <cf:property name="pCep">
+      <cf:rule typeName="RegularExpressionValidate" options="NullDisallowed, EmptyDisallowed" expression="[0-9]{5}-[0-9]{3}">
+        <cf:message cultureName="pt-BR" name="Null">[MskCep] Cep não informado</cf:message>
+        <cf:message cultureName="pt-BR" name="Empty">[MskCep] Cep não informado</cf:message>
+        <cf:message cultureName="pt-BR" name="RegexFailed">[MskCep] Cep inválido</cf:message>
+      </cf:rule>
+    </cf:property>
+    <cf:property name="pCepAux" />
+    <cf:property name="oCadastrosTipo" typeName="{0}.CadastroTipoCollection" relationPropertyName="oCadastros" persistenceName="ocadastrostipo" />
+    <cf:property name="pcCadastroTipoLista" computed="true" />
+    <cf:property name="pFlgPreCadastro" persistenceDefaultSaveValue="N" maxLength="1">
+      <cf:message class="ajuda" cultureName="pt-BR">Pré-Cadastro? S/N (Pré exige somente CPF ou CNPJ)</cf:message>
+    </cf:property>
+    <cf:property name="oCadastroFilial" typeName="{0}.Filial" relationPropertyName="oCadastro" />
+    <cf:view persistenceName="vcadastrocadastroviewgeral" autoLightweight="true" name="CadastroViewGeral">
+      <cf:viewProperty name="pId" />
+      <cf:viewProperty name="pNome" />
+      <cf:viewProperty name="pCodigo" />
+      <cf:viewProperty name="pPFPJ" />
+      <cf:viewProperty name="pEndereco" />
+      <cf:viewProperty name="pEnderLogradouro" />
+      <cf:viewProperty name="pEnderComplemento" />
+      <cf:viewProperty name="pEnderBairro" />
+      <cf:viewProperty name="pEnderNumero" />
+      <cf:viewProperty name="pEnderAuxLogradouro" />
+      <cf:viewProperty name="pEnderAuxNumero" />
+      <cf:viewProperty name="pEnderAuxBairro" />
+      <cf:viewProperty name="pEnderAuxComplemento" />
+      <cf:viewProperty name="pEnderecoAux" />
+      <cf:viewProperty name="pEmail" />
+      <cf:viewProperty name="pCpfCnpj" />
+      <cf:viewProperty name="pDataNascimento" />
+      <cf:viewProperty name="pRgIe" />
+      <cf:viewProperty name="pNomeFantasia" />
+      <cf:viewProperty name="pFlgSexo" />
+      <cf:viewProperty name="pDataCadastro" />
+      <cf:viewProperty name="pDataBaixa" />
+      <cf:viewProperty name="pTelefone" />
+      <cf:viewProperty name="pTelefoneAux" />
+      <cf:viewProperty name="pCelular" />
+      <cf:viewProperty name="pCodigoCidade" expression="ocidade.pcodigo" />
+      <cf:viewProperty name="pNomeCidade" expression="ocidade.pnome" />
+      <cf:viewProperty name="pUFCidade" expression="ocidade.ouf.psigla" />
+      <cf:viewProperty name="pCodigoCidadeAux" expression="ocidadeaux.pcodigo" />
+      <cf:viewProperty name="pNomeCidadeaux" expression="ocidadeaux.pnome" />
+      <cf:viewProperty name="pUFCidadeAux" expression="ocidadeaux.ouf.psigla" />
+      <cf:viewProperty name="pCodigoEmpresa" expression="oempresas.pcodigo" />
+      <cf:viewProperty name="pNomeEmpresa" expression="oempresas.pnome" />
+    </cf:view>
+    <cf:view persistenceName="vcadastrocadastroviewgeraltipo" autoLightweight="true" name="CadastroViewGeralTipo">
+      <cf:viewProperty name="pId" />
+      <cf:viewProperty name="pNome" />
+      <cf:viewProperty name="pCodigo" />
+      <cf:viewProperty name="pPFPJ" />
+      <cf:viewProperty name="pEndereco" />
+      <cf:viewProperty name="pEnderLogradouro" />
+      <cf:viewProperty name="pEnderComplemento" />
+      <cf:viewProperty name="pEnderBairro" />
+      <cf:viewProperty name="pEnderNumero" />
+      <cf:viewProperty name="pEnderAuxLogradouro" />
+      <cf:viewProperty name="pEnderAuxNumero" />
+      <cf:viewProperty name="pEnderAuxBairro" />
+      <cf:viewProperty name="pEnderAuxComplemento" />
+      <cf:viewProperty name="pEnderecoAux" />
+      <cf:viewProperty name="pEmail" />
+      <cf:viewProperty name="pCpfCnpj" />
+      <cf:viewProperty name="pDataNascimento" />
+      <cf:viewProperty name="pRgIe" />
+      <cf:viewProperty name="pNomeFantasia" />
+      <cf:viewProperty name="pFlgSexo" />
+      <cf:viewProperty name="pDataCadastro" />
+      <cf:viewProperty name="pDataBaixa" />
+      <cf:viewProperty name="pTelefone" />
+      <cf:viewProperty name="pTelefoneAux" />
+      <cf:viewProperty name="pCelular" />
+      <cf:viewProperty name="pCodigoCidade" expression="ocidade.pcodigo" />
+      <cf:viewProperty name="pNomeCidade" expression="ocidade.pnome" />
+      <cf:viewProperty name="pUFCidade" expression="ocidade.ouf.psigla" />
+      <cf:viewProperty name="pCodigoCidadeAux" expression="ocidadeaux.pcodigo" />
+      <cf:viewProperty name="pNomeCidadeaux" expression="ocidadeaux.pnome" />
+      <cf:viewProperty name="pUFCidadeAux" expression="ocidadeaux.ouf.psigla" />
+      <cf:viewProperty name="pCodigoEmpresa" expression="oempresas.pcodigo" />
+      <cf:viewProperty name="pNomeEmpresa" expression="oempresas.pnome" />
+      <cf:viewProperty name="pCadastroTipoFlgTipo" expression="oCadastrosTipo.pFlgCadastro" />
+      <cf:viewProperty name="pCadastroTipoDescricao" expression="oCadastrosTipo.pDescricao" />
+    </cf:view>
+    <cf:rule typeName="OnBeforeSave" />
+    <cf:method name="LoadByEmpresaViewGeral" body="load (int parCodEmpresa) from vcadastrocadastroviewgeral where pCodigoEmpresa = @parCodEmpresa order by pNomeFantasia asc" />
+    <cf:rule typeName="OnBeforeDelete" />
+    <cf:snippet name="OnGetpcCadastroTipoLista" language="VisualBasic"><![CDATA[
+    Private Sub OnGetpcCadastroTipoLista()
+            Dim primeiroTipo As Boolean = True
+            _pcCadastroTipoLista = String.Empty
+            For Each cadastroTipo As CadastroTipo In Me.oCadastrosTipo
+                If Not primeiroTipo Then
+                    _pcCadastroTipoLista += ", "
+                End If
+                _pcCadastroTipoLista += cadastroTipo.pFlgCadastro
+                primeiroTipo = False
+            Next
+        End Sub
+]]></cf:snippet>
+    <cf:method name="LoadByEmpresaFlgCadastroViewGeralTipo" body="LOAD(int parCodEmpresa, string parFlgCadastro) FROM vcadastrocadastroviewgeraltipo WHERE pCodigoEmpresa = @parCodEmpresa and pCadastroTipoFlgTipo = @parFlgCadastro" />
+    <cf:method name="LoadByNomeFlgCadastroViewGeral" body="LOAD(string parNome, string parFlgCadastro) from vcadastrocadastroviewgeraltipo WHERE pNome LIKE @parNome AND pCadastroTipoFlgTipo = @parFlgCadastro" />
+    <cf:method name="LoadBypCpfCnpj" body="LOAD(string parCpfCnpj) WHERE pCpfCnpj = @parCpfCnpj" />
+    <cf:method name="LoadMaxCodigo" body="LOADONE ORDER BY pCodigo DESC" maxCount="1" />
+    <cf:method name="Delete">
+      <cf:rule typeName="Transaction" />
+    </cf:method>
+    <cf:method name="LoadByNomeViewGeral" body="LOAD(string parNome) from vcadastrocadastroviewgeral WHERE pNome LIKE @parNome" />
+    <cf:method name="LoadByParametros" returnTypeName="System.Collections.Generic.List(Of S5T.CadastroViewGeralTipo)">
+      <cf:body text="raw (int parcodigo, string parnome, string parfj, string parcpfcnpj, string parnomecidade, string parufcidade, string parflgcadastro)" rawText="set @query = 'SELECT pId,&#xD;&#xA;       pNome,&#xD;&#xA;       pCodigo,&#xD;&#xA;       pPFPJ,&#xD;&#xA;       pEndereco,&#xD;&#xA;       pEnderLogradouro,&#xD;&#xA;       pEnderComplemento,&#xD;&#xA;       pEnderBairro,&#xD;&#xA;       pEnderNumero,&#xD;&#xA;       pEnderAuxLogradouro,&#xD;&#xA;       pEnderAuxNumero,&#xD;&#xA;       pEnderAuxBairro,&#xD;&#xA;       pEnderAuxComplemento,&#xD;&#xA;       pEnderecoAux,&#xD;&#xA;       pEmail,&#xD;&#xA;       pCpfCnpj,&#xD;&#xA;       pDataNascimento,&#xD;&#xA;       pRgIe,&#xD;&#xA;       pNomeFantasia,&#xD;&#xA;       pFlgSexo,&#xD;&#xA;       pDataCadastro,&#xD;&#xA;       pDataBaixa,&#xD;&#xA;       pTelefone,&#xD;&#xA;       pTelefoneAux,&#xD;&#xA;       pCelular,&#xD;&#xA;       pCodigoCidade,&#xD;&#xA;       pNomeCidade,&#xD;&#xA;       pUFCidade,&#xD;&#xA;       pCodigoCidadeAux,&#xD;&#xA;       pNomeCidadeaux,&#xD;&#xA;       pUFCidadeAux,&#xD;&#xA;       pCodigoEmpresa,&#xD;&#xA;       pNomeEmpresa,&#xD;&#xA;       GROUP_CONCAT(DISTINCT pCadastroTipoFlgTipo) AS pCadastroTipoFlgTipo,&#xD;&#xA;       GROUP_CONCAT(DISTINCT pCadastroTipoDescricao) AS pCadastroTipoDescricao&#xD;&#xA;  FROM vcadastrocadastroviewgeraltipo';&#xD;&#xA;set @where = ' where 0=0';&#xD;&#xA;if (p_parcodigo &lt;&gt; 0) and (p_parcodigo is not null) then&#xD;&#xA;	set @where = concat(@where,concat(' and pCodigo = ', quote(p_parcodigo)));&#xD;&#xA;end if;&#xD;&#xA;if p_parnome is not null then&#xD;&#xA;	set @where = concat(@where,concat(' and pNome like ', quote(p_parnome)));&#xD;&#xA;end if;&#xD;&#xA;if p_parfj is not null then&#xD;&#xA;	set @where = concat(@where,concat(' and pPFPJ like ', quote(p_parfj)));&#xD;&#xA;end if;&#xD;&#xA;if p_parcpfcnpj is not null then&#xD;&#xA;	set @where = concat(@where,concat(' and pCpfCnpj like ', quote(p_parcpfcnpj)));&#xD;&#xA;end if;&#xD;&#xA;if p_parnomecidade is not null then&#xD;&#xA;	set @where = concat(@where,concat(' and pNomeCidade like ', quote(p_parnomecidade)));&#xD;&#xA;end if;&#xD;&#xA;if p_parufcidade is not null then&#xD;&#xA;	set @where = concat(@where,concat(' and pUfCidade like ', quote(p_parufcidade)));&#xD;&#xA;end if;&#xD;&#xA;if p_parflgcadastro is not null then&#xD;&#xA;	set @where = concat(@where,concat(' and pCadastroTipoFlgTipo like ', quote(p_parflgcadastro)));&#xD;&#xA;end if;&#xD;&#xA;SET @Query = CONCAT(@Query, @Where);&#xD;&#xA;SET @Query = CONCAT(@Query, ' GROUP BY pId');&#xD;&#xA;PREPARE stmt FROM @Query;&#xD;&#xA;EXECUTE stmt;" language="mysql" />
+      <cf:parameter typeName="int" nullable="True" name="parcodigo" modelNullable="False" />
+      <cf:parameter typeName="string" nullable="True" name="parnome" modelNullable="False" />
+      <cf:parameter typeName="string" nullable="True" name="parfj" modelNullable="False" />
+      <cf:parameter typeName="string" nullable="True" name="parcpfcnpj" modelNullable="False" />
+      <cf:parameter typeName="string" nullable="True" name="parnomecidade" modelNullable="False" />
+      <cf:parameter typeName="string" nullable="True" name="parufcidade" modelNullable="False" />
+      <cf:parameter typeName="string" nullable="True" name="parflgcadastro" modelNullable="False" />
+      <cf:body text="raw (int parcodigo, string parnome, string parfj, string parcpfcnpj, string parnomecidade, string parufcidade, string parflgcadastro)" rawText="SET ANSI_WARNINGS OFF&#xD;&#xA;&#xD;&#xA;  DECLARE @query NVARCHAR(2000)&#xD;&#xA;  DECLARE @where NVARCHAR(2000)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;  SET @query = 'SELECT pId'&#xD;&#xA;  SET @query = @query + ' ,max(pNome) pNome'&#xD;&#xA;  SET @query = @query + ' ,max(pCodigo) pCodigo'&#xD;&#xA;  SET @query = @query + ' ,max(pPFPJ) pPFPJ'&#xD;&#xA;  SET @query = @query + ' ,max(pEndereco) pEndereco'&#xD;&#xA;  SET @query = @query + ' ,max(pEnderLogradouro) pEnderLogradouro'&#xD;&#xA;  SET @query = @query + ' ,max(pEnderComplemento) pEnderComplemento'&#xD;&#xA;  SET @query = @query + ' ,max(pEnderBairro) pEnderBairro'&#xD;&#xA;  SET @query = @query + ' ,max(pEnderNumero) pEnderNumero'&#xD;&#xA;  SET @query = @query + ' ,max(pEnderAuxLogradouro) pEnderAuxLogradouro'&#xD;&#xA;  SET @query = @query + ' ,max(pEnderAuxNumero) pEnderAuxNumero'&#xD;&#xA;  SET @query = @query + ' ,max(pEnderAuxBairro) pEnderAuxBairro'&#xD;&#xA;  SET @query = @query + ' ,max(pEnderAuxComplemento) pEnderAuxComplemento'&#xD;&#xA;  SET @query = @query + ' ,max(pEnderecoAux) pEnderecoAux'&#xD;&#xA;  SET @query = @query + ' ,max(pEmail) pEmail'&#xD;&#xA;  SET @query = @query + ' ,max(pCpfCnpj) pCpfCnpj'&#xD;&#xA;  SET @query = @query + ' ,max(pDataNascimento) pDataNascimento'&#xD;&#xA;  SET @query = @query + ' ,max(pRgIe) pRgIe'&#xD;&#xA;  SET @query = @query + ' ,max(pNomeFantasia) pNomeFantasia'&#xD;&#xA;  SET @query = @query + ' ,max(pFlgSexo) pFlgSexo'&#xD;&#xA;  SET @query = @query + ' ,max(pDataCadastro) pDataCadastro'&#xD;&#xA;  SET @query = @query + ' ,max(pDataBaixa) pDataBaixa'&#xD;&#xA;  SET @query = @query + ' ,max(pTelefone) pTelefone'&#xD;&#xA;  SET @query = @query + ' ,max(pTelefoneAux) pTelefoneAux'&#xD;&#xA;  SET @query = @query + ' ,max(pCelular) pCelular'&#xD;&#xA;  SET @query = @query + ' ,max(pCodigoCidade) pCodigoCidade'&#xD;&#xA;  SET @query = @query + ' ,max(pNomeCidade) pNomeCidade'&#xD;&#xA;  SET @query = @query + ' ,max(pUFCidade) pUFCidade'&#xD;&#xA;  SET @query = @query + ' ,max(pCodigoCidadeAux) pCodigoCidadeAux'&#xD;&#xA;  SET @query = @query + ' ,max(pNomeCidadeaux) pNomeCidadeaux'&#xD;&#xA;  SET @query = @query + ' ,max(pUFCidadeAux) pUFCidadeAux'&#xD;&#xA;  SET @query = @query + ' ,max(pCodigoEmpresa) pCodigoEmpresa'&#xD;&#xA;  SET @query = @query + ' ,max(pNomeEmpresa) pNomeEmpresa'&#xD;&#xA;  SET @query = @query + ' ,reverse(stuff(reverse(max(FlgTipo)), 1, 1, ' + char(39) + char(39) + ')) pCadastroTipoFlgTipo'&#xD;&#xA;  SET @query = @query + ' ,reverse(stuff(reverse(max(Descricao)), 1, 1, ' + char(39) + char(39) + ')) pCadastroTipoDescricao'&#xD;&#xA;  SET @query = @query + ' FROM'&#xD;&#xA;  SET @query = @query + '  vcadastrocadastroviewgeraltipo cadview0'&#xD;&#xA;  SET @query = @query + '  CROSS APPLY ('&#xD;&#xA;  SET @query = @query + ' SELECT cadview1.pCadastroTipoFlgTipo + ' + char(39) + ',' + char(39)&#xD;&#xA;  SET @query = @query + ' FROM'&#xD;&#xA;  SET @query = @query + '  vcadastrocadastroviewgeraltipo cadview1'&#xD;&#xA;  SET @query = @query + ' WHERE'&#xD;&#xA;  SET @query = @query + '  cadview1.pid = cadview0.pid'&#xD;&#xA;  SET @query = @query + ' FOR XML'&#xD;&#xA;  SET @query = @query + '  PATH (' + char(39) + char(39) + ')) a1 (FlgTipo)'&#xD;&#xA;  SET @query = @query + '  CROSS APPLY ('&#xD;&#xA;  SET @query = @query + ' SELECT cadview1.pCadastroTipoDescricao + ' + char(39) + ',' + char(39)&#xD;&#xA;  SET @query = @query + ' FROM'&#xD;&#xA;  SET @query = @query + ' vcadastrocadastroviewgeraltipo cadview1'&#xD;&#xA;  SET @query = @query + ' WHERE'&#xD;&#xA;  SET @query = @query + '  cadview1.pid = cadview0.pid'&#xD;&#xA;  SET @query = @query + ' FOR XML'&#xD;&#xA;  SET @query = @query + '  PATH (' + char(39) + char(39) + ')) a2 (Descricao)'&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;  SET @where = ' where 0=0';&#xD;&#xA;&#xD;&#xA;  IF (@parcodigo &lt;&gt; 0) AND (@parcodigo IS NOT NULL)&#xD;&#xA;    SET @where = concat(@where, concat(' and pCodigo = ', @parcodigo))&#xD;&#xA;&#xD;&#xA;  IF (@parnome &lt;&gt; '') AND (@parnome IS NOT NULL)&#xD;&#xA;    SET @where = concat(@where, concat(' and pNome like ', char(39) + @parnome + char(39)))&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;  IF (@parfj &lt;&gt; '') AND (@parfj IS NOT NULL)&#xD;&#xA;    SET @where = concat(@where, concat(' and pPFPJ = ', char(39) + @parfj + char(39)))&#xD;&#xA;&#xD;&#xA;  IF (@parcpfcnpj &lt;&gt; '') AND (@parcpfcnpj IS NOT NULL)&#xD;&#xA;    SET @where = concat(@where, concat(' and pCpfCnpj like ', char(39) + @parcpfcnpj + char(39)))&#xD;&#xA;&#xD;&#xA;  IF (@parnomecidade &lt;&gt; '') AND (@parnomecidade IS NOT NULL)&#xD;&#xA;    SET @where = concat(@where, concat(' and pNomeCidade like ', char(39) + @parnomecidade + char(39)))&#xD;&#xA;&#xD;&#xA;  IF (@parufcidade &lt;&gt; '') AND (@parufcidade IS NOT NULL)&#xD;&#xA;    SET @where = concat(@where, concat(' and pUfCidade like ', char(39) + @parufcidade + char(39)))&#xD;&#xA;&#xD;&#xA;  IF (@parflgcadastro &lt;&gt; '') AND (@parflgcadastro IS NOT NULL)&#xD;&#xA;    SET @where = concat(@where, concat(' and pCadastroTipoFlgTipo like ', char(39) + @parflgcadastro + char(39)))&#xD;&#xA;&#xD;&#xA;  SET @query = @query + @where&#xD;&#xA;&#xD;&#xA;  SET @query = @query + ' GROUP BY pId'&#xD;&#xA;  EXECUTE (@query)" language="tsql" />
+    </cf:method>
+  </cf:entity>
+  <cf:entity name="Cidade" namespace="S5T" categoryPath="/S5T" persistenceName="cidade">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pNome" entityDisplay="true" collectionKey="false" />
+    <cf:property name="pCodigo" defaultValue="" typeName="int" collectionKey="true" />
+    <cf:property name="pCodigoIbge" typeName="int" collectionKey="false" unique="true" />
+    <cf:property name="oUF" typeName="{0}.UF" relationPropertyName="oCidades" collectionKey="false" />
+    <cf:property name="oCadastros" typeName="{0}.CadastroCollection" relationPropertyName="oCidade" collectionKey="false" />
+    <cf:property name="CadastrosAux" typeName="{0}.CadastroCollection" relationPropertyName="oCidadeAux" collectionKey="false" />
+    <cf:property name="xDataHoraReg" typeName="datetime" />
+    <cf:property name="xLoginReg" maxLength="30" />
+    <cf:view persistenceName="vcidadecidadeviewgrid" autoLightweight="true" name="CidadeViewGrid">
+      <cf:viewProperty name="pId" />
+      <cf:viewProperty name="pNome" />
+      <cf:viewProperty name="pCodigo" />
+      <cf:viewProperty name="pCodigoIbge" />
+      <cf:viewProperty name="UF" expression="oUF.pDescricao" />
+      <cf:viewProperty name="Sigla" expression="oUF.pSigla" />
+      <cf:viewProperty name="pCodigoStr" />
+    </cf:view>
+    <cf:rule typeName="OnBeforeSave" />
+    <cf:method name="LoadAllViewGrid" body="load from vcidadecidadeviewgrid ORDER BY pNome asc" />
+    <cf:rule typeName="OnBeforeDelete" />
+    <cf:method name="LoadByNomeViewGrid" body="load (string parNomeCidade) from vcidadecidadeviewgrid where pNome like @parNomeCidade" />
+    <cf:method name="LoadMaxCodigo" body="LOADONE ORDER BY pCodigo DESC" maxCount="1" />
+    <cf:method name="LoadByFilterCodigoNome" returnTypeName="System.Collections.Generic.List(Of S5T.CidadeViewGrid)">
+      <cf:body text="RAW (string filter, long startIndex, long endIndex)" rawText="SELECT st.pId, st.pCodigo, st.pNome, uf.pSigla Sigla, LPAD(st.pCodigo,4,'0') pCodigoStr FROM &#xD;&#xA;  (SELECT pId, pCodigo, pNome, t.oUF_pId, (@row_number:=@row_number + 1) AS rn&#xD;&#xA;       FROM&#xD;&#xA;        Cidade AS t,(SELECT @row_number:=0) AS r  WHERE ((CONCAT(LPAD(t.pCodigo,4,'0'), t.pNome) LIKE `p_filter`)) ORDER BY t.pNome) AS st&#xD;&#xA;   LEFT OUTER JOIN uf&#xD;&#xA;    ON st.oUF_pId = uf.pId&#xD;&#xA;  WHERE st.rn BETWEEN `p_startIndex` AND `p_endIndex`;" language="mysql" />
+      <cf:body text="RAW (string filter, long startIndex, long endIndex)" rawText="SELECT st.pId&#xD;&#xA;       , st.pCodigo&#xD;&#xA;       , st.pNome&#xD;&#xA;       , st.pSigla Sigla&#xD;&#xA;	   , right('0000' + ltrim(str(st.pCodigo)), 4) pCodigoStr&#xD;&#xA;  FROM&#xD;&#xA;    (SELECT t.pId&#xD;&#xA;          , t.pCodigo&#xD;&#xA;          , t.pNome&#xD;&#xA;          , uf.pSigla&#xD;&#xA;          , row_number() OVER (ORDER BY t.pNome) AS rn&#xD;&#xA;     FROM&#xD;&#xA;       cidade AS t&#xD;&#xA;       LEFT OUTER JOIN uf&#xD;&#xA;         ON t.oUF_pId = uf.pId&#xD;&#xA;     WHERE&#xD;&#xA;        ((right('0000' + ltrim(str(t.pCodigo)), 4) + ' ' + t.pNome) LIKE @filter)) AS st&#xD;&#xA;  WHERE&#xD;&#xA;    st.rn BETWEEN @startIndex AND @endIndex" language="tsql" />
+    </cf:method>
+  </cf:entity>
+  <cf:entity name="UF" namespace="S5T" categoryPath="/S5T" persistenceName="uf">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pCodigo" typeName="int" collectionKey="true" />
+    <cf:property name="pDescricao" collectionKey="false" />
+    <cf:property name="pSigla" entityDisplay="true" collectionKey="false" unique="true" maxLength="2" />
+    <cf:property name="pCodigoIbge" typeName="int" unique="true" />
+    <cf:property name="oCidades" typeName="{0}.CidadeCollection" relationPropertyName="oUF" collectionKey="false" />
+    <cf:property name="xDataHoraReg" typeName="datetime" />
+    <cf:property name="xLoginReg" maxLength="30" />
+    <cf:property name="oPais" typeName="{0}.Pais" relationPropertyName="oUFs" />
+    <cf:view persistenceName="vufufviewgrid" autoLightweight="true" name="UFViewGrid">
+      <cf:viewProperty name="pId" />
+      <cf:viewProperty name="pCodigo" />
+      <cf:viewProperty name="pDescricao" />
+      <cf:viewProperty name="pSigla" />
+    </cf:view>
+    <cf:method name="LoadAllViewGrid" body="load from vufufviewgrid ORDER BY pDescricao asc" />
+    <cf:rule typeName="OnBeforeSave" />
+    <cf:rule typeName="OnBeforeDelete" />
+    <cf:method name="LoadByDescricaoViewGrid" body="load (string parNomeUF) from vufufviewgrid where pDescricao like @parNomeUF" />
+    <cf:method name="LoadBySigla" body="LOADONE (string parSigla) where pSigla = @parSigla" />
+    <cf:method name="LoadMaxCodigo" body="LOADONE ORDER BY pCodigo DESC" maxCount="1" />
+  </cf:entity>
+  <cf:entity name="Pais" namespace="S5T" categoryPath="/S5T" persistenceName="pais">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pCodigo" typeName="int" collectionKey="true" />
+    <cf:property name="pNome" entityDisplay="true" />
+    <cf:property name="pSigla" unique="true" maxLength="3" />
+    <cf:property name="pCodigoIbge" typeName="int" unique="true" />
+    <cf:property name="xDataHoraReg" typeName="datetime" />
+    <cf:property name="xLoginReg" maxLength="30" />
+    <cf:property name="oUFs" typeName="{0}.UFCollection" relationPropertyName="oPais" />
+    <cf:view persistenceName="vpaispaisviewgrid" autoLightweight="true" name="PaisViewGrid">
+      <cf:viewProperty name="pId" />
+      <cf:viewProperty name="pCodigo" />
+      <cf:viewProperty name="pCodigoIbge" />
+      <cf:viewProperty name="pNome" />
+    </cf:view>
+    <cf:method name="LoadAllViewGrid" body="load from vpaispaisviewgrid ORDER BY pNome asc" />
+    <cf:rule typeName="OnBeforeSave" />
+    <cf:rule typeName="OnBeforeDelete" />
+    <cf:method name="LoadByDescricaoViewGrid" body="load (string parNomePais) from vpaispaisviewgrid where pNome like @parNomePais" />
+    <cf:method name="LoadMaxCodigo" body="LOADONE ORDER BY pCodigo DESC" maxCount="1" />
+  </cf:entity>
+  <cf:entity name="CadastroTipo" namespace="S5T" categoryPath="/S5T" persistenceName="cadastrotipo">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pDescricao" entityDisplay="true" />
+    <cf:property name="pFlgCadastro" />
+    <cf:property name="oCadastros" typeName="{0}.CadastroCollection" relationPropertyName="oCadastrosTipo" persistenceName="ocadastros" />
+    <cf:property name="xDataHoraReg" typeName="datetime" />
+    <cf:property name="xLoginReg" maxLength="30" />
+    <cf:view persistenceName="vcadastrotipocadastrotipoviewgrid" autoLightweight="true" name="CadastroTipoViewGrid">
+      <cf:viewProperty name="pId" />
+      <cf:viewProperty name="pDescricao" />
+      <cf:viewProperty name="pFlgCadastro" />
+    </cf:view>
+    <cf:method name="LoadByFlgCadastro" body="loadone (string parFlgCadastro) where pFlgCadastro = @parFlgCadastro" />
+    <cf:method name="LoadAllViewGrid" body="load from vcadastrotipocadastrotipoviewgrid ORDER BY pDescricao ASC" />
+  </cf:entity>
+  <cf:entity name="AppConfig" namespace="S5T" categoryPath="/S5T" persistenceName="appconfig">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:method name="LoadDataBD" returnTypeName="date" cfom:returnOrdinal="0">
+      <cf:body text="raw" rawText="select curdate() as Data;" language="mysql" />
+      <cf:body text="raw" rawText="SELECT cast(getdate() AS DATE) AS Data" language="tsql" />
+    </cf:method>
+    <cf:method name="LoadDataHoraBD" returnTypeName="datetime">
+      <cf:body text="raw" rawText="select now() as DataHora;" language="mysql" />
+      <cf:body text="raw" rawText="SELECT cast(getdate() AS DATETIME) AS DataHora" language="tsql" />
+    </cf:method>
+    <cf:method name="LoadHoraBD" returnTypeName="time">
+      <cf:body text="raw" rawText="select curtime() as Hora;" language="mysql" />
+      <cf:body text="raw" rawText="SELECT cast(getdate() AS TIME) AS Hora" language="tsql" />
+    </cf:method>
+    <cf:method name="ValidaTelefone" language="VisualBasic" methodType="BodySnippet" memberAttributes="Static, Public" returnTypeName="string"><![CDATA[ValidaTelefone = ValidaTelefonePartial(parTelefone, parNomeControle)]]><cf:parameter typeName="string" name="parTelefone" modelNullable="False" /><cf:parameter typeName="string" name="parNomeControle" modelNullable="False" /></cf:method>
+  </cf:entity>
+  <cf:entity name="MenuPermissao" namespace="S5T" categoryPath="/S5T" persistenceName="menupermissao">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="oUsuario" typeName="{0}.Usuario" relationPropertyName="oMenuPermissoes" />
+    <cf:property name="oSistema" typeName="{0}.Sistema" relationPropertyName="oMenuPermissoes" />
+    <cf:property name="pNomeToolStripPerm" nullable="false" />
+    <cf:property name="pFlgPermissao" maxLength="1" />
+    <cf:property name="xDataHoraReg" typeName="datetime" />
+    <cf:property name="xLoginReg" maxLength="30" />
+    <cf:method name="LoadBySistemaUsuarioToolStrip" body="loadone (oSistema, oUsuario, string parNomeToolStripPerm) where oSistema = @oSistema and oUsuario = @oUsuario and pNomeToolStripPerm = @parNomeToolStripPerm" />
+    <cf:method name="InserePermissoes" language="VisualBasic" methodType="BodySnippet" memberAttributes="Static, Public"><![CDATA[MenuPermissao.InserePermissoesPartial(oSistema, oUsuario, arrToolStrips)]]><cf:rule typeName="Transaction" /><cf:parameter typeName="S5T.Sistema" name="oSistema" modelNullable="False" /><cf:parameter typeName="S5T.Usuario" name="oUsuario" modelNullable="False" /><cf:parameter typeName="System.Array" name="arrToolStrips" modelNullable="False" /></cf:method>
+    <cf:method name="DeleteBySistemaUsuario" body="delete (oSistema, oUsuario) where oSistema = @oSistema and oUsuario = @oUsuario" />
+    <cf:method name="PesquisaPermissoes" language="VisualBasic" methodType="BodySnippet" memberAttributes="Static, Public" returnTypeName="System.Collections.Generic.List(Of S5T.MenuVwPerm)"><![CDATA[return MenuPermissao.PesquisaPermissoesPartial(parCodSistema, parCodUsuario)]]><cf:parameter typeName="int" name="parCodSistema" modelNullable="False" /><cf:parameter typeName="int" name="parCodUsuario" modelNullable="False" /></cf:method>
+    <cf:method name="LoadBySistemaUsuario" body="load (oSistema, oUsuario) where oSistema = @oSistema and oUsuario = @oUsuario" />
+    <cf:method name="LoadBySistemaUsuarioPerm" body="load (oSistema, oUsuario) where oSistema = @oSistema and oUsuario = @oUsuario and pFlgPermissao = 'S'" />
+  </cf:entity>
+  <cf:entity name="Sistema" namespace="S5T" categoryPath="/S5T" persistenceName="sistema">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pNome" entityDisplay="true" collectionKey="false" />
+    <cf:property name="oMenus" typeName="{0}.MenuCollection" relationPropertyName="oSistema" collectionKey="false" />
+    <cf:property name="oEmpresas" typeName="{0}.EmpresaCollection" relationPropertyName="oSistemas" collectionKey="false" persistenceName="oempresas" />
+    <cf:property name="pCodigo" typeName="int" collectionKey="true" />
+    <cf:property name="oMenuPermissoes" typeName="{0}.MenuPermissaoCollection" relationPropertyName="oSistema" />
+    <cf:property name="xDataHoraReg" typeName="datetime" />
+    <cf:property name="xLoginReg" maxLength="30" />
+    <cf:method name="LoadByCodSistemaCodEmpresa" body="LOADONE (int parCodSistema, int parCodEmpresa) where pCodigo = @parCodSistema and oEmpresas.pCodigo = @parCodEmpresa" />
+    <cf:method name="LoadByNome" body="load(string parNome) where pNome like @parNome" />
+  </cf:entity>
+  <cf:entity name="Menu" namespace="S5T" categoryPath="/S5T" persistenceName="menu">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pDescricao" />
+    <cf:property name="pNomeToolStrip" />
+    <cf:property name="oSistema" typeName="{0}.Sistema" relationPropertyName="oMenus" />
+    <cf:property name="pNivelPosicao" typeName="int" />
+    <cf:property name="xDataHoraReg" typeName="datetime" />
+    <cf:property name="xLoginReg" maxLength="30" />
+    <cf:view persistenceName="vmenumenuvw" autoLightweight="true" name="MenuVw">
+      <cf:viewProperty name="pId" />
+      <cf:viewProperty name="pDescricao" />
+      <cf:viewProperty name="pNomeToolStrip" />
+      <cf:viewProperty name="pNivelPosicao" />
+      <cf:viewProperty name="pSistemaCodigo" expression="oSistema.pCodigo" />
+      <cf:viewProperty name="pSistemaNome" expression="oSistema.pNome" />
+    </cf:view>
+    <cf:view persistenceName="vmenumenuvwperm" autoLightweight="true" name="MenuVwPerm">
+      <cf:body text="raw" rawText="SELECT menu.pId, menu.pNivelPosicao, menu.pDescricao, sistema.pCodigo, sistema.pNome, menu.pNomeToolStrip, menupermissao.pFlgPermissao, menupermissao.oUsuario_pId, menupermissao.oSistema_pId FROM (menu INNER JOIN sistema ON (menu.oSistema_pId = sistema.pId)) LEFT OUTER JOIN menupermissao ON (menu.pNomeToolStrip = menupermissao.pNomeToolStripPerm)" language="mysql" />
+      <cf:viewProperty name="pId" expression="pId" />
+      <cf:viewProperty name="pNivelPosicao" expression="pNivelPosicao" />
+      <cf:viewProperty name="pDescricao" expression="pDescricao" />
+      <cf:viewProperty name="pCodigo" expression="pCodigo" />
+      <cf:viewProperty name="pNome" expression="pNome" />
+      <cf:viewProperty name="pNomeToolStrip" expression="pNomeToolStrip" />
+      <cf:viewProperty name="pFlgPermissao" expression="pFlgPermissao" />
+      <cf:viewProperty name="oUsuario_pId" expression="oUsuario_pId" />
+      <cf:viewProperty name="oSistema_pId" expression="oSistema_pId" />
+    </cf:view>
+    <cf:method name="DeleteBySistema" body="delete(oSistema) where oSistema = @oSistema" />
+    <cf:method name="LoadBySistemaVw" body="load (int parCodSistema) from vmenumenuvw where pSistemaCodigo = @parCodSistema" />
+    <cf:method name="LoadBySistemaVwPerm" body="load (string parIdUsuario, string parIdSistema) from vmenumenuvwperm where (not (oUsuario_pId exists) or oUsuario_pId = @parIdUsuario) AND (not (oSistema_pId exists) or oSistema_pId = @parIdSistema)" />
+  </cf:entity>
+  <cf:entity name="LoginRegistro" namespace="S5T" categoryPath="/S5T" persistenceName="loginregistro">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pDataHora" typeName="datetime" />
+    <cf:property name="pSenha" typeName="password" />
+    <cf:property name="pObsLog" />
+    <cf:property name="pCodigoUsuario" typeName="int" />
+    <cf:property name="pLoginUsuario" />
+    <cf:property name="pFlgAdminUsuario" maxLength="1" />
+    <cf:property name="pCodigoFilial" typeName="int" />
+    <cf:property name="pCodigoEmpresa" typeName="int" />
+    <cf:property name="pLoginValidado" typeName="bool" />
+    <cf:property name="sUsuarioStatus" typeName="int" />
+    <cf:method name="LoadByCurrentSession" body="loadone (datetime parDataHora, string parLogin) where pDataHora = @parDataHora and pLoginUsuario = @parLogin and pLoginValidado = TRUE" />
+    <cf:method name="LoadByCodUsuario" body="loadone (int parCodUsuario) where pCodigoUsuario = @parCodUsuario and pLoginValidado = TRUE" xmlns:cf="http://www.softfluent.com/codefluent/2005/1">
+      <cf:parameter typeName="int" name="parCodUsuario" modelNullable="False" />
+    </cf:method>
+  </cf:entity>
+  <cf:entity name="Empresa" namespace="S5T" categoryPath="/S5T" persistenceName="empresa">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pCodigo" typeName="int" collectionKey="true" />
+    <cf:property name="pNome" entityDisplay="true" collectionKey="false" />
+    <cf:property name="oCadastros" typeName="{0}.CadastroCollection" relationPropertyName="oEmpresas" collectionKey="false" persistenceName="ocadastros" />
+    <cf:property name="oSistemas" typeName="{0}.SistemaCollection" relationPropertyName="oEmpresas" collectionKey="false" persistenceName="osistemas" />
+    <cf:property name="oFiliais" typeName="{0}.FilialCollection" relationPropertyName="oEmpresa" collectionKey="false" />
+    <cf:property name="xDataHoraReg" typeName="datetime" collectionKey="false" />
+    <cf:property name="xLoginReg" collectionKey="false" maxLength="30" />
+    <cf:property name="pSimplesNacionalValorAliquotaCreditoICMS" typeName="double" />
+    <cf:property name="sSimplesNacionalCategoria" typeName="{0}.EmpresaSimplesNacionalCategoria">
+      <cf:message class="ajuda" cultureName="pt-BR">ME - MicroEmpresa - ate 120.000/ano
+EPP - Empresa Pequeno Porte - acima 120.000/ano</cf:message>
+    </cf:property>
+    <cf:property name="sCodigoRegimeTributario" typeName="{0}.EmpresaCodigoRegimeTributario" />
+    <cf:property name="sCodigoRegimeTributarioNormal" typeName="{0}.EmpresaCodigoRegimeTributarioNormal" />
+    <cf:method name="LoadByNome" body="load(string parNome) where pNome like @parNome" />
+  </cf:entity>
+  <cf:enumeration name="EmpresaSimplesNacionalCategoria" namespace="S5T" categoryPath="/S5T">
+    <cf:enumerationValue name="Me" />
+    <cf:enumerationValue name="EppIcmsSobFaturamento" />
+    <cf:enumerationValue name="EppIcmsValorFixo" />
+  </cf:enumeration>
+  <cf:enumeration name="EmpresaCodigoRegimeTributario" namespace="S5T" categoryPath="/S5T">
+    <cf:enumerationValue name="SimplesNacional" value="1" />
+    <cf:enumerationValue name="SimplesNacionalExcessoReceita" value="2" />
+    <cf:enumerationValue name="RegimeNormal" value="3" />
+  </cf:enumeration>
+  <cf:enumeration name="EmpresaCodigoRegimeTributarioNormal" namespace="S5T" categoryPath="/S5T">
+    <cf:enumerationValue name="NaoSeAplica" />
+    <cf:enumerationValue name="LucroReal" />
+    <cf:enumerationValue name="LucroPresumidoRegimeCaixa" />
+    <cf:enumerationValue name="LucroPresumidoRegimeCompetencia" />
+  </cf:enumeration>
+  <cf:entity name="Filial" namespace="S5T" categoryPath="/S5T" persistenceName="filial">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pCodigo" typeName="int" collectionKey="false" />
+    <cf:property name="pNome" entityDisplay="true" collectionKey="false" />
+    <cf:property name="sTipo" typeName="{0}.FilialTipo" collectionKey="false" />
+    <cf:property name="xDataHoraReg" typeName="datetime" collectionKey="false" />
+    <cf:property name="xLoginReg" collectionKey="false" maxLength="30" />
+    <cf:property name="oUsuarios" typeName="{0}.UsuarioCollection" relationPropertyName="oFiliais" collectionKey="false" persistenceName="ousuarios" />
+    <cf:property name="oEmpresa" typeName="{0}.Empresa" relationPropertyName="oFiliais" collectionKey="false" />
+    <cf:property name="oCadastro" typeName="{0}.Cadastro" relationPropertyName="oCadastroFilial" collectionKey="false" />
+    <cf:property name="oFilialConfigs" typeName="{0}.FilialConfigCollection" relationPropertyName="oFilial" collectionKey="false" />
+    <cf:view persistenceName="vfilialfilialviewgrid" autoLightweight="true" name="FilialViewGrid">
+      <cf:viewProperty name="pId" />
+      <cf:viewProperty name="pCodigo" />
+      <cf:viewProperty name="pNome" />
+      <cf:viewProperty name="sTipo" />
+      <cf:viewProperty name="pCodEmpresa" expression="oEmpresa.pCodigo" />
+      <cf:viewProperty name="pNomEmpresa" expression="oEmpresa.pNome" />
+      <cf:viewProperty name="pCNPJ" expression="oCadastro.pCpfCnpj" />
+    </cf:view>
+    <cf:view persistenceName="vfilialfilialviewusuarios" autoLightweight="true" name="FilialViewUsuarios">
+      <cf:viewProperty name="pId" />
+      <cf:viewProperty name="pCodigo" />
+      <cf:viewProperty name="pNome" />
+      <cf:viewProperty name="sTipo" />
+      <cf:viewProperty name="pEmpresaCodigo" expression="oEmpresa.pCodigo" />
+      <cf:viewProperty name="pEmpresaNome" expression="oEmpresa.pNome" />
+      <cf:viewProperty name="pUsuarioLogin" expression="oUsuarios.pLogin" />
+    </cf:view>
+    <cf:method name="LoadByCodEmpresaCodFilial" body="loadone (int pCodEmpresa, int pCodFilial) where oEmpresa.pCodigo = @pCodEmpresa and pCodigo = @pCodFilial" />
+    <cf:method name="LoadByParametros" returnTypeName="System.Collections.Generic.List(Of S5T.FilialViewGrid)">
+      <cf:body text="raw (int parCodigo, string parNome,string parCNPJ, int parFilialTipo)" rawText="SET @Query = 'SELECT pId, pCodigo, pNome, pCNPJ, sTipo, pCodEmpresa, pNomEmpresa from vfilialfilialviewgrid';&#xD;&#xA;&#xD;&#xA;     SET @Where  = ' WHERE 0=0 ';&#xD;&#xA;&#xD;&#xA;     if (p_parcodigo &lt;&gt; 0) and (p_parcodigo is not null)&#xD;&#xA;     THEN&#xD;&#xA;        SET @Where  = CONCAT(@Where, CONCAT(' AND pCodigo = ', p_parCodigo));&#xD;&#xA;     END IF;&#xD;&#xA;&#xD;&#xA;     IF p_parNome is not null&#xD;&#xA;     THEN&#xD;&#xA;        SET @Where  = CONCAT(@Where, CONCAT( ' AND pNome like ', QUOTE(p_parNome)));&#xD;&#xA;     END IF;&#xD;&#xA;&#xD;&#xA; IF p_parCNPJ is not null&#xD;&#xA;     THEN&#xD;&#xA;        SET @Where  = CONCAT(@Where, CONCAT( ' AND pCNPJ like ', QUOTE(p_parCNPJ)));&#xD;&#xA;     END IF;&#xD;&#xA;&#xD;&#xA;   if (p_parFilialTipo &lt;&gt; 0) and (p_parFilialTipo is not null)&#xD;&#xA;     THEN&#xD;&#xA;        SET @Where  = CONCAT(@Where, CONCAT(' AND sTipo = ', p_parFilialTipo));&#xD;&#xA;     END IF;&#xD;&#xA;&#xD;&#xA;     SET @Query = CONCAT(@Query, @Where);&#xD;&#xA;&#xD;&#xA;PREPARE stmt FROM @Query;&#xD;&#xA;EXECUTE stmt;" language="mysql" />
+      <cf:parameter typeName="int" nullable="True" name="parCodigo" modelNullable="False" />
+      <cf:parameter typeName="string" nullable="True" name="parNome" modelNullable="False" />
+      <cf:parameter typeName="string" nullable="True" name="parCNPJ" modelNullable="False" />
+      <cf:parameter typeName="int" nullable="True" name="parFilialTipo" modelNullable="False" />
+    </cf:method>
+    <cf:rule typeName="OnBeforeSave" />
+    <cf:rule typeName="OnBeforeDelete" />
+    <cf:method name="LoadByCodEmpresaNomeFilial" body="load (int pCodEmpresa, string pNomFilial) where oEmpresa.pCodigo = @pCodEmpresa and pNome like @pNomFilial" />
+    <cf:method name="LoadMaxCodigo" body="LOADONE(int parCodEmpresa) WHERE oEmpresa.pCodigo = @parCodEmpresa ORDER BY pCodigo DESC" maxCount="1" />
+    <cf:method name="LoadByCodFilialLoginUsuario" body="load (int parCodFilial, string parLoginUsuario) from vfilialfilialviewusuarios where pCodigo = @parCodFilial and pUsuarioLogin = @parLoginUsuario" />
+  </cf:entity>
+  <cf:entity name="FilialConfig" namespace="S5T" categoryPath="/S5T" persistenceName="filialconfig">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="sTipo" entityDisplay="true" typeName="{0}.FilialConfigTipo" />
+    <cf:property name="pConteudo" />
+    <cf:property name="xDataHoraReg" typeName="datetime" />
+    <cf:property name="xLoginReg" maxLength="30" />
+    <cf:property name="oFilial" typeName="{0}.Filial" relationPropertyName="oFilialConfigs" />
+    <cf:method name="LoadByFilialTipoConfig" body="LOADONE(oFilial, sTipo) WHERE oFilial = @oFilial and sTipo = @sTipo" />
+    <cf:method name="LoadByFilial" body="LOAD(oFilial) WHERE oFilial = @oFilial" />
+    <cf:method name="LoadByTipo" body="LOAD(S5T.FilialConfigTipo parTipo) WHERE sTipo = @parTipo" xmlns:cf="http://www.softfluent.com/codefluent/2005/1" />
+  </cf:entity>
+  <cf:enumeration name="FilialConfigTipo" namespace="S5T" categoryPath="/S5T">
+    <cf:enumerationValue name="PaisPadraoCodigo" value="1" />
+  </cf:enumeration>
+  <cf:enumeration name="FilialTipo" namespace="S5T" categoryPath="/S5T">
+    <cf:enumerationValue name="Matriz" value="1" />
+    <cf:enumerationValue name="Filial" value="2" />
+  </cf:enumeration>
+  <cf:entity name="AppRelatorio" namespace="S5T" categoryPath="/S5T" persistenceName="apprelatorio">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pNomeFormArgumento" collectionKey="false" />
+    <cf:property name="pNomeRelatorio" entityDisplay="true" collectionKey="true" maxLength="20" />
+    <cf:property name="pNomeRdlc" collectionKey="false" />
+    <cf:property name="pNomeDataSet" collectionKey="false" />
+    <cf:property name="sCategoria" typeName="{0}.AppRelatorioCategoria" collectionKey="false" />
+    <cf:property name="pTituloRelatorio" collectionKey="false" />
+    <cf:property name="pSequencia" typeName="int" />
+    <cf:property name="pcCategoriaRelatorio" computed="true" />
+    <cf:property name="oUsuarios" typeName="{0}.UsuarioCollection" relationPropertyName="oAppRelatorios" />
+    <cf:property name="pCategoriaRelatorio" />
+    <cf:view persistenceName="vapprelatorioapprelatorioview" autoLightweight="true" checkLevel="DisallowRawOrderByColumns, DisallowLooseTyping" name="AppRelatorioView">
+      <cf:viewProperty name="pId" />
+      <cf:viewProperty name="pNomeFormArgumento" />
+      <cf:viewProperty name="pNomeRelatorio" />
+      <cf:viewProperty name="pNomeRdlc" />
+      <cf:viewProperty name="pNomeDataSet" />
+      <cf:viewProperty name="sCategoria" />
+      <cf:viewProperty name="pTituloRelatorio" />
+      <cf:viewProperty name="pSequencia" />
+      <cf:viewProperty name="pcCategoriaRelatorio" />
+      <cf:viewProperty name="pCategoriaRelatorio" />
+    </cf:view>
+    <cf:view persistenceName="vapprelatorioapprelatoriousuarioview" autoLightweight="true" checkLevel="DisallowRawOrderByColumns, DisallowLooseTyping" name="AppRelatorioUsuarioView">
+      <cf:viewProperty name="pId" />
+      <cf:viewProperty name="pNomeFormArgumento" />
+      <cf:viewProperty name="pNomeRelatorio" />
+      <cf:viewProperty name="pNomeRdlc" />
+      <cf:viewProperty name="pNomeDataSet" />
+      <cf:viewProperty name="sCategoria" />
+      <cf:viewProperty name="pTituloRelatorio" />
+      <cf:viewProperty name="pSequencia" />
+      <cf:viewProperty name="pcCategoriaRelatorio" />
+      <cf:viewProperty name="pCategoriaRelatorio" />
+      <cf:viewProperty name="pUsuarioLogin" expression="oUsuarios.pLogin" />
+    </cf:view>
+    <cf:method name="LoadAllView" body="LOAD FROM vapprelatorioapprelatorioview ORDER BY pSequencia" />
+    <cf:method name="LoadByUsuarioView" body="LOAD(string parLogin) FROM vapprelatorioapprelatoriousuarioview WHERE pUsuarioLogin = @parLogin" />
+    <cf:rule typeName="OnBeforeSave" />
+    <cf:method name="LoadByCategoriaRelatorioView" body="LOAD(string parCategoriaRelatorio) FROM vapprelatorioapprelatorioview WHERE pCategoriaRelatorio = @parCategoriaRelatorio" />
+    <cf:method name="LoadByUsuarioCategoriaRelatorioView" body="LOAD(string parLogin, string parCategoriaRelatorio) FROM vapprelatorioapprelatoriousuarioview WHERE  pUsuarioLogin = @parLogin AND pCategoriaRelatorio = @parCategoriaRelatorio" />
+    <cf:method name="LoadByIdView" body="LOADONE(long parId) FROM vapprelatorioapprelatoriousuarioview WHERE pId = @parId" />
+  </cf:entity>
+  <cf:enumeration name="AppRelatorioCategoria" namespace="S5T" categoryPath="/S5T">
+    <cf:enumerationValue name="Cadastros" value="1" />
+    <cf:enumerationValue name="Contabilidade" value="2" />
+    <cf:enumerationValue name="Estoque" value="3" />
+    <cf:enumerationValue name="Financeiro" value="4" />
+    <cf:enumerationValue name="Fiscal" value="5" />
+    <cf:enumerationValue name="Fechamento_Mensal" value="6" />
+    <cf:enumerationValue name="Servico" value="7" />
+  </cf:enumeration>
+  <cf:producer name="SQL Server" typeName="CodeFluent.Producers.SqlServer.SqlServerProducer, CodeFluent.Producers.SqlServer">
+    <cf:configuration produceViews="true" connectionString="Server=RENATO-LAPTOP\SQLEXPRESS;Database=s5tuam;Integrated Security=true;Application Name=S5T;Password=manager;User ID=RenatoFX" targetDirectory="..\S5TBom\Persistence\SqlServer" cfx:targetProject="..\S5TBom\S5TBom.vbproj" cfx:targetProjectLayout="Update, DontRemove" targetVersion="Sql2014" updateDatabase="true" />
+  </cf:producer>
+  <cf:producer name="Asp.Net Identity" typeName="SoftFluent.AspNetIdentity.AspNetIdentityProducer, SoftFluent.AspNetIdentity">
+    <cf:configuration targetDirectory="..\S5TBom\Classes" cfx:targetProjectLayout="Update" />
+  </cf:producer>
+  <cf:entity name="IdUser" d2p1:entityType="User" namespace="S5T" categoryPath="/S5T" xmlns:d2p1="http://www.softfluent.com/codefluent/producers.aspNetIdentityProducer/2014/1">
+    <cf:property name="Id" d2p1:propertyType="UserKey" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="UserName" d2p1:propertyType="UserName" collectionKey="true" maxLength="70" />
+    <cf:property name="CreationDateUTC" d2p1:propertyType="UserCreationDate" usePersistenceDefaultValue="false" nullable="false" typeName="datetime" />
+    <cf:property name="Email" d2p1:propertyType="UserEmail" typeName="email" uiType="EMail" unique="true" maxLength="70" />
+    <cf:property name="EmailConfirmed" d2p1:propertyType="UserEmailConfirmed" nullable="false" typeName="bool" />
+    <cf:property name="PhoneNumber" d2p1:propertyType="UserPhoneNumber" unique="false" />
+    <cf:property name="PhoneNumberConfirmed" d2p1:propertyType="UserPhoneNumberConfirmed" nullable="false" typeName="bool" />
+    <cf:property name="Password" d2p1:propertyType="UserPassword" typeName="password" uiType="Password" />
+    <cf:property name="LastPasswordChangeDate" d2p1:propertyType="UserLastPasswordChangeDate" typeName="datetime" />
+    <cf:property name="AccessFailedCount" d2p1:propertyType="UserFailedPasswordAttemptCount" usePersistenceDefaultValue="false" nullable="false" typeName="int" />
+    <cf:property name="AccessFailedWindowStart" d2p1:propertyType="UserFailedPasswordAttemptWindowStart" typeName="datetime" />
+    <cf:property name="LockoutEnabled" d2p1:propertyType="UserLockoutEnabled" nullable="false" typeName="bool" />
+    <cf:property name="LockoutEndDateUtc" d2p1:propertyType="UserLockoutEndDate" serializationNullable="true" modelNullable="true" typeName="datetime" />
+    <cf:property name="LastProfileUpdateDate" d2p1:propertyType="UserLastProfileUpdateDate" typeName="datetime" />
+    <cf:property name="SecurityStamp" d2p1:propertyType="UserSecurityStamp" nullable="false" />
+    <cf:property name="TwoFactorEnabled" d2p1:propertyType="UserTwoFactorEnabled" nullable="false" typeName="bool" />
+    <cf:property name="Roles" d2p1:propertyType="UserRoles" typeName="{0}.IdRoleCollection" relationPropertyName="Users" />
+    <cf:property name="Claims" d2p1:propertyType="UserClaims" cascadeDelete="Before" typeName="{0}.IdUserClaimCollection" relationPropertyName="User" />
+    <cf:property name="Logins" d2p1:propertyType="UserLogins" cascadeDelete="Before" typeName="{0}.IdUserLoginCollection" relationPropertyName="User" />
+    <cf:property name="oUsuario" typeName="{0}.Usuario" relationPropertyName="oIdUser" />
+    <cf:method name="LoadByUserLoginInfo" body="LOADONE(string providerKey, string providerName) WHERE Logins.ProviderKey = @providerKey AND Logins.ProviderName = @providerName" d2p1:methodType="LoadUserByUserLoginInfo" />
+    <cf:method name="LoadByEmail" body="LOADONE(Email) WHERE Email = @Email" d2p1:methodType="LoadUserByEmail" />
+  </cf:entity>
+  <cf:entity name="IdRole" d2p1:entityType="Role" namespace="S5T" categoryPath="/S5T" xmlns:d2p1="http://www.softfluent.com/codefluent/producers.aspNetIdentityProducer/2014/1">
+    <cf:property name="Id" d2p1:propertyType="RoleKey" cfps:hint="CLUSTERED" key="true" collectionKey="false" />
+    <cf:property name="Name" d2p1:propertyType="RoleName" collectionKey="true" maxLength="70" />
+    <cf:property name="Users" d2p1:propertyType="RoleUsers" typeName="{0}.IdUserCollection" relationPropertyName="Roles" />
+    <cf:property name="Claims" d2p1:propertyType="RoleClaims" cascadeDelete="Before" typeName="{0}.IdRoleClaimCollection" relationPropertyName="Role" />
+  </cf:entity>
+  <cf:entity name="IdUserClaim" d2p1:entityType="UserClaim" namespace="S5T" categoryPath="/S5T" xmlns:d2p1="http://www.softfluent.com/codefluent/producers.aspNetIdentityProducer/2014/1">
+    <cf:property name="Id" d2p1:propertyType="UserClaimKey" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="Type" d2p1:propertyType="UserClaimType" nullable="false" />
+    <cf:property name="Value" d2p1:propertyType="UserClaimValue" />
+    <cf:property name="ValueType" d2p1:propertyType="UserClaimValueType" />
+    <cf:property name="Issuer" d2p1:propertyType="UserClaimIssuer" />
+    <cf:property name="OriginalIssuer" d2p1:propertyType="UserClaimOriginalIssuer" />
+    <cf:property name="User" d2p1:propertyType="UserClaimUser" nullable="false" typeName="{0}.IdUser" relationPropertyName="Claims" />
+    <cf:method name="DeleteByClaim" body="DELETE(Type, Value) WHERE Type = @Type AND Value = @Value" d2p1:methodType="DeleteUserClaims" />
+    <cf:method name="LoadByClaim" body="LOAD(Type, Value) WHERE Type = @Type AND Value = @Value" d2p1:methodType="LoadUserClaims" />
+  </cf:entity>
+  <cf:entity name="IdUserLogin" d2p1:entityType="UserLogin" namespace="S5T" categoryPath="/S5T" xmlns:d2p1="http://www.softfluent.com/codefluent/producers.aspNetIdentityProducer/2014/1">
+    <cf:property name="Id" d2p1:propertyType="UserLoginKey" cfps:hint="CLUSTERED" />
+    <cf:property name="ProviderName" d2p1:propertyType="UserLoginProviderName" nullable="false" />
+    <cf:property name="ProviderKey" d2p1:propertyType="UserLoginProviderKey" nullable="false" />
+    <cf:property name="ProviderDisplayName" d2p1:propertyType="UserLoginProviderDisplayName" nullable="false" />
+    <cf:property name="User" d2p1:propertyType="UserLoginUser" nullable="false" typeName="{0}.IdUser" relationPropertyName="Logins" />
+    <cf:method name="DeleteByUserLoginInfo" body="DELETE(User, ProviderKey, ProviderName) WHERE User = @User AND ProviderKey = @ProviderKey AND ProviderName = @ProviderName" d2p1:methodType="DeleteLoginByUserLoginInfo" />
+  </cf:entity>
+  <cf:entity name="IdRoleClaim" d2p1:entityType="RoleClaim" namespace="S5T" categoryPath="/S5T" xmlns:d2p1="http://www.softfluent.com/codefluent/producers.aspNetIdentityProducer/2014/1">
+    <cf:property name="Id" d2p1:propertyType="RoleClaimKey" cfps:hint="CLUSTERED" />
+    <cf:property name="Type" d2p1:propertyType="RoleClaimClaimType" nullable="false" />
+    <cf:property name="Value" d2p1:propertyType="RoleClaimClaimValue" />
+    <cf:property name="ValueType" d2p1:propertyType="RoleClaimClaimValueType" />
+    <cf:property name="Role" d2p1:propertyType="RoleClaimRole" nullable="false" typeName="{0}.IdRole" relationPropertyName="Claims" />
+  </cf:entity>
+  <cf:entity name="WebSiteMap" namespace="S5T" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="pRelPath" />
+    <cf:property name="pNode" />
+    <cf:property name="pDescription" />
+    <cf:view persistenceName="vwebsitemaplogacessousuariosviewraw" autoLightweight="true" checkLevel="None" name="LogAcessoUsuariosViewRaw">
+      <cf:body checkLevel="Default" text="raw" rawText="SELECT loginregistro.pDataHora, loginregistro.pLoginUsuario, loginregistro.pObsLog, websitemap.pNode, websitemap.pDescription FROM loginregistro LEFT OUTER JOIN websitemap ON loginregistro.pObsLog = websitemap.pRelPath" language="MySQL" />
+      <cf:viewProperty name="pDataHora" typeName="date" />
+      <cf:viewProperty name="pLoginUsuario" />
+      <cf:viewProperty name="pObsLog" />
+      <cf:viewProperty name="pNode" />
+      <cf:viewProperty name="pDescription" />
+    </cf:view>
+  </cf:entity>
+  <cf:entity name="ENTRADA_CANA_DET" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="NR_ANO_SAFRA" typeName="int" />
+    <cf:property name="NRO_DOCUMENTO" typeName="int" />
+    <cf:property name="PROP_CODIGO" typeName="int" />
+    <cf:property name="DS_NOME_PROPRIEDADE" />
+    <cf:property name="DSC_VARIEDADE" />
+    <cf:property name="NRO_CORTE" typeName="int" />
+    <cf:property name="FRENTE_COLHEITA" />
+    <cf:property name="MUNICIPIO" typeName="int" />
+    <cf:property name="DESCMUNI" />
+    <cf:property name="TIPO" typeName="int" />
+    <cf:property name="DESCTIPO" />
+    <cf:property name="DT_ENTRADA" typeName="date" />
+    <cf:property name="EQUIP_ENTRADA" typeName="int" />
+    <cf:property name="REBOQUE" typeName="int" />
+    <cf:property name="DT_MOAGEM" typeName="date" />
+    <cf:property name="AREA_COLHIDA" typeName="double" />
+    <cf:property name="QT_TON_ENTREGUE_PREV" typeName="double" />
+    <cf:property name="QT_TON_ENTREGUE_REAL" typeName="double" />
+  </cf:entity>
+  <cf:entity name="ENTRADA_CANA_DET_AGRUP" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="NR_ANO_SAFRA" typeName="int" />
+    <cf:property name="NRO_DOCUMENTO" typeName="int" />
+    <cf:property name="PROP_CODIGO" typeName="int" />
+    <cf:property name="DS_NOME_PROPRIEDADE" />
+    <cf:property name="FRENTE_COLHEITA" />
+    <cf:property name="MUNICIPIO" typeName="int" />
+    <cf:property name="DESCMUNI" />
+    <cf:property name="TIPO" typeName="int" />
+    <cf:property name="DESCTIPO" />
+    <cf:property name="DT_ENTRADA" typeName="date" />
+    <cf:property name="DT_MOAGEM" typeName="date" />
+    <cf:property name="AREA_COLHIDA" typeName="double" />
+    <cf:property name="QT_TON_ENTREGUE_REAL" typeName="double" />
+  </cf:entity>
+  <cf:entity name="ENTRADA_CANA_DET_MP" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="NR_ANO_SAFRA" typeName="int" />
+    <cf:property name="PROP_CODIGO" typeName="int" />
+    <cf:property name="DS_NOME_PROPRIEDADE" />
+    <cf:property name="FRENTE_COLHEITATOP" />
+    <cf:property name="FRENTE_COLHEITA" />
+    <cf:property name="MUNICIPIO" typeName="int" />
+    <cf:property name="DESCMUNI" />
+    <cf:property name="QT_TON_ENTREGUE_REAL" typeName="double" />
+    <cf:property name="INICIO" typeName="date" />
+  </cf:entity>
+  <cf:entity name="INFO_GERAIS" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="FRENTE" typeName="int" />
+    <cf:property name="PROPRIEDADE" typeName="int" />
+    <cf:property name="DSC_PROPRIEDADE" />
+    <cf:property name="COLHEDORA" typeName="int" />
+    <cf:property name="TONELADA" typeName="double" />
+    <cf:property name="QTD_VIAGENS" typeName="int" />
+    <cf:property name="MEDIA_VIAGEM" typeName="double" />
+    <cf:property name="RAIO_MEDIO" typeName="double" />
+    <cf:property name="IMP_MINERAL" typeName="double" />
+    <cf:property name="IMP_VEGETAL_PALHA" typeName="double" />
+    <cf:property name="IMP_VEGETAL_PONTEIRA" typeName="double" />
+    <cf:property name="IMP_MINERAL1" typeName="double" />
+    <cf:property name="IMP_MINERAL2" typeName="double" />
+    <cf:property name="IMP_VEGETAL_PALHA1" typeName="double" />
+    <cf:property name="IMP_VEGETAL_PALHA2" typeName="double" />
+    <cf:property name="IMP_VEGETAL_PONTEIRA1" typeName="double" />
+    <cf:property name="IMP_VEGETAL_PONTEIRA2" typeName="double" />
+  </cf:entity>
+  <cf:entity name="MAPA_PLANCOLHEITA" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="PROP_CODIGO" typeName="int" />
+    <cf:property name="DS_NOME_PROPRIEDADE" />
+    <cf:property name="FRENTE_COLHEITA" typeName="int" />
+    <cf:property name="MES" typeName="date" />
+    <cf:property name="SEMANA" typeName="int" />
+    <cf:property name="MES_SEMANA" />
+    <cf:property name="SEMANA_PERIODO" />
+    <cf:property name="REFORMA_PREV" />
+    <cf:property name="AREA_PREV" typeName="double" />
+    <cf:property name="TONELADA_PREV" typeName="double" />
+    <cf:property name="AREA_PREV_REFORMA" typeName="double" />
+    <cf:property name="TONELADA_PREV_REFORMA" typeName="double" />
+    <cf:property name="AREA_PREV_TOTAL" typeName="double" />
+    <cf:property name="AREA_PREV_REFORMA_TOTAL" typeName="double" />
+  </cf:entity>
+  <cf:entity name="RES_MENSAL_SAFRA_ACUMULADA" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="NRO_ANO_SAFRA" typeName="int" />
+    <cf:property name="MES" />
+    <cf:property name="DIA" typeName="date" />
+    <cf:property name="TONELADA_PLAN" typeName="double" />
+    <cf:property name="TONELADA_PLAN_AC" typeName="double" />
+    <cf:property name="TONELADA_REAL" typeName="double" />
+    <cf:property name="TONELADA_REAL_AC" typeName="double" />
+  </cf:entity>
+  <cf:entity name="RES_MENSAL_SAFRA" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="NRO_ANO_SAFRA" typeName="int" />
+    <cf:property name="MES" />
+    <cf:property name="DIA" typeName="date" />
+    <cf:property name="TONELADA_PLAN" typeName="double" />
+    <cf:property name="TONELADA_REAL" typeName="double" />
+  </cf:entity>
+  <cf:entity name="RES_MENSAL_DIARIA" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="NRO_ANO_SAFRA" typeName="int" />
+    <cf:property name="MES" />
+    <cf:property name="DIA" typeName="date" />
+    <cf:property name="TONELADA_PLAN" typeName="double" />
+    <cf:property name="TONELADA_REAL" typeName="double" />
+  </cf:entity>
+  <cf:entity name="RES_MENSAL_ACUMULADA" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="NRO_ANO_SAFRA" typeName="int" />
+    <cf:property name="MES" />
+    <cf:property name="DIA" typeName="date" />
+    <cf:property name="TONELADA_PLAN" typeName="double" />
+    <cf:property name="TONELADA_PLAN_AC" typeName="double" />
+    <cf:property name="TONELADA_REAL" typeName="double" />
+    <cf:property name="TONELADA_REAL_AC" typeName="double" />
+  </cf:entity>
+  <cf:entity name="RES_MENSAL_GRID" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="NRO_ANO_SAFRA" typeName="int" />
+    <cf:property name="MES" />
+    <cf:property name="MES_N" typeName="int" />
+    <cf:property name="TIPO" />
+    <cf:property name="TONELADA" typeName="double" />
+  </cf:entity>
+  <cf:entity name="ENT_CAMBAL_PRINCIPAL" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="HORA" typeName="int" />
+    <cf:property name="F1" typeName="int" />
+    <cf:property name="F2" typeName="int" />
+    <cf:property name="F3" typeName="int" />
+    <cf:property name="F4" typeName="int" />
+    <cf:property name="F5" typeName="int" />
+    <cf:property name="F6" typeName="int" />
+    <cf:property name="F7" typeName="int" />
+    <cf:property name="F8" typeName="int" />
+    <cf:property name="F9" typeName="int" />
+    <cf:property name="F10" typeName="int" />
+    <cf:property name="TOTAL" typeName="int" />
+  </cf:entity>
+  <cf:entity name="ENT_CAMBAL_FRENTESPROP" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ROWNUM" typeName="int" />
+    <cf:property name="FRENTE" typeName="int" />
+    <cf:property name="COD_PROP" typeName="int" />
+    <cf:property name="PROPRIEDADE" />
+    <cf:property name="QTD_VIAGENS" typeName="int" />
+  </cf:entity>
+  <cf:entity name="ENT_CAMBAL_CAMINHAOVIAGENS" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ROWNUM" typeName="int" />
+    <cf:property name="FRENTE" typeName="int" />
+    <cf:property name="COD_PROP" typeName="int" />
+    <cf:property name="CAMINHAO" typeName="int" />
+    <cf:property name="QTD_VIAGENS" typeName="int" />
+  </cf:entity>
+  <cf:entity name="SEQUENCIA_COLHEITA" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="FRENTE_COLHEITA" typeName="int" />
+    <cf:property name="PROP_CODIGO" typeName="int" />
+    <cf:property name="DS_NOME_PROPRIEDADE" />
+    <cf:property name="COORD_LAT" typeName="double" />
+    <cf:property name="COORD_LONG" typeName="double" />
+    <cf:property name="ORDEM" typeName="int" />
+  </cf:entity>
+  <cf:entity name="ESCALA_COLAB" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ROWNUM" typeName="int" />
+    <cf:property name="PROCESSO" />
+    <cf:property name="ESTRUTURA" />
+    <cf:property name="MATRICULA" typeName="int" />
+    <cf:property name="NOME" />
+    <cf:property name="TURNO" />
+    <cf:property name="DIA01" />
+    <cf:property name="DIA02" />
+    <cf:property name="DIA03" />
+    <cf:property name="DIA04" />
+    <cf:property name="DIA05" />
+    <cf:property name="DIA06" />
+    <cf:property name="DIA07" />
+    <cf:property name="DIA08" />
+    <cf:property name="DIA09" />
+    <cf:property name="DIA10" />
+    <cf:property name="DIA11" />
+    <cf:property name="DIA12" />
+    <cf:property name="DIA13" />
+    <cf:property name="DIA14" />
+    <cf:property name="DIA15" />
+    <cf:property name="DIA16" />
+    <cf:property name="DIA17" />
+    <cf:property name="DIA18" />
+    <cf:property name="DIA19" />
+    <cf:property name="DIA20" />
+    <cf:property name="DIA21" />
+    <cf:property name="DIA22" />
+    <cf:property name="DIA23" />
+    <cf:property name="DIA24" />
+    <cf:property name="DIA25" />
+    <cf:property name="DIA26" />
+    <cf:property name="DIA27" />
+    <cf:property name="DIA28" />
+    <cf:property name="DIA29" />
+    <cf:property name="DIA30" />
+    <cf:property name="CELULAR" />
+    <cf:property name="ID_NIVEL" typeName="int" />
+    <cf:property name="ID_TURMAS" typeName="int" />
+  </cf:entity>
+  <cf:entity name="ACOMP_PROD_1CORTE" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ROWNUM" typeName="int" />
+    <cf:property name="PROP_CODIGO" typeName="int" />
+    <cf:property name="DS_NOME_PROPRIEDADE" />
+    <cf:property name="NRO_CORTE" typeName="int" />
+    <cf:property name="QT_AREA_COLHIDA" typeName="double" />
+    <cf:property name="IDADE" typeName="int" />
+    <cf:property name="TIPO_PROPRIEDADE" />
+    <cf:property name="QT_TON_ENTREGUE" typeName="double" />
+    <cf:property name="RENDIMENTO_PLAN" typeName="int" />
+    <cf:property name="RENDIMENTO_REAL" typeName="int" />
+    <cf:property name="DESVIO" typeName="int" />
+    <cf:property name="PORC_BROCA" typeName="double" />
+    <cf:property name="PERDAS" typeName="double" />
+    <cf:property name="INCENDIO" />
+    <cf:property name="DATA_INCENDIO" typeName="date" />
+    <cf:property name="DT_DESSECACAO" typeName="date" />
+    <cf:property name="DT_CALAGEM" typeName="date" />
+    <cf:property name="DT_PLANTIO" typeName="date" />
+    <cf:property name="TIPO_PLANTIO" />
+    <cf:property name="EMPRESA_PLANTIO" />
+    <cf:property name="STAND" typeName="int" />
+    <cf:property name="TIPO_ADUBACAO" />
+    <cf:property name="TRAT_TOLETES" />
+    <cf:property name="DT_HERB_CANA_PLANTA" typeName="date" />
+    <cf:property name="SEMANA_ENCERRAMENTO" />
+  </cf:entity>
+  <cf:entity name="ACOMP_PROD_1CORTE_TALHAO" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ROWNUM" typeName="int" />
+    <cf:property name="PROP_CODIGO" typeName="int" />
+    <cf:property name="DS_NOME_PROPRIEDADE" />
+    <cf:property name="TALHAO" typeName="int" />
+    <cf:property name="NRO_CORTE" typeName="int" />
+    <cf:property name="QT_AREA_COLHIDA" typeName="double" />
+    <cf:property name="IDADE" typeName="int" />
+    <cf:property name="TIPO_PROPRIEDADE" />
+    <cf:property name="QT_TON_ENTREGUE" typeName="double" />
+    <cf:property name="RENDIMENTO_PLAN" typeName="int" />
+    <cf:property name="RENDIMENTO_REAL" typeName="int" />
+    <cf:property name="DESVIO" typeName="int" />
+    <cf:property name="PORC_BROCA" typeName="double" />
+    <cf:property name="PERDAS" typeName="double" />
+    <cf:property name="INCENDIO" />
+    <cf:property name="DATA_INCENDIO" typeName="date" />
+    <cf:property name="DT_DESSECACAO" typeName="date" />
+    <cf:property name="DT_CALAGEM" typeName="date" />
+    <cf:property name="DT_PLANTIO" typeName="date" />
+    <cf:property name="TIPO_PLANTIO" />
+    <cf:property name="EMPRESA_PLANTIO" />
+    <cf:property name="STAND" typeName="int" />
+    <cf:property name="TIPO_ADUBACAO" />
+    <cf:property name="TRAT_TOLETES" />
+    <cf:property name="DT_HERB_CANA_PLANTA" typeName="date" />
+    <cf:property name="SEMANA_ENCERRAMENTO" />
+  </cf:entity>
+  <cf:entity name="ACOMP_PROD_DCORTE" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ROWNUM" typeName="int" />
+    <cf:property name="PROP_CODIGO" typeName="int" />
+    <cf:property name="DS_NOME_PROPRIEDADE" />
+    <cf:property name="NRO_CORTE" typeName="int" />
+    <cf:property name="QT_AREA_COLHIDA" typeName="double" />
+    <cf:property name="IDADE" typeName="int" />
+    <cf:property name="TIPO_PROPRIEDADE" />
+    <cf:property name="QT_TON_ENTREGUE" typeName="double" />
+    <cf:property name="RENDIMENTO_PLAN" typeName="int" />
+    <cf:property name="RENDIMENTO_REAL" typeName="int" />
+    <cf:property name="DESVIO" typeName="int" />
+    <cf:property name="PORC_BROCA" typeName="double" />
+    <cf:property name="PERDAS" typeName="double" />
+    <cf:property name="DT_COLHEITA_ANTERIOR" typeName="date" />
+    <cf:property name="TIPO_ADUBACAO" />
+    <cf:property name="DT_ADUBACAO" typeName="date" />
+    <cf:property name="DIF_DIAS_ADUB" typeName="int" />
+    <cf:property name="TIPO_HERBICIDA" />
+    <cf:property name="DT_HERBICIDA" typeName="date" />
+    <cf:property name="DIF_DIAS_HERB" typeName="int" />
+    <cf:property name="INCENDIO" />
+    <cf:property name="DATA_INCENDIO" typeName="date" />
+    <cf:property name="FERTIRRIGACAO" />
+    <cf:property name="DT_FERTIRRIGACAO" typeName="date" />
+    <cf:property name="SEMANA_ENCERRAMENTO" />
+  </cf:entity>
+  <cf:entity name="ACOMP_PROD_DCORTE_TALHAO" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ROWNUM" typeName="int" />
+    <cf:property name="PROP_CODIGO" typeName="int" />
+    <cf:property name="DS_NOME_PROPRIEDADE" />
+    <cf:property name="TALHAO" typeName="int" />
+    <cf:property name="NRO_CORTE" typeName="int" />
+    <cf:property name="QT_AREA_COLHIDA" typeName="double" />
+    <cf:property name="IDADE" typeName="int" />
+    <cf:property name="TIPO_PROPRIEDADE" />
+    <cf:property name="DT_COLHEITA_ATUAL" typeName="date" />
+    <cf:property name="QT_TON_ENTREGUE" typeName="double" />
+    <cf:property name="RENDIMENTO_PLAN" typeName="int" />
+    <cf:property name="RENDIMENTO_REAL" typeName="int" />
+    <cf:property name="DESVIO" typeName="int" />
+    <cf:property name="PORC_BROCA" typeName="double" />
+    <cf:property name="PERDAS" typeName="double" />
+    <cf:property name="DT_COLHEITA_ANTERIOR" typeName="date" />
+    <cf:property name="TIPO_ADUBACAO" />
+    <cf:property name="DT_ADUBACAO" typeName="date" />
+    <cf:property name="DIF_DIAS_ADUB" typeName="int" />
+    <cf:property name="TIPO_HERBICIDA" />
+    <cf:property name="DT_HERBICIDA" typeName="date" />
+    <cf:property name="DIF_DIAS_HERB" typeName="int" />
+    <cf:property name="INCENDIO" />
+    <cf:property name="DATA_INCENDIO" typeName="date" />
+    <cf:property name="FERTIRRIGACAO" />
+    <cf:property name="DT_FERTIRRIGACAO" typeName="date" />
+    <cf:property name="SEMANA_ENCERRAMENTO" />
+  </cf:entity>
+  <cf:entity name="ENTRADA_CANA_HORA" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="DIA" typeName="date" />
+    <cf:property name="HORA" />
+    <cf:property name="TONELADAS" typeName="double" />
+    <cf:property name="VIAGEM" typeName="int" />
+    <cf:property name="TON_VIAGEM" typeName="double" />
+    <cf:property name="METAFRENTE" typeName="double" />
+    <cf:method name="LoadByDIA" body="LOAD(int parID_NEGOCIOS, date parDIA) WHERE ID_NEGOCIOS = @parID_NEGOCIOS AND DIA= @parDIA" />
+  </cf:entity>
+  <cf:entity name="ENTRADA_CANA_HORA_FRENTE" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="DIA" typeName="date" />
+    <cf:property name="HORA" />
+    <cf:property name="FRENTE" typeName="int" />
+    <cf:property name="TONELADAS" typeName="double" />
+    <cf:property name="VIAGEM" typeName="int" />
+    <cf:property name="TON_VIAGEM" typeName="double" />
+    <cf:property name="METAFRENTE" typeName="double" />
+    <cf:method name="LoadByDIAFRENTE" body="LOAD(int parID_NEGOCIOS, date parDIA, int parFRENTE) WHERE ID_NEGOCIOS = @parID_NEGOCIOS AND DIA = @parDIA AND FRENTE = @parFRENTE" />
+  </cf:entity>
+  <cf:entity name="MOAGEM_CANA_HORA" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="DIA" typeName="date" />
+    <cf:property name="HORA" />
+    <cf:property name="VIAGEM" typeName="int" />
+    <cf:property name="TONELADAS" typeName="double" />
+    <cf:property name="METAFRENTE" typeName="double" />
+    <cf:method name="LoadByDIA" body="LOAD(int parID_NEGOCIOS, date parDIA) WHERE ID_NEGOCIOS = @parID_NEGOCIOS AND DIA= @parDIA" />
+  </cf:entity>
+  <cf:entity name="CERTIFICADO_PATIO_HORA" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="DIA" typeName="date" />
+    <cf:property name="HORA" />
+    <cf:property name="FRENTE" typeName="int" />
+    <cf:property name="CERTIFICADOS" typeName="int" />
+    <cf:property name="CERT_VAZIO" typeName="int" />
+  </cf:entity>
+  <cf:entity name="INDICADORES_AGRICOLA" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="NOTACALC" typeName="int" />
+    <cf:property name="FRENTETIPO" />
+    <cf:property name="FRENTETIPOAUX" />
+    <cf:property name="DS_FRENTE" />
+    <cf:property name="DS_TIPO" />
+    <cf:property name="DS_FRENTETIPO" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="INDICADOR" />
+    <cf:property name="FRENTE" typeName="int" />
+    <cf:property name="PLANEJADO" typeName="double" />
+    <cf:property name="REALIZADO" typeName="double" />
+    <cf:property name="PERC" typeName="double" />
+    <cf:property name="NOTA" />
+    <cf:property name="DATA_FECHAMENTO" typeName="date" />
+    <cf:property name="UNIDADE_MEDIDA" />
+    <cf:property name="PERC_ABAIXO_META" typeName="double" />
+    <cf:property name="PERC_ACIMA_META" typeName="double" />
+    <cf:property name="TIPO" />
+    <cf:property name="GRUPO" />
+    <cf:method name="LoadByDATA_FECHAMENTO_GRUPO" body="LOAD (int parID_NEGOCIOS, date parDATA_FECHAMENTO, string parGRUPO) WHERE ID_NEGOCIOS = @parID_NEGOCIOS AND DATA_FECHAMENTO = @parDATA_FECHAMENTO AND GRUPO = @parGRUPO" />
+    <cf:method name="LoadByDATA_FECHAMENTO" body="LOAD(int parID_NEGOCIOS, date parDATA_FECHAMENTO) WHERE ID_NEGOCIOS = @parID_NEGOCIOS AND DATA_FECHAMENTO = @parDATA_FECHAMENTO" />
+  </cf:entity>
+  <cf:entity name="INDICADORES_AGRICOLA_EQUIP" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="FRENTETIPO" />
+    <cf:property name="FRENTETIPOAUX" />
+    <cf:property name="DS_FRENTE" />
+    <cf:property name="DS_TIPO" />
+    <cf:property name="DS_FRENTETIPO" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="FRENTE" typeName="int" />
+    <cf:property name="DATA_FECHAMENTO" typeName="date" />
+    <cf:property name="TIPO" />
+    <cf:property name="GRUPO" />
+    <cf:property name="DSC_EQUIPAMENTO" />
+    <cf:property name="NRO_EQUIPAMENTO" typeName="int" />
+    <cf:property name="R_DISP_MECANICA_COLHEDORA" typeName="double" />
+    <cf:property name="R_DISP_MECANICA_DEMAIS" typeName="double" />
+    <cf:property name="R_DISP_MECANICA" typeName="double" />
+    <cf:property name="R_CONSUMO_OLEO_DIESELLTH" typeName="double" />
+    <cf:property name="R_CONSUMO_OLEO_DIESELKML" typeName="double" />
+    <cf:property name="R_CONSUMO_OLEO_DIESELLTTON" typeName="double" />
+    <cf:property name="R_CONSUMO_OLEO_HIDRAULICO" typeName="double" />
+    <cf:property name="R_TEMPO_APROVEIT_COLHEDORA" typeName="double" />
+    <cf:method name="LoadByFRENTETIPOAUX_DATA_REF" body="LOAD(string parFRENTETIPOAUX, date parDATA_FECHAMENTO) WHERE FRENTETIPOAUX = @parFRENTETIPOAUX AND DATA_FECHAMENTO = @parDATA_FECHAMENTO" />
+  </cf:entity>
+  <cf:entity name="INDICADORES_AGRICOLA_TEMPOAPROV" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" collectionKey="false" />
+    <cf:property name="DATA_FECHAMENTO" typeName="date" collectionKey="true" />
+    <cf:property name="PERC_TEMPO_APROV" typeName="double" collectionKey="false" />
+  </cf:entity>
+  <cf:entity name="SAFRA_ANO" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="SAFRA" typeName="int" />
+  </cf:entity>
+  <cf:entity name="PROPRIEDADES" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="SAFRA" typeName="int" />
+    <cf:property name="COD_PROPRIEDADE" typeName="int" />
+    <cf:property name="DSC_PROPRIEDADE" />
+    <cf:method name="LoadBySAFRA" body="LOAD(int parSAFRA) where SAFRA = @parSAFRA" />
+    <cf:method name="LoadByCOD_PROPRIEDADE" body="LOADONE(int parSAFRA, int parCOD_PROPRIEDADE) WHERE SAFRA = @parSAFRA AND COD_PROPRIEDADE = @parCOD_PROPRIEDADE" />
+    <cf:method name="LoadByDSC_PROPRIEDADE" body="LOAD(int parSAFRA, string parDSC_PROPRIEDADE) WHERE SAFRA = @parSAFRA AND DSC_PROPRIEDADE LIKE @parDSC_PROPRIEDADE" />
+  </cf:entity>
+  <cf:entity name="V_DADOS_TALHAO" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="SAFRA" typeName="int" />
+    <cf:property name="COD_PROPRIEDADE" typeName="int" />
+    <cf:property name="DSC_PROPRIEDADE" />
+    <cf:property name="TALHAO" typeName="int" />
+    <cf:property name="CORTE" typeName="int" />
+    <cf:property name="AMBIENTE" />
+    <cf:property name="VARIEDADE" />
+    <cf:property name="MATURACAO" />
+    <cf:property name="AREA_TOTAL" typeName="double" />
+    <cf:method name="LoadByCOD_PROPRIEDADE" body="LOAD(int parSAFRA, int parCOD_PROPRIEDADE) WHERE SAFRA = @parSAFRA AND COD_PROPRIEDADE = @parCOD_PROPRIEDADE" />
+  </cf:entity>
+  <cf:entity name="ACOMPANHAMENTO_PLANTIO" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="COD_PROPRIEDADE" typeName="int" />
+    <cf:property name="SAFRA" typeName="int" />
+    <cf:property name="DT_PLANTIO" typeName="date" />
+    <cf:property name="AREA_PLANTIO" typeName="double" />
+  </cf:entity>
+  <cf:entity name="HISTORICO_PROPRIEDADE_TRATOS" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="SAFRA" typeName="int" />
+    <cf:property name="COD_PROPRIEDADE" typeName="int" />
+    <cf:property name="DSC_PROPRIEDADE" />
+    <cf:property name="TALHAO" typeName="int" />
+    <cf:property name="CORTE" typeName="int" />
+    <cf:property name="AMBIENTE" />
+    <cf:property name="AREA_TALHAO" typeName="double" />
+    <cf:property name="AREA_TALHAO_DIS" typeName="double" />
+    <cf:property name="AREA_TALHAO_MUDA" typeName="double" />
+    <cf:property name="COLHEITA_ANT" typeName="date" />
+    <cf:property name="COLHEITA_ATU" typeName="date" />
+    <cf:property name="ATIVIDADE" typeName="int" />
+    <cf:property name="DSC_ATIVIDADE" />
+    <cf:property name="NRO_RECOM" typeName="int" />
+    <cf:property name="DATA_APLICACAO" typeName="date" />
+    <cf:property name="AREA_APLICADA" typeName="double" />
+    <cf:property name="TOTAL_TALHAO_DISP" typeName="int" />
+    <cf:property name="AREA_TOT_TH_DISP" typeName="double" />
+    <cf:property name="AREA_TOT_TH_MUDA" typeName="double" />
+    <cf:property name="GRUPO_SUBGRUPO_AGR" typeName="double" />
+  </cf:entity>
+  <cf:entity name="HISTORICO_PROPRIEDADE" namespace="S5TUam" categoryPath="/S5T">
+    <cf:property name="pId" cfps:hint="CLUSTERED" key="true" />
+    <cf:property name="ID_NEGOCIOS" typeName="int" />
+    <cf:property name="SAFRA" typeName="int" />
+    <cf:property name="COD_PROPRIEDADE" typeName="int" />
+    <cf:property name="DSC_PROPRIEDADE" />
+    <cf:property name="TALHAO" typeName="int" />
+    <cf:property name="RENDIMENTO_PLAN" typeName="double" />
+    <cf:property name="CORTE" typeName="int" />
+    <cf:property name="AMBIENTE" />
+    <cf:property name="DT_PLANTIO" typeName="date" />
+    <cf:property name="DT_COLHEITA_ANT" typeName="date" />
+    <cf:property name="DT_COLHEITA_ATU" typeName="date" />
+    <cf:property name="AREA_TOTAL" typeName="double" />
+    <cf:property name="AREA_LIBERADA" typeName="double" />
+    <cf:property name="TONELADA" typeName="double" />
+    <cf:property name="RENDIMENTO_REAL" typeName="double" />
+    <cf:property name="TCH" typeName="double" />
+    <cf:property name="IDADE" typeName="double" />
+    <cf:property name="PERC_BROCA" typeName="double" />
+    <cf:property name="PERC_PERDA" typeName="double" />
+  </cf:entity>
+</cf:project>

@@ -1,0 +1,51 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Login.master.vb" Inherits="AspNet5t.LoginMaster" %>
+
+<%@ Register Assembly="DevExpress.Web.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Import Namespace="Microsoft.AspNet.Identity" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>4T Sistemas Ltda</title>
+    <asp:PlaceHolder runat="server">
+<%--        <link href="<%= Page.ResolveUrl("~/Content/Styles1.css")%>?v=<%= DateTime.Now.Ticks %>" rel="stylesheet" />
+        <link href="<%= Page.ResolveUrl("~/Content/Site.css")%>?v=<%= DateTime.Now.Ticks %>" rel="stylesheet" />--%>
+    </asp:PlaceHolder>
+
+    <script type="text/javascript">
+        
+        function redirectLoginPage() {
+            window.location = "LoginAux.aspx";
+        }
+        
+    </script>
+    <style type="text/css">
+        .dxpnlControl.dxpnl-edge, .dxpnlControl.dxpnl-edge.dxpnl-bar {
+            background-color: white;
+        }
+
+        .dxpnlControl.dxpnl-edge, .dxpnlControl.dxpnl-bar
+        {
+            padding: 0px;
+        }
+        .dxpnl-edge.l {
+            border-right-width: 0px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolderRoot" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <dx:ASPxPanel ID="MainPane" runat="server" CssClass="mainContentPane">
+            <PanelCollection>
+                <dx:PanelContent runat="server" SupportsDisabledAttribute="True">
+                    <asp:ContentPlaceHolder ID="MainContentPlaceHolderRoot" runat="server">
+                    </asp:ContentPlaceHolder>
+                </dx:PanelContent>
+            </PanelCollection>
+        </dx:ASPxPanel>
+    </form>
+</body>
+</html>

@@ -1,0 +1,4962 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AspNet5t
+</name>
+</assembly>
+<members>
+<member name="T:AspNet5t.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:AspNet5t.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:AspNet5t.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:AspNet5t.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:AspNet5t.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:AspNet5t.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="F:AspNet5t.AddPhoneNumber._ErrorMessage">
+<summary>
+ErrorMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.AddPhoneNumber._PhoneNumber">
+<summary>
+PhoneNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Confirm._successPanel">
+<summary>
+successPanel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Confirm._login">
+<summary>
+login control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Confirm._errorPanel">
+<summary>
+errorPanel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ForgotPassword._loginForm">
+<summary>
+loginForm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ForgotPassword._ErrorMessage">
+<summary>
+ErrorMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ForgotPassword._FailureText">
+<summary>
+FailureText control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ForgotPassword._Email">
+<summary>
+Email control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ForgotPassword._DisplayEmail">
+<summary>
+DisplayEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login._ErrorMessage">
+<summary>
+ErrorMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login._FailureText">
+<summary>
+FailureText control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login._Email">
+<summary>
+Email control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login._Password">
+<summary>
+Password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login._RememberMe">
+<summary>
+RememberMe control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login._RegisterHyperLink">
+<summary>
+RegisterHyperLink control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login._OpenAuthLogin">
+<summary>
+OpenAuthLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Manage._SuccessMessagePlaceHolder">
+<summary>
+SuccessMessagePlaceHolder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Manage._ChangePassword">
+<summary>
+ChangePassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Manage._CreatePassword">
+<summary>
+CreatePassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManageLogins._SuccessMessagePlaceholder">
+<summary>
+SuccessMessagePlaceholder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManagePassword._setPassword">
+<summary>
+setPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManagePassword._password">
+<summary>
+password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManagePassword._confirmPassword">
+<summary>
+confirmPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManagePassword._changePasswordHolder">
+<summary>
+changePasswordHolder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManagePassword._CurrentPasswordLabel">
+<summary>
+CurrentPasswordLabel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManagePassword._CurrentPassword">
+<summary>
+CurrentPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManagePassword._NewPasswordLabel">
+<summary>
+NewPasswordLabel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManagePassword._NewPassword">
+<summary>
+NewPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManagePassword._ConfirmNewPasswordLabel">
+<summary>
+ConfirmNewPasswordLabel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManagePassword._ConfirmNewPassword">
+<summary>
+ConfirmNewPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ManagePassword._btnCancelar">
+<summary>
+btnCancelar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.OpenAuthProviders._providerDetails">
+<summary>
+providerDetails control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Register._ErrorMessage">
+<summary>
+ErrorMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Register._Email">
+<summary>
+Email control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Register._Password">
+<summary>
+Password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Register._ConfirmPassword">
+<summary>
+ConfirmPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.RegisterExternalLogin._email">
+<summary>
+email control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ResetPassword._ErrorMessage">
+<summary>
+ErrorMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ResetPassword._Email">
+<summary>
+Email control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ResetPassword._Password">
+<summary>
+Password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ResetPassword._ConfirmPassword">
+<summary>
+ConfirmPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ResetPasswordConfirmation._login">
+<summary>
+login control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.TwoFactorAuthenticationSignIn._sendcode">
+<summary>
+sendcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.TwoFactorAuthenticationSignIn._Providers">
+<summary>
+Providers control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.TwoFactorAuthenticationSignIn._ProviderSubmit">
+<summary>
+ProviderSubmit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.TwoFactorAuthenticationSignIn._verifycode">
+<summary>
+verifycode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.TwoFactorAuthenticationSignIn._SelectedProvider">
+<summary>
+SelectedProvider control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.TwoFactorAuthenticationSignIn._ErrorMessage">
+<summary>
+ErrorMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.TwoFactorAuthenticationSignIn._FailureText">
+<summary>
+FailureText control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.TwoFactorAuthenticationSignIn._Code">
+<summary>
+Code control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.TwoFactorAuthenticationSignIn._RememberBrowser">
+<summary>
+RememberBrowser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.TwoFactorAuthenticationSignIn._CodeSubmit">
+<summary>
+CodeSubmit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.VerifyPhoneNumber._ErrorMessage">
+<summary>
+ErrorMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.VerifyPhoneNumber._PhoneNumber">
+<summary>
+PhoneNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.VerifyPhoneNumber._Code">
+<summary>
+Code control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaColheitaCertificados.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaColheitaCertificados.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaColheitaCertificados.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCana.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCana.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCana.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaPorTipo.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaPorTipo.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaPorTipo.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemPorFrente.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemPorFrente.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemPorFrente.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemRangeParam.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemRangeParam.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemRangeParam.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalAcumulada.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalAcumulada.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalAcumulada.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalDiaria.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalDiaria.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalDiaria.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafra.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafra.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafra.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafraAcumulada.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafraAcumulada.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafraAcumulada.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraGeral.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraGeral.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraGeral.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraPorFrente.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraPorFrente.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraPorFrente.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradasCertificadoHora.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradasCertificadoHora.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradasCertificadoHora.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMobMoagemCanaHora.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobMoagemCanaHora.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobMoagemCanaHora.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaPalhaPorDia.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaPalhaPorDia.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaPalhaPorDia.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnFinanceiro.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnFinanceiro.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnFinanceiro.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnFinanceiroPivot.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnFinanceiroPivot.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnFinanceiroPivot.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaColheitaCertificadosMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaColheitaCertificadosMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaColheitaCertificadosMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaPorTipoMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaPorTipoMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaPorTipoMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemPorFrenteMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemPorFrenteMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemPorFrenteMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemRangeParamMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemRangeParamMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaEntradasCanaTonPorViagemRangeParamMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalAcumuladaMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalAcumuladaMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalAcumuladaMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalDiariaMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalDiariaMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalDiariaMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafraAcumuladaMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafraAcumuladaMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafraAcumuladaMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafraMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafraMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMoagemMensalSafraMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraGeralMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraGeralMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraGeralMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraPorFrenteMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraPorFrenteMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradaCanaHoraPorFrenteMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradasCertificadoHoraMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradasCertificadoHoraMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobEntradasCertificadoHoraMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnEntCanaMobMoagemCanaHoraMSSQL.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobMoagemCanaHoraMSSQL.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnEntCanaMobMoagemCanaHoraMSSQL.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoTratoresColhedoras.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoTratoresColhedoras.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoTratoresColhedoras.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnOficinaResumoGeralPub.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaResumoGeralPub.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaResumoGeralPub.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashLogUsuarios.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashLogUsuarios.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashLogUsuarios.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamento.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamento.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamento.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoGeral.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoGeral.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoGeral.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoPorClasseMec.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoPorClasseMec.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoPorClasseMec.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoPorFrente.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoPorFrente.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaDetalhamentoPorFrente.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnOficinaResumoGeral.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaResumoGeral.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaResumoGeral.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.Win_Dashboards.dashCnOficinaResumoPorFrente.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaResumoPorFrente.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:AspNet5t.Win_Dashboards.dashCnOficinaResumoPorFrente.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:AspNet5t.LogAdmin._btnAdd">
+<summary>
+btnAdd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LogAdmin._btnRemove">
+<summary>
+btnRemove control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._ASPxCbPanel">
+<summary>
+ASPxCbPanel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._ASPxHiddenField">
+<summary>
+ASPxHiddenField control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._ASPxFormLayout1">
+<summary>
+ASPxFormLayout1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._txtGrupo">
+<summary>
+txtGrupo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._txtDataFechamento">
+<summary>
+txtDataFechamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._txtTempoAprov">
+<summary>
+txtTempoAprov control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._IndicadoresPorEquip">
+<summary>
+IndicadoresPorEquip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._txtGrupoEquip">
+<summary>
+txtGrupoEquip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._txtDataFechamentoEquip">
+<summary>
+txtDataFechamentoEquip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._txtTempoAprovEquip">
+<summary>
+txtTempoAprovEquip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._ASPxGridView2">
+<summary>
+ASPxGridView2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._gridExport">
+<summary>
+gridExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._SqlDataSourceRemunVariavel">
+<summary>
+SqlDataSourceRemunVariavel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrintPDF._SqlDataSourceRemunVariavelEquip">
+<summary>
+SqlDataSourceRemunVariavelEquip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._ASPxCbPanel">
+<summary>
+ASPxCbPanel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._ASPxHiddenField">
+<summary>
+ASPxHiddenField control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._ASPxFormLayout1">
+<summary>
+ASPxFormLayout1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._ASPxComboGrupo">
+<summary>
+ASPxComboGrupo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._ASPxComboDataFechamento">
+<summary>
+ASPxComboDataFechamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._ASPxLabelTempoAprov">
+<summary>
+ASPxLabelTempoAprov control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._ASPxGridView2">
+<summary>
+ASPxGridView2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._gridExport">
+<summary>
+gridExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._SqlDataSourceRemunVariavel">
+<summary>
+SqlDataSourceRemunVariavel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolasPrint._SqlDataSourceRemunVariavelEquip">
+<summary>
+SqlDataSourceRemunVariavelEquip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnAdmRmEpiPendenteInd._ASPxCheckBoxAutoRefresh">
+<summary>
+ASPxCheckBoxAutoRefresh control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnAdmRmEpiPendenteInd._gridGeral">
+<summary>
+gridGeral control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHoraPub._ASPxCallbackPanel2">
+<summary>
+ASPxCallbackPanel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHoraPub._ASPxLabel1">
+<summary>
+ASPxLabel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHoraPub._ASPxLabelMedia">
+<summary>
+ASPxLabelMedia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHoraPub._ASPxLabelTonHoraMedia">
+<summary>
+ASPxLabelTonHoraMedia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHoraPub._ASPxImage1">
+<summary>
+ASPxImage1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHoraPub._ASPxLabelTon">
+<summary>
+ASPxLabelTon control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHoraPub._ASPxLabelTonDia">
+<summary>
+ASPxLabelTonDia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHoraPub._dataReferencia">
+<summary>
+dataReferencia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHoraPub._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHoraPub._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHoraPub._ASPxTimer1">
+<summary>
+ASPxTimer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnAdmRmEpiPendenteIndMenu._ASPxCheckBoxAutoRefresh">
+<summary>
+ASPxCheckBoxAutoRefresh control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnAdmRmEpiPendenteIndMenu._gridGeral">
+<summary>
+gridGeral control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEnRenovColetaPalha._ASPxCallbackPanel2">
+<summary>
+ASPxCallbackPanel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEnRenovColetaPalha._ASPxLabel1">
+<summary>
+ASPxLabel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEnRenovColetaPalha._ASPxLabelPalhaMes">
+<summary>
+ASPxLabelPalhaMes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEnRenovColetaPalha._ASPxImagePeriodo">
+<summary>
+ASPxImagePeriodo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEnRenovColetaPalha._ASPxLabel2">
+<summary>
+ASPxLabel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEnRenovColetaPalha._ASPxLabelPalhaSafra">
+<summary>
+ASPxLabelPalhaSafra control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEnRenovColetaPalha._ASPxImageSafra">
+<summary>
+ASPxImageSafra control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEnRenovColetaPalha._dataReferencia">
+<summary>
+dataReferencia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEnRenovColetaPalha._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEnRenovColetaPalha._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobCaminhoesBalHora._ASPxCbPanel">
+<summary>
+ASPxCbPanel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobCaminhoesBalHora._ASPxHiddenField">
+<summary>
+ASPxHiddenField control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobCaminhoesBalHora._ASPxFormLayout1">
+<summary>
+ASPxFormLayout1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobCaminhoesBalHora._ASPxDataRef">
+<summary>
+ASPxDataRef control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobCaminhoesBalHora._ASPxGridViewHorasFrentePrincipal">
+<summary>
+ASPxGridViewHorasFrentePrincipal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobCaminhoesBalHora._ASPxSplitter1">
+<summary>
+ASPxSplitter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobCaminhoesBalHora._ASPxGridViewFrentesProp">
+<summary>
+ASPxGridViewFrentesProp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobCaminhoesBalHora._ASPxGridViewCaminhaoViagens">
+<summary>
+ASPxGridViewCaminhaoViagens control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobCaminhoesBalHora._SqlDataSourceHorasFrente">
+<summary>
+SqlDataSourceHorasFrente control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobCaminhoesBalHora._SqlDataSourceFrenteProp">
+<summary>
+SqlDataSourceFrenteProp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobCaminhoesBalHora._SqlDataSourceCaminhaoViagens">
+<summary>
+SqlDataSourceCaminhaoViagens control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._ASPxCallbackPanel4">
+<summary>
+ASPxCallbackPanel4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._ASPxLabel1">
+<summary>
+ASPxLabel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._ASPxLabelSafraMes">
+<summary>
+ASPxLabelSafraMes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._dataReferencia">
+<summary>
+dataReferencia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._ASPxDashMoagemMensalDiaria">
+<summary>
+ASPxDashMoagemMensalDiaria control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._ASPxDashMoagemMensalAcumulada">
+<summary>
+ASPxDashMoagemMensalAcumulada control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._ASPxDashMoagemMensalSafra">
+<summary>
+ASPxDashMoagemMensalSafra control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._ASPxDashMoagemMensalSafraAcumulada">
+<summary>
+ASPxDashMoagemMensalSafraAcumulada control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._ASPxPivotGrid1">
+<summary>
+ASPxPivotGrid1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._fieldTONELADA">
+<summary>
+fieldTONELADA control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._fieldMES">
+<summary>
+fieldMES control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._fieldTIPO">
+<summary>
+fieldTIPO control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemResumoMensal._SqlDataSourceMoagemMensalResumo">
+<summary>
+SqlDataSourceMoagemMensalResumo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaColheitaSeqMapa._ASPxLabel1">
+<summary>
+ASPxLabel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaColheitaSeqMapa._ASPxLabel2">
+<summary>
+ASPxLabel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaColheitaSeqMapa._cmbFrente">
+<summary>
+cmbFrente control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaColheitaSeqMapa._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaColheitaSeqMapa._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnFinanceiroPivot._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnFinanceiroPivot._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnFinanceiroPivot._ASPxTimer1">
+<summary>
+ASPxTimer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnFinanceiro._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnFinanceiro._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnFinanceiro._ASPxTimer1">
+<summary>
+ASPxTimer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEscalaColaborador._ASPxCbPanel">
+<summary>
+ASPxCbPanel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEscalaColaborador._ASPxHiddenField">
+<summary>
+ASPxHiddenField control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEscalaColaborador._ASPxFormLayout1">
+<summary>
+ASPxFormLayout1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEscalaColaborador._ASPxComboProcesso">
+<summary>
+ASPxComboProcesso control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEscalaColaborador._ASPxDataRef">
+<summary>
+ASPxDataRef control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEscalaColaborador._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEscalaColaborador._SqlDataSourceRemunVariavel">
+<summary>
+SqlDataSourceRemunVariavel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaGerencialBrocas._ASPxComboSafra">
+<summary>
+ASPxComboSafra control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaGerencialBrocas._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaGerencialBrocas._ASPxChkSemControle">
+<summary>
+ASPxChkSemControle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaGerencialBrocas._ASPxGridView2">
+<summary>
+ASPxGridView2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaGerencialBrocas._SqlDataSourceGerencialBrocas">
+<summary>
+SqlDataSourceGerencialBrocas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaGerencialBrocas._SqlDataSourceGerencialBrocasResumo">
+<summary>
+SqlDataSourceGerencialBrocasResumo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxCbPanel">
+<summary>
+ASPxCbPanel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxHiddenField">
+<summary>
+ASPxHiddenField control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxFormLayout2">
+<summary>
+ASPxFormLayout2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxFormLayout2_E2">
+<summary>
+ASPxFormLayout2_E2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxFormLayout3">
+<summary>
+ASPxFormLayout3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxButtonResultadoFrente">
+<summary>
+ASPxButtonResultadoFrente control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxButtonEquip">
+<summary>
+ASPxButtonEquip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxComboDataFechamento">
+<summary>
+ASPxComboDataFechamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxLabelTempoAprov">
+<summary>
+ASPxLabelTempoAprov control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._FrentesNavBar">
+<summary>
+FrentesNavBar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxDataView1">
+<summary>
+ASPxDataView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxPopupControl1">
+<summary>
+ASPxPopupControl1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._gridResumoGanho">
+<summary>
+gridResumoGanho control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxPopupControl2">
+<summary>
+ASPxPopupControl2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._ASPxGridView2">
+<summary>
+ASPxGridView2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._SqlDataSourceRemunVariavel">
+<summary>
+SqlDataSourceRemunVariavel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._SqlDataSourceResumoGanho">
+<summary>
+SqlDataSourceResumoGanho control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempMobIndAgricolasFrenteTipo._SqlDataSourceRemunVariavelEquip">
+<summary>
+SqlDataSourceRemunVariavelEquip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempResumoGanho._ASPxCbPanel">
+<summary>
+ASPxCbPanel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempResumoGanho._ASPxHiddenField">
+<summary>
+ASPxHiddenField control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempResumoGanho._ASPxFormLayout1">
+<summary>
+ASPxFormLayout1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempResumoGanho._ASPxComboGrupo">
+<summary>
+ASPxComboGrupo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempResumoGanho._ASPxComboDataFechamento">
+<summary>
+ASPxComboDataFechamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempResumoGanho._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempResumoGanho._SqlDataSourceResumoGanho">
+<summary>
+SqlDataSourceResumoGanho control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoDualGeralFrentePub._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoDualGeralFrentePub._ASPxButton2">
+<summary>
+ASPxButton2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoDualGeralFrentePub._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoDualGeralFrentePub._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoDualGeralFrentePub._ASPxTimer1">
+<summary>
+ASPxTimer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._ASPxCbPanel">
+<summary>
+ASPxCbPanel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._ASPxHiddenField">
+<summary>
+ASPxHiddenField control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._ASPxFormLayout1">
+<summary>
+ASPxFormLayout1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._ASPxComboGrupo">
+<summary>
+ASPxComboGrupo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._btnPdfExport">
+<summary>
+btnPdfExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._ASPxComboDataFechamento">
+<summary>
+ASPxComboDataFechamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._ASPxLabelTempoAprov">
+<summary>
+ASPxLabelTempoAprov control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._ASPxGridView2">
+<summary>
+ASPxGridView2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._gridExport">
+<summary>
+gridExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._SqlDataSourceRemunVariavel">
+<summary>
+SqlDataSourceRemunVariavel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnIndDesempIndAgricolas._SqlDataSourceRemunVariavelEquip">
+<summary>
+SqlDataSourceRemunVariavelEquip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LogAcessos._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebSiteMapAdmin._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebSiteMapAdmin._dsWebSiteMap">
+<summary>
+dsWebSiteMap control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoEquipamentos._gridCm">
+<summary>
+gridCm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoEquipamentos._gridDetalhe">
+<summary>
+gridDetalhe control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoEquipamentos._SqlDataSourceCM">
+<summary>
+SqlDataSourceCM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoEquipamentos._SqlDataSourceCMCO">
+<summary>
+SqlDataSourceCMCO control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoEquipamentos._SqlDataSourceCMCOSE">
+<summary>
+SqlDataSourceCMCOSE control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoEquipamentos._SqlDataSourceDetalhe">
+<summary>
+SqlDataSourceDetalhe control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginMaster._HeadContentPlaceHolderRoot">
+<summary>
+HeadContentPlaceHolderRoot control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginMaster._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginMaster._MainPane">
+<summary>
+MainPane control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginMaster._MainContentPlaceHolderRoot">
+<summary>
+MainContentPlaceHolderRoot control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginAux._hlLogo">
+<summary>
+hlLogo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginAux._SuccessMessagePlaceHolder">
+<summary>
+SuccessMessagePlaceHolder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginAux._ErrorMessage">
+<summary>
+ErrorMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginAux._LoginFormLayout">
+<summary>
+LoginFormLayout control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginAux._txtUsuario">
+<summary>
+txtUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginAux._txtPassword">
+<summary>
+txtPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginAux._btnLoginNow">
+<summary>
+btnLoginNow control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginAux._btnCancelLogin">
+<summary>
+btnCancelLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.MainNoForm._HeadContentPlaceHolderMain">
+<summary>
+HeadContentPlaceHolderMain control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.MainNoForm._LeftPane">
+<summary>
+LeftPane control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.MainNoForm._ASPxNavBar1">
+<summary>
+ASPxNavBar1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.MainNoForm._ASPxSiteMapDataSource1">
+<summary>
+ASPxSiteMapDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.MainNoForm._MainContentPlaceHolderMain">
+<summary>
+MainContentPlaceHolderMain control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.RootNoForm._HeadContentPlaceHolderRoot">
+<summary>
+HeadContentPlaceHolderRoot control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.RootNoForm._HeaderPane">
+<summary>
+HeaderPane control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.RootNoForm._hlLogo">
+<summary>
+hlLogo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.RootNoForm._LoginView1">
+<summary>
+LoginView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.RootNoForm._MainPane">
+<summary>
+MainPane control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.RootNoForm._MainContentPlaceHolderRoot">
+<summary>
+MainContentPlaceHolderRoot control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebForm1._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebForm1._SqlDataSource1">
+<summary>
+SqlDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp4._ASPxGaugeControl2">
+<summary>
+ASPxGaugeControl2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp4._ASPxGaugeControl1">
+<summary>
+ASPxGaugeControl1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp4._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp4._ASPxHyperLink1">
+<summary>
+ASPxHyperLink1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.DefaultMain._SuccessMessagePlaceHolder">
+<summary>
+SuccessMessagePlaceHolder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._btnExcluir">
+<summary>
+btnExcluir control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._btnDesistir">
+<summary>
+btnDesistir control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._ASPxPageControl1">
+<summary>
+ASPxPageControl1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._ASPxFormLayout0">
+<summary>
+ASPxFormLayout0 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._btnPesquisar">
+<summary>
+btnPesquisar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._gridUsuarios">
+<summary>
+gridUsuarios control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._ASPxFormLayout3">
+<summary>
+ASPxFormLayout3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._txtLoginUsuario">
+<summary>
+txtLoginUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._gridRolesUsuario">
+<summary>
+gridRolesUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._dsRoles">
+<summary>
+dsRoles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._txtSenhaUsuario">
+<summary>
+txtSenhaUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._txtSenhaConfirmarUsuario">
+<summary>
+txtSenhaConfirmarUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._chkHabilitadoUsuario">
+<summary>
+chkHabilitadoUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._ASPxValidationSummary1">
+<summary>
+ASPxValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Usuarios._litMsgGenerica">
+<summary>
+litMsgGenerica control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.RoleAdmin._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.RoleAdmin._dsRoles">
+<summary>
+dsRoles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._btnExcluir">
+<summary>
+btnExcluir control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._btnDesistir">
+<summary>
+btnDesistir control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._btnSair">
+<summary>
+btnSair control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._ASPxPageControl1">
+<summary>
+ASPxPageControl1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._ASPxFormLayout0">
+<summary>
+ASPxFormLayout0 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._cmbPesqTipo">
+<summary>
+cmbPesqTipo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtPesqCodigo">
+<summary>
+txtPesqCodigo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._btnPesquisar">
+<summary>
+btnPesquisar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._btnImprimir">
+<summary>
+btnImprimir control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._cmbPesqPFPJ">
+<summary>
+cmbPesqPFPJ control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtPesqNome">
+<summary>
+txtPesqNome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._gridCadastro">
+<summary>
+gridCadastro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._dsCadastro">
+<summary>
+dsCadastro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._ASPxFormLayout1">
+<summary>
+ASPxFormLayout1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._lbCodigo">
+<summary>
+lbCodigo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._rbPFPJ">
+<summary>
+rbPFPJ control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._gridCadastroTipo">
+<summary>
+gridCadastroTipo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._dsCadastroTipo">
+<summary>
+dsCadastroTipo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtNome">
+<summary>
+txtNome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtCPF">
+<summary>
+txtCPF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._rbSexo">
+<summary>
+rbSexo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtDataNascimento">
+<summary>
+txtDataNascimento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtRG">
+<summary>
+txtRG control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtIEPF">
+<summary>
+txtIEPF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtEmailPF">
+<summary>
+txtEmailPF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtTelFixoPF">
+<summary>
+txtTelFixoPF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtTelCelularPF">
+<summary>
+txtTelCelularPF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtTelAltPF">
+<summary>
+txtTelAltPF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtTelFaxPF">
+<summary>
+txtTelFaxPF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtRazaoSocial">
+<summary>
+txtRazaoSocial control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtNomeFantasia">
+<summary>
+txtNomeFantasia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtCNPJ">
+<summary>
+txtCNPJ control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtIEPJ">
+<summary>
+txtIEPJ control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtEmailPJ">
+<summary>
+txtEmailPJ control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtTelFixoPJ">
+<summary>
+txtTelFixoPJ control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtTelCelularPJ">
+<summary>
+txtTelCelularPJ control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtTelAltPJ">
+<summary>
+txtTelAltPJ control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtTelFaxPJ">
+<summary>
+txtTelFaxPJ control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._ASPxFormLayout2">
+<summary>
+ASPxFormLayout2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtLogradouro">
+<summary>
+txtLogradouro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtNumero">
+<summary>
+txtNumero control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtComplemento">
+<summary>
+txtComplemento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtBairro">
+<summary>
+txtBairro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._cmbCidade">
+<summary>
+cmbCidade control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtCEP">
+<summary>
+txtCEP control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtLogradouroAux">
+<summary>
+txtLogradouroAux control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtNumeroAux">
+<summary>
+txtNumeroAux control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtComplementoAux">
+<summary>
+txtComplementoAux control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtBairroAux">
+<summary>
+txtBairroAux control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._cmbCidadeAux">
+<summary>
+cmbCidadeAux control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtCEPAux">
+<summary>
+txtCEPAux control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._ASPxFormLayout3">
+<summary>
+ASPxFormLayout3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtLoginUsuario">
+<summary>
+txtLoginUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._gridRolesUsuario">
+<summary>
+gridRolesUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._dsRoles">
+<summary>
+dsRoles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtSenhaUsuario">
+<summary>
+txtSenhaUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._txtSenhaConfirmarUsuario">
+<summary>
+txtSenhaConfirmarUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._chkHabilitadoUsuario">
+<summary>
+chkHabilitadoUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._ASPxValidationSummary1">
+<summary>
+ASPxValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Cadastro._litMsgGenerica">
+<summary>
+litMsgGenerica control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCanaHoraDualGeralFrente._ASPxCallbackPanel2">
+<summary>
+ASPxCallbackPanel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCanaHoraDualGeralFrente._ASPxLabel1">
+<summary>
+ASPxLabel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCanaHoraDualGeralFrente._ASPxLabelTonHoraMedia">
+<summary>
+ASPxLabelTonHoraMedia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCanaHoraDualGeralFrente._ASPxImage1">
+<summary>
+ASPxImage1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCanaHoraDualGeralFrente._ASPxLabel2">
+<summary>
+ASPxLabel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCanaHoraDualGeralFrente._ASPxLabelViagemMedia">
+<summary>
+ASPxLabelViagemMedia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCanaHoraDualGeralFrente._dataReferencia">
+<summary>
+dataReferencia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCanaHoraDualGeralFrente._cmbFrente">
+<summary>
+cmbFrente control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCanaHoraDualGeralFrente._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCanaHoraDualGeralFrente._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCanaHoraDualGeralFrente._ASPxTimer1">
+<summary>
+ASPxTimer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxCallbackPanel2">
+<summary>
+ASPxCallbackPanel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxLabel1">
+<summary>
+ASPxLabel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxLabelMedia">
+<summary>
+ASPxLabelMedia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxLabelTonHoraMedia">
+<summary>
+ASPxLabelTonHoraMedia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxImage1">
+<summary>
+ASPxImage1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxLabelTon">
+<summary>
+ASPxLabelTon control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxLabelTonDia">
+<summary>
+ASPxLabelTonDia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxLabel2">
+<summary>
+ASPxLabel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxLabelViagemMedia">
+<summary>
+ASPxLabelViagemMedia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._dataReferencia">
+<summary>
+dataReferencia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobMoagemCanaHora._ASPxTimer1">
+<summary>
+ASPxTimer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividade1Corte._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividade1Corte._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividade1Corte._ASPxGridView2">
+<summary>
+ASPxGridView2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividade1Corte._ucCapivaraPopUp">
+<summary>
+ucCapivaraPopUp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividade1Corte._SqlDataSource1Corte">
+<summary>
+SqlDataSource1Corte control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividade1Corte._SqlDataSource1CorteTalhao">
+<summary>
+SqlDataSource1CorteTalhao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividadeDCorte._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividadeDCorte._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividadeDCorte._ASPxGridView2">
+<summary>
+ASPxGridView2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividadeDCorte._ucCapivaraPopUp">
+<summary>
+ucCapivaraPopUp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividadeDCorte._SqlDataSourceDCorte">
+<summary>
+SqlDataSourceDCorte control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaAcompProdutividadeDCorte._SqlDataSourceDCorteTalhao">
+<summary>
+SqlDataSourceDCorteTalhao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaMapa._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaMapa._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaMapa._ucCapivaraPopUp">
+<summary>
+ucCapivaraPopUp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaPorPropDualGeralFrente._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaPorPropDualGeralFrente._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaPorPropDualGeralFrente._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaPorPropDualGeralFrente._ASPxDashboardViewer2">
+<summary>
+ASPxDashboardViewer2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaPorPropDualGeralFrente._ucCapivaraPopUp">
+<summary>
+ucCapivaraPopUp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCana._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCana._ASPxCheckBoxAutoRefresh">
+<summary>
+ASPxCheckBoxAutoRefresh control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCana._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCana._ucCapivaraPopUp">
+<summary>
+ucCapivaraPopUp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCana._ASPxTimer1">
+<summary>
+ASPxTimer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaPorOrigem._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaPorOrigem._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaPorOrigem._ucCapivaraPopUp">
+<summary>
+ucCapivaraPopUp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCertificadoHora._ASPxCallbackPanel2">
+<summary>
+ASPxCallbackPanel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCertificadoHora._ASPxLabel1">
+<summary>
+ASPxLabel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCertificadoHora._ASPxLabelTonHoraMedia">
+<summary>
+ASPxLabelTonHoraMedia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCertificadoHora._ASPxLabelCertificadosHoraMedia">
+<summary>
+ASPxLabelCertificadosHoraMedia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCertificadoHora._dataReferencia">
+<summary>
+dataReferencia control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCertificadoHora._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCertificadoHora._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaMobEntradasCertificadoHora._ASPxTimer1">
+<summary>
+ASPxTimer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaColheitaCertificados._dtInicial">
+<summary>
+dtInicial control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaColheitaCertificados._dtFinal">
+<summary>
+dtFinal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaColheitaCertificados._btnPesquisar">
+<summary>
+btnPesquisar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaColheitaCertificados._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaColheitaCertificados._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaPlanejamentoColheitaMapa._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaPlanejamentoColheitaMapa._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaPlanejamentoColheitaMapa._ucCapivaraPopUp">
+<summary>
+ucCapivaraPopUp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaDetalhamento._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaDetalhamentoTriGeralCmFr._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaDetalhamentoTriGeralCmFr._ASPxButton2">
+<summary>
+ASPxButton2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaDetalhamentoTriGeralCmFr._ASPxButton3">
+<summary>
+ASPxButton3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaDetalhamentoTriGeralCmFr._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaDetalhamentoTriGeralCmFr._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoDualGeralFrente._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoDualGeralFrente._ASPxButton2">
+<summary>
+ASPxButton2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoDualGeralFrente._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnOficinaResumoDualGeralFrente._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaMapaPropriedades._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaMapaPropriedades._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaMapaPropriedades._ASPxDashboardViewer2">
+<summary>
+ASPxDashboardViewer2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.cnEntCanaEntradasCanaMapaPropriedades._ucCapivaraPopUp">
+<summary>
+ucCapivaraPopUp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.pivotEntradaCana._ASPxFormLayout1">
+<summary>
+ASPxFormLayout1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.pivotEntradaCana._comboChartType">
+<summary>
+comboChartType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.pivotEntradaCana._buttonSaveAs">
+<summary>
+buttonSaveAs control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.pivotEntradaCana._ASPxPivotGrid1">
+<summary>
+ASPxPivotGrid1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.pivotEntradaCana._ASPxPivotGridExporter1">
+<summary>
+ASPxPivotGridExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.pivotEntradaCana._WebChartControl1">
+<summary>
+WebChartControl1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.relEntradasPropriedades._ASPxDocumentViewer1">
+<summary>
+ASPxDocumentViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Light._HeadContentPlaceHolderMain">
+<summary>
+HeadContentPlaceHolderMain control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login1._ErrorMessage">
+<summary>
+ErrorMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login1._LoginFormLayout">
+<summary>
+LoginFormLayout control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login1._txtUsuario">
+<summary>
+txtUsuario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login1._txtPassword">
+<summary>
+txtPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login1._chkLembrar">
+<summary>
+chkLembrar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login1._btnLoginNow">
+<summary>
+btnLoginNow control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Login1._btnCancelLogin">
+<summary>
+btnCancelLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.LoginRedirect._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Main._HeadContentPlaceHolderMain">
+<summary>
+HeadContentPlaceHolderMain control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Main._LeftPane">
+<summary>
+LeftPane control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Main._ASPxNavBar1">
+<summary>
+ASPxNavBar1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Main._ASPxSiteMapDataSource1">
+<summary>
+ASPxSiteMapDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Main._MainContentPlaceHolderMain">
+<summary>
+MainContentPlaceHolderMain control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Root._HeadContentPlaceHolderRoot">
+<summary>
+HeadContentPlaceHolderRoot control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Root._HeaderPane">
+<summary>
+HeaderPane control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Root._hlLogo">
+<summary>
+hlLogo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Root._LoginView1">
+<summary>
+LoginView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Root._MainPane">
+<summary>
+MainPane control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Root._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.Root._MainContentPlaceHolderRoot">
+<summary>
+MainContentPlaceHolderRoot control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._ASPxHiddenField">
+<summary>
+ASPxHiddenField control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._propriedadePopUp">
+<summary>
+propriedadePopUp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._ASPxHyperLink1">
+<summary>
+ASPxHyperLink1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._ASPxPageControl1">
+<summary>
+ASPxPageControl1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._ASPxDataView1">
+<summary>
+ASPxDataView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._ASPxDataView2">
+<summary>
+ASPxDataView2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._ASPxFormLayout3">
+<summary>
+ASPxFormLayout3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._ASPxDateEdit1">
+<summary>
+ASPxDateEdit1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._ASPxGridView2">
+<summary>
+ASPxGridView2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._SqlDataSource1Corte">
+<summary>
+SqlDataSource1Corte control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._SqlDataSourceDCortes">
+<summary>
+SqlDataSourceDCortes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._SqlDataSourceProdutividade">
+<summary>
+SqlDataSourceProdutividade control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.ucCapivaraPopUp._SqlDataSourceIndicesTecnicos">
+<summary>
+SqlDataSourceIndicesTecnicos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp1._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp1._ASPxButton2">
+<summary>
+ASPxButton2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp1._ASPxCallbackPanel1">
+<summary>
+ASPxCallbackPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp1._ASPxDataView1">
+<summary>
+ASPxDataView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp1._SqlDataSource1">
+<summary>
+SqlDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp2._ASPxPivotGrid1">
+<summary>
+ASPxPivotGrid1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp2._LinqServerModeDataSource1">
+<summary>
+LinqServerModeDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp2._SqlDataSource1">
+<summary>
+SqlDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.CapivaraStandAlone._ASPxPageControl1">
+<summary>
+ASPxPageControl1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.CapivaraStandAlone._ASPxDataView1">
+<summary>
+ASPxDataView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.CapivaraStandAlone._ASPxDataView2">
+<summary>
+ASPxDataView2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.CapivaraStandAlone._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.CapivaraStandAlone._ASPxFormLayout3">
+<summary>
+ASPxFormLayout3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.CapivaraStandAlone._ASPxDateEdit1">
+<summary>
+ASPxDateEdit1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.CapivaraStandAlone._ASPxGridView2">
+<summary>
+ASPxGridView2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.CapivaraStandAlone._SqlDataSource1Corte">
+<summary>
+SqlDataSource1Corte control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.CapivaraStandAlone._SqlDataSourceDCortes">
+<summary>
+SqlDataSourceDCortes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.CapivaraStandAlone._SqlDataSourceProdutividade">
+<summary>
+SqlDataSourceProdutividade control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.CapivaraStandAlone._SqlDataSourceIndicesTecnicos">
+<summary>
+SqlDataSourceIndicesTecnicos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp5._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmp5._ASPxGaugeControl1">
+<summary>
+ASPxGaugeControl1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmpCanaMoagemMensal._ASPxPivotGrid1">
+<summary>
+ASPxPivotGrid1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmpCanaMoagemMensal._fieldTONELADAREAL">
+<summary>
+fieldTONELADAREAL control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmpCanaMoagemMensal._fieldTONELADAPLAN">
+<summary>
+fieldTONELADAPLAN control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmpCanaMoagemMensal._fieldMES">
+<summary>
+fieldMES control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmpCanaMoagemMensal._SqlDataSourceMoagemMensalResumo">
+<summary>
+SqlDataSourceMoagemMensalResumo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmpChoropleth._ASPxButton1">
+<summary>
+ASPxButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmpChoropleth._ASPxDashboardViewer1">
+<summary>
+ASPxDashboardViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmpChoropleth._ucCapivaraPopUp">
+<summary>
+ucCapivaraPopUp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmpRemunVarMatriz._ASPxPivotGrid1">
+<summary>
+ASPxPivotGrid1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:AspNet5t.WebFormTmpRemunVarMatriz._SqlDataSource1">
+<summary>
+SqlDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

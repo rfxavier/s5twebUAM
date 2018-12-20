@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CustomSqlQuery1.Sql" xml:space="preserve">
+    <value>SELECT AB.FRENTE, AB.PROPRIEDADE, AB.DSC_PROPRIEDADE, AB.COLHEDORA, ROUND(AB.TONELADA,3) TONELADA, TRUNC(AB.QTD_VIAGENS) QTD_VIAGENS, ROUND(AB.TONELADA / AB.QTD_VIAGENS,3) MEDIA_VIAGEM,ROUND(AB.RAIO_MEDIO,1) RAIO_MEDIO,
+       ROUND(AB.IMP_MINERAL,3) IMP_MINERAL, ROUND(AB.IMP_VEGETAL_PALHA,3) IMP_VEGETAL_PALHA, ROUND(AB.IMP_VEGETAL_PONTEIRA,3) IMP_VEGETAL_PONTEIRA, 
+       ROUND(IMP_MINERAL1, 3) IMP_MINERAL1, ROUND(IMP_MINERAL2, 3) IMP_MINERAL2, ROUND(IMP_VEGETAL_PALHA1, 3) IMP_VEGETAL_PALHA1, ROUND(IMP_VEGETAL_PALHA2, 3) IMP_VEGETAL_PALHA2, ROUND(IMP_VEGETAL_PONTEIRA1, 3) IMP_VEGETAL_PONTEIRA1, ROUND(IMP_VEGETAL_PONTEIRA2, 3) IMP_VEGETAL_PONTEIRA2 
+  FROM (
+          SELECT TO_NUMBER(TRIM(TO_CHAR(SISAGRI.F_BUSCA_FRENTE_SERVICO_LIB(LIBE.ID_NEGOCIOS, LIBE.LIBE_DATA, LIBE.LIBE_ID_TALH, LIBE.LIBE_TIPO_CORTE, CERC.CERC_DATAENTRADAB)))) "FRENTE",
+               TALH.TALH_CODIGO_PROP "PROPRIEDADE",
+               PROP.PROP_DESCRICAO "DSC_PROPRIEDADE",
+               CERC.CERC_NCARRCOLH "COLHEDORA",       
+               SUM(CERC.CERC_PESOBRUTO - CERC.CERC_TARA) / 1000 "TONELADA",
+               SUM((SELECT 1 / COUNT(*)
+                     FROM SISAGRI.CERTIFICADO_CANA CH
+                    WHERE CH.ID_NEGOCIOS = 1
+                      AND CH.SAFRA = extract(year from sysdate)
+                      AND CH.CERC_CERTIFICADO = CERC.CERC_CERTIFICADO
+                      AND ch.cerc_data_ref BETWEEN to_date(:parDataHoraIni,'YYYYMMDDHH24:MI') AND  to_date(:parDataHoraFim,'YYYYMMDDHH24:MI')
+                      )) "QTD_VIAGENS",
+               SUM(TALH.TALH_KMINDUSTRIA * (CERC.CERC_PESOBRUTO - CERC.CERC_TARA)) / SUM(CERC.CERC_PESOBRUTO - CERC.CERC_TARA) "RAIO_MEDIO",
+               SUM(DECODE(CERC.CERC_IMPMA, 0, NULL, NULL, NULL,  CERC.CERC_IMPMA* CERC.CERC_PESO_ANALISADO ))         IMP_MINERAL1, 
+               SUM(DECODE(CERC.CERC_IMPMA, 0, NULL, NULL, NULL, CERC.CERC_PESO_ANALISADO ))                           IMP_MINERAL2,      
+               SUM(DECODE(CERC.CERC_IMPMA, 0, NULL, NULL, NULL,  CERC.CERC_IMPMA * CERC.CERC_PESO_ANALISADO )) /   
+                 SUM(DECODE(CERC.CERC_IMPMA, 0, NULL, NULL, NULL, CERC.CERC_PESO_ANALISADO ))                        "IMP_MINERAL",
+                 
+               SUM(DECODE(CERC.CERC_IMPVEG_CALC, 0, NULL, NULL, NULL, (CERC.CERC_IMPVB / DECODE(CERC.CERC_IMPVA, 0, NULL, CERC.CERC_IMPVA)) * CERC.CERC_PESO_ANALISADO)) IMP_VEGETAL_PALHA1,
+               (SUM(DECODE(CERC.CERC_IMPVEG_CALC, 0, NULL, NULL, NULL, CERC.CERC_PESO_ANALISADO))) / 10                                                                  IMP_VEGETAL_PALHA2,
+               SUM(DECODE(CERC.CERC_IMPVEG_CALC, 0, NULL, NULL, NULL, (CERC.CERC_IMPVB / DECODE(CERC.CERC_IMPVA, 0, NULL, CERC.CERC_IMPVA)) * CERC.CERC_PESO_ANALISADO)) /
+                 (SUM(DECODE(CERC.CERC_IMPVEG_CALC, 0, NULL, NULL, NULL, CERC.CERC_PESO_ANALISADO))) / 10                                                               "IMP_VEGETAL_PALHA",
+               SUM(DECODE(CERC.CERC_IMPVEGP_CALC, 0, NULL, NULL, NULL, (CERC.CERC_IMPVC / DECODE(CERC.CERC_IMPVA, 0, NULL, CERC.CERC_IMPVA)) * CERC.CERC_PESO_ANALISADO)) IMP_VEGETAL_PONTEIRA1,
+               (SUM(DECODE(CERC.CERC_IMPVEGP_CALC, 0, NULL, NULL, NULL, CERC.CERC_PESO_ANALISADO))) / 10                                                                  IMP_VEGETAL_PONTEIRA2,
+               SUM(DECODE(CERC.CERC_IMPVEGP_CALC, 0, NULL, NULL, NULL, (CERC.CERC_IMPVC / DECODE(CERC.CERC_IMPVA, 0, NULL, CERC.CERC_IMPVA)) * CERC.CERC_PESO_ANALISADO)) / 
+                 (SUM(DECODE(CERC.CERC_IMPVEGP_CALC, 0, NULL, NULL, NULL, CERC.CERC_PESO_ANALISADO))) / 10                                                                "IMP_VEGETAL_PONTEIRA"
+          FROM SISAGRI.TALHAO               TALH,
+               SISAGRI.PROPRIEDADE_AGRICOLA PROP,
+               SISAGRI.TALHAO_LIBERACAO     LIBE,
+               SISAGRI.CERTIFICADO_CANA     CERC
+         WHERE TALH.TALH_ID = CERC.CERC_ID_TALH
+           AND TALH.ID_NEGOCIOS_PROP = PROP.ID_NEGOCIOS
+           AND TALH.TALH_CODIGO_PROP = PROP.PROP_CODIGO
+           AND CERC.CERC_FLAG_ENTRADA IS NULL
+           AND CERC.ID_NEGOCIOS = 1
+           AND CERC.SAFRA = extract(year from sysdate)
+           AND CERC.cerc_data_ref BETWEEN to_date(:parDataHoraIni,'YYYYMMDDHH24:MI') AND  to_date(:parDataHoraFim,'YYYYMMDDHH24:MI')
+           AND TALH.TALH_ID = LIBE.LIBE_ID_TALH
+           AND (LIBE.LIBE_TIPO_CORTE = CERC.CERC_CODIGO_TIPT OR
+               LIBE.LIBE_TIPO_CORTE IS NULL)
+         GROUP BY TO_NUMBER(TRIM(TO_CHAR(SISAGRI.F_BUSCA_FRENTE_SERVICO_LIB(LIBE.ID_NEGOCIOS, LIBE.LIBE_DATA, LIBE.LIBE_ID_TALH, LIBE.LIBE_TIPO_CORTE, CERC.CERC_DATAENTRADAB)))),
+                  TALH.TALH_CODIGO_PROP,
+                  PROP.PROP_DESCRICAO,
+                  CERC.CERC_NCARRCOLH 
+                   ) AB</value>
+  </data>
+  <data name="dataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iZHNCSTRUIj48VmlldyBOYW1lPSJkc0JJNFQiPjxGaWVsZCBOYW1lPSJGUkVOVEUiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlBST1BSSUVEQURFIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJEU0NfUFJPUFJJRURBREUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ09MSEVET1JBIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJUT05FTEFEQSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUVREX1ZJQUdFTlMiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ik1FRElBX1ZJQUdFTSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUkFJT19NRURJTyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iSU1QX01JTkVSQUwiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IklNUF9WRUdFVEFMX1BBTEhBIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJTVBfVkVHRVRBTF9QT05URUlSQSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iSU1QX01JTkVSQUwxIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJTVBfTUlORVJBTDIiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IklNUF9WRUdFVEFMX1BBTEhBMSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iSU1QX1ZFR0VUQUxfUEFMSEEyIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJJTVBfVkVHRVRBTF9QT05URUlSQTEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IklNUF9WRUdFVEFMX1BPTlRFSVJBMiIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+</root>

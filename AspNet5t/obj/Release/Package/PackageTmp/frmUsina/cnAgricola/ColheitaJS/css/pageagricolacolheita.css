@@ -1,0 +1,10 @@
+﻿#tabFiltroPeriodo .dx-tab-selected {
+    background-color: #808080;
+}
+.entregacanatotais {
+    font-size: 14px;
+}
+.dx-button-success {
+    background-color: #a9d08e !important;
+    border-color: #a9d08e !important;
+}

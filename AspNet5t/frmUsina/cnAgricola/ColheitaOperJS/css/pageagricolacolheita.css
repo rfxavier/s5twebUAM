@@ -1,0 +1,17 @@
+﻿.dx-button-success {
+    background-color: #a9d08e !important;
+    border-color: #a9d08e !important;
+}
+.panel-body {
+    padding: 2px;
+}
+.tg  {border-collapse:collapse;border-spacing:0;margin: 0 auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-5mgg{font-weight:bold;background-color:#c0c0c0;vertical-align:top;text-align:center;}
+.tg .tg-yw4l{text-align:center;vertical-align: middle!important;}
+.tg .tg-yw42{text-align:center;width:20%;vertical-align: middle!important;}
+
+.dx-tab {
+    background-color: #f4f4f4 !important;
+}

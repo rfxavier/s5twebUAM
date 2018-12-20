@@ -1,0 +1,134 @@
+﻿#toprow4T {
+    height: 43px;
+    padding-top: 4px;
+}
+
+.logged-in-template {
+    float: right;
+    padding-top: 5px;
+}
+
+  .fullscreen_bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('../../Images/uam_bg.jpg');
+    background-repeat:repeat;
+    opacity : 1;
+    z-index: -1;
+  }
+
+.texto-autenticacao {
+    color: white;
+}
+
+.invisivel {
+    display: none;
+}
+
+.leftPanel a:focus, .leftPanel a:hover {
+    text-decoration: none!important;
+}
+
+.vertical-align {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.vertical-center {
+    min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+}
+.botao-popcapivara-dash
+{
+    float:right;
+    position: absolute; 
+    /*left:75%;*/
+    z-index:1;
+    margin-top: 8px;
+    margin-right: 26px;
+}
+
+.botao-popcapivara-gridview
+{
+    float:right;
+    position: absolute; 
+    /*left:75%;*/
+    z-index:1;
+    margin-top: 2px;
+    margin-right: 26px;
+}
+
+.hyperlink-mapa-gridview
+{
+    float:right;
+    position: absolute; 
+    left:90%;
+    z-index:1;
+    margin-top: 6px;
+    /*margin-left: 260px;*/
+}
+    /* ICQ button */
+    .icq {
+        border: 1px solid #51CF04;
+        padding: 4px;
+        color: #51CF04;
+        background-color: #E0FFBB;
+        background-image: url('')!important;
+        font-size: 8pt;
+        font-weight: bold;
+
+        cursor: pointer;
+        white-space: nowrap;
+    }
+    .icq div.dxb {
+        padding: 1px 5px;
+        border: 0px;
+    }
+    .icq div.dxbf {
+        padding: 0px 4px;
+        border: dotted 1px black;
+    }
+    .icqHovered {
+        background-color: #EFFFDC;
+    }
+    .icqPressed {
+        border-color: #CECF40;
+        padding: 5px 3px 3px 5px;
+    }
+        .IndDesempMobIndic{
+        float:left;
+        position:static;
+        margin:5px 5px 5px 5px;
+        
+    }
+     .IndDesempMobIndicDir{
+        float:right;       
+        position:relative;
+        
+    }
+     .ClearBoth {
+         clear:both;
+     }
+.botoes-direita
+{
+    float:right;
+    margin-right: 22px;
+    /*position: absolute;
+    margin-top: 10px;
+    right: 0;*/
+}
+
+.botoes-direita-individual
+{
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+}

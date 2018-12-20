@@ -1,0 +1,6 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Root.master" AutoEventWireup="false" CodeBehind="Light.master.vb" Inherits="AspNet5t.Light" %>
+<asp:Content ID="ContentHead" ContentPlaceHolderID="HeadContentPlaceHolderRoot" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolderMain" runat="server" />
+</asp:Content>
+<asp:Content ID="ContentMain" ContentPlaceHolderID="MainContentPlaceHolderRoot" runat="server">
+</asp:Content>

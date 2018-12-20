@@ -1,0 +1,13 @@
+# Ignore the NuGet packages folder in the root of the repository.
+# If needed, prefix 'packages' with additional folder names if it's 
+# not in the same folder as .tfignore.
+\packages
+\.vs
+
+# include package target files which may be required for msbuild,
+# again prefixing the folder name as needed.
+!\packages\*.targets
+!\packages\repositories.config
+*.sln.DotSettings
+licenses.licx
+S5T.build.xml

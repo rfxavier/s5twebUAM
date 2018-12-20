@@ -1,0 +1,40 @@
+﻿.btn-success {
+  color: #fff;
+  background-color: #45B6AF;
+  border-color: #3ea49d;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+  color: #fff;
+  background-color: #3b9c96;
+  border-color: #307f7a;
+}
+.content {
+  background-color: rgba(199, 255, 188, 0.15);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  width: 400px;
+  margin: 40px auto 10px auto;
+  padding: 30px;
+  padding-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.form-control:focus {
+  border-color: #12b200;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(18, 178, 0, 0.54);
+}
+.btn-4t {
+    width: 110px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 300;
+}

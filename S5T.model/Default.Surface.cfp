@@ -1,0 +1,77 @@
+﻿<cf:project defaultNamespace="Default" partType="Surface" xmlns:cf="http://www.softfluent.com/codefluent/2005/1">
+  <cf:surface name="Default">
+    <cf:selector name="_all" expression="//*" />
+    <shape _type="Namespace" _key="S5T" Position="20,18.7251642036125" ZIndex="13" />
+    <shape _type="Enumeration" _key="S5T.UsuarioStatus" Position="10,28" />
+    <shape _type="Enumeration" _key="S5T.EmpresaSimplesNacionalCategoria" Position="254.15,28" />
+    <shape _type="Enumeration" _key="S5T.EmpresaCodigoRegimeTributario" Position="590.913333333333,28" />
+    <shape _type="Enumeration" _key="S5T.EmpresaCodigoRegimeTributarioNormal" Position="944.19,28" />
+    <shape _type="Enumeration" _key="S5T.FilialConfigTipo" Position="1326.62333333333,28" />
+    <shape _type="Enumeration" _key="S5T.FilialTipo" Position="1610.18,28" />
+    <shape _type="Enumeration" _key="S5T.AppRelatorioCategoria" Position="1830.63333333333,28" />
+    <shape _type="Entity" _key="S5T.AppConfig" Position="10,325.583333333333" />
+    <shape _type="Entity" _key="S5T.AppRelatorio" Position="237.083888888889,325.583333333333" />
+    <shape _type="Entity" _key="S5T.Cadastro" Position="563.464444444444,325.583333333333" />
+    <shape _type="Entity" _key="S5T.CadastroTipo" Position="895.501666666667,325.583333333333" />
+    <shape _type="Entity" _key="S5T.Cidade" Position="1171.08888888889,325.583333333333" ZIndex="1" />
+    <shape _type="Entity" _key="S5T.Empresa" Position="1446.67611111111,325.583333333333" />
+    <shape _type="Entity" _key="S5T.Filial" Position="1879.08666666667,325.583333333333" />
+    <shape _type="Entity" _key="S5T.FilialConfig" Position="10,1343.16666666667" />
+    <shape _type="Entity" _key="S5T.IdRole" Position="312.963888888889,1343.16666666667" />
+    <shape _type="Entity" _key="S5T.IdRoleClaim" Position="574.157777777778,1343.16666666667" />
+    <shape _type="Entity" _key="S5T.IdUser" Position="855.528333333333,1343.16666666667" />
+    <shape _type="Entity" _key="S5T.IdUserClaim" Position="1218.13888888889,1343.16666666667" />
+    <shape _type="Entity" _key="S5T.IdUserLogin" Position="1517.07611111111,1343.16666666667" />
+    <shape _type="Entity" _key="S5T.LoginRegistro" Position="1857.56666666667,1343.16666666667" />
+    <shape _type="Entity" _key="S5T.Menu" Position="10,1960.75" />
+    <shape _type="Entity" _key="S5T.MenuPermissao" Position="319.066111111111,1960.75" />
+    <shape _type="Entity" _key="S5T.Pais" Position="655.638888888889,1960.75" />
+    <shape _type="Entity" _key="S5T.Sistema" Position="953.755,1960.75" />
+    <shape _type="Entity" _key="S5T.UF" Position="1271.98444444444,1960.75" />
+    <shape _type="Entity" _key="S5T.Usuario" Position="1570.10055555556,1960.75" />
+    <shape _type="Entity" _key="S5T.WebSiteMap" Position="1888.33,1960.75" />
+    <shape _type="Entity" _key="S5T.AppRelatorioView" Position="10,2458.33333333333" />
+    <shape _type="Entity" _key="S5T.AppRelatorioUsuarioView" Position="335.094444444444,2458.33333333333" />
+    <shape _type="Entity" _key="S5T.CadastroViewGeral" Position="660.188888888889,2458.33333333333" />
+    <shape _type="Entity" _key="S5T.CadastroViewGeralTipo" Position="990.94,2458.33333333333" />
+    <shape _type="Entity" _key="S5T.CadastroTipoViewGrid" Position="1321.69111111111,2458.33333333333" />
+    <shape _type="Entity" _key="S5T.CidadeViewGrid" Position="1610.20555555556,2458.33333333333" />
+    <shape _type="Entity" _key="S5T.FilialViewGrid" Position="1877.13,2458.33333333333" />
+    <shape _type="Entity" _key="S5T.FilialViewUsuarios" Position="10,3315.91666666667" />
+    <shape _type="Entity" _key="S5T.MenuVw" Position="350.055,3315.91666666667" />
+    <shape _type="Entity" _key="S5T.MenuVwPerm" Position="686.916666666667,3315.91666666667" />
+    <shape _type="Entity" _key="S5T.PaisViewGrid" Position="1023.77833333333,3315.91666666667" />
+    <shape _type="Entity" _key="S5T.UFViewGrid" Position="1342.31333333333,3315.91666666667" />
+    <shape _type="Entity" _key="S5T.LogAcessoUsuariosViewRaw" Position="1649.815,3315.91666666667" />
+    <shape _type="Namespace" _key="S5TUam" Position="2075.63666666667,20" ZIndex="14" />
+    <shape _type="Entity" _key="S5TUam.ACOMP_PROD_1CORTE" Position="10,28" />
+    <shape _type="Entity" _key="S5TUam.ACOMP_PROD_1CORTE_TALHAO" Position="324.453333333333,28" />
+    <shape _type="Entity" _key="S5TUam.ACOMP_PROD_DCORTE" Position="650.72,28" />
+    <shape _type="Entity" _key="S5TUam.ACOMP_PROD_DCORTE_TALHAO" Position="965.173333333333,28" />
+    <shape _type="Entity" _key="S5TUam.CERTIFICADO_PATIO_HORA" Position="1293.05666666667,28" />
+    <shape _type="Entity" _key="S5TUam.ENT_CAMBAL_CAMINHAOVIAGENS" Position="1592.63333333333,28" />
+    <shape _type="Entity" _key="S5TUam.ENT_CAMBAL_FRENTESPROP" Position="10,745.583333333333" />
+    <shape _type="Entity" _key="S5TUam.ENT_CAMBAL_PRINCIPAL" Position="342.264,745.583333333333" />
+    <shape _type="Entity" _key="S5TUam.ENTRADA_CANA_DET" Position="652.434666666667,745.583333333333" />
+    <shape _type="Entity" _key="S5TUam.ENTRADA_CANA_DET_AGRUP" Position="989.555333333333,745.583333333333" />
+    <shape _type="Entity" _key="S5TUam.ENTRADA_CANA_DET_MP" Position="1326.24933333333,745.583333333333" />
+    <shape _type="Entity" _key="S5TUam.ENTRADA_CANA_HORA" Position="1662.58666666667,745.583333333333" />
+    <shape _type="Entity" _key="S5TUam.ENTRADA_CANA_HORA_FRENTE" Position="10,1303.16666666667" />
+    <shape _type="Entity" _key="S5TUam.ESCALA_COLAB" Position="341.495333333333,1303.16666666667" />
+    <shape _type="Entity" _key="S5TUam.INDICADORES_AGRICOLA" Position="582.827333333334,1303.16666666667" />
+    <shape _type="Entity" _key="S5TUam.INDICADORES_AGRICOLA_EQUIP" Position="876.896,1303.16666666667" ZIndex="1" />
+    <shape _type="Entity" _key="S5TUam.INDICADORES_AGRICOLA_TEMPOAPROV" Position="1237.83133333333,1303.16666666667" />
+    <shape _type="Entity" _key="S5TUam.INFO_GERAIS" Position="1622.74,1303.16666666667" />
+    <shape _type="Entity" _key="S5TUam.MAPA_PLANCOLHEITA" Position="10,2260.75" />
+    <shape _type="Entity" _key="S5TUam.MOAGEM_CANA_HORA" Position="336.258187192119,2265.12992610837" ZIndex="4" />
+    <shape _type="Entity" _key="S5TUam.PROPRIEDADES" Position="536.181114464508,2261.77667107396" ZIndex="5" />
+    <shape _type="Entity" _key="S5TUam.RES_MENSAL_ACUMULADA" Position="807.93068863206,2260.75" ZIndex="2" />
+    <shape _type="Entity" _key="S5TUam.RES_MENSAL_DIARIA" Position="1041.27866666667,2260.75" />
+    <shape _type="Entity" _key="S5TUam.RES_MENSAL_GRID" Position="1354.01933333333,2260.75" />
+    <shape _type="Entity" _key="S5TUam.RES_MENSAL_SAFRA" Position="1666.76,2260.75" />
+    <shape _type="Entity" _key="S5TUam.RES_MENSAL_SAFRA_ACUMULADA" Position="10,2718.33333333333" />
+    <shape _type="Entity" _key="S5TUam.SAFRA_ANO" Position="788.114666666667,2718.33333333333" />
+    <shape _type="Entity" _key="S5TUam.SEQUENCIA_COLHEITA" Position="526.23,2718.33333333333" />
+    <shape _type="Entity" _key="S5TUam.V_DADOS_TALHAO" Position="1470.42933333333,2718.33333333333" ZIndex="6" />
+  </cf:surface>
+</cf:project>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="" title="root" description="root" roles="*">
+    <siteMapNode url="~/Default.aspx" title="Início" description="Home" roles="*" />
+    <siteMapNode url="" title="Admin" description="Admin" roles="AdmMaster,Admin BI4T">
+      <siteMapNode url="~/frmAdmMasterCadastro/Usuarios.aspx" title="Usuários" description="AdminUsuarios" roles="AdmMaster,Admin BI4T" />
+      <siteMapNode url="~/frmAdmMasterCadastro/frmAdmMaster/RoleAdmin.aspx" title="Permissões" description="Permissões" roles="AdmMaster" />
+      <siteMapNode url="~/frmAdmMasterCadastro/frmAdmMaster/WebSiteMapAdmin.aspx" title="Site Map" description="Site Map" roles="AdmMaster" />
+      <siteMapNode url="~/frmAdmMasterCadastro/frmAdmMaster/LogAdmin.aspx" title="Log Admin" description="Log Admin" roles="AdmMaster" />
+      <siteMapNode url="~/WebFormTmp6.aspx" title="Tmp6" description="Tmp6" roles="AdmMaster" />
+      <siteMapNode url="~/WebFormTmp7.aspx" title="Tmp7" description="Tmp7" roles="AdmMaster" />
+    </siteMapNode>
+    <siteMapNode url="" title="Acesso" description="Acesso" roles="AdmMaster,Admin BI4T,Log de Acesso ao BI">
+      <siteMapNode url="~/frmUsina/cnAcesso/LogAcessoBI/LogAcessos.aspx" title="Log de Acesso ao BI" description="Log de Acesso ao BI" roles="AdmMaster,Admin BI4T,Log de Acesso ao BI" />
+    </siteMapNode>
+    <siteMapNode url="" title="Administrativo" description="Administrativo" roles="AdmMaster,Admin BI4T,Administrativo">
+      <siteMapNode url="~/frmUsina/cnAdministrativo/RmEpiPend/cnAdmRmEpiPendenteIndMenu.aspx?area=IND" title="RM EPI Pendente - Ind" description="RM EPI Pendente - Ind" roles="AdmMaster,Admin BI4T,RM EPI Pendente - Ind" />
+      <siteMapNode url="~/frmUsina/cnAdministrativo/RmEpiPend/cnAdmRmEpiPendenteIndMenu.aspx?area=AGR" title="RM EPI Pendente - Agr" description="RM EPI Pendente - Agr" roles="AdmMaster,Admin BI4T,RM EPI Pendente - Agr" />
+      <siteMapNode url="~/frmUsina/cnAdministrativo/RmEpiPend/cnAdmRmEpiPendenteIndMenu.aspx?area=ADM" title="RM EPI Pendente - Adm" description="RM EPI Pendente - Adm" roles="AdmMaster,Admin BI4T,RM EPI Pendente - Adm" />
+    </siteMapNode>
+    <siteMapNode url="" title="Colheita de Cana" description="Colheita de Cana" roles="AdmMaster,Admin BI4T,Colheita de Cana">
+      <siteMapNode url="~/frmUsina/cnEntCana/AcompProdutividade1Corte/cnEntCanaAcompProdutividade1Corte.aspx" title="Acomp. Produtividade 1º Corte" description="Acomp. Produtividade 1º Corte" roles="AdmMaster,Admin BI4T,Acomp. Produtividade 1º Corte" />
+      <siteMapNode url="~/frmUsina/cnEntCana/AcompProdutividadeDCorte/cnEntCanaAcompProdutividadeDCorte.aspx" title="Acomp. Produtividade Demais Cortes" description="Acomp. Produtividade Demais Cortes" roles="AdmMaster,Admin BI4T,Acomp. Produtividade Demais Cortes" />
+      <siteMapNode url="~/frmUsina/cnEntCanaMob/EntCaminhoesBalHora/cnEntCanaMobCaminhoesBalHora.aspx" title="Entrada de Caminhões na Balança" description="Entrada de Caminhões na Balança" roles="AdmMaster,Admin BI4T,Entrada de Caminhões na Balança" />
+      <siteMapNode url="~/frmUsina/cnEntCana/Cana/cnEntCanaEntradasCana.aspx" title="Entrada de Cana" description="Entrada de Cana" roles="AdmMaster,Admin BI4T,Entrada de Cana" />
+      <siteMapNode url="~/frmUsina/cnEntCana/CanaPorOrigem/cnEntCanaEntradasCanaPorOrigem.aspx" title="Entrada de Cana por Origem" description="Entrada de Cana por Origem" roles="AdmMaster,Admin BI4T,Entrada de Cana por Origem" />
+      <siteMapNode url="~/frmUsina/cnEntCana/CanaPorPropriedade/cnEntCanaEntradasCanaPorPropDualGeralFrente.aspx" title="Entrada de Cana por Propriedade" description="Entrada de Cana por Propriedade" roles="AdmMaster,Admin BI4T,Entrada de Cana por Propriedade" />
+      <siteMapNode url="~/frmUsina/cnEntCana/EscalaProcesso/cnEntCanaEscalaColaborador.aspx" title="Escala Colaborador" description="Escala Colaborador" roles="AdmMaster,Admin BI4T,Escala Colaborador" />
+      <siteMapNode url="~/frmUsina/cnEntCana/ColheitaCertificados/cnEntCanaColheitaCertificados.aspx" title="Informações Gerais" description="Informações Gerais" roles="AdmMaster,Admin BI4T,Informações Gerais" />
+      <siteMapNode url="~/frmUsina/cnEntCana/ControleEstoqueFrenteJS/cnEntCanaCtrlEstoqueFrenteJS.aspx" title="Mapa de Colheita de Cana" description="Mapa de Colheita de Cana" roles="AdmMaster,Admin BI4T,Mapa de Colheita de Cana" />
+      <siteMapNode url="~/frmUsina/cnEntCana/CanaMapa/cnEntCanaEntradasCanaMapa.aspx" title="Mapa de Entrada por Municipio" description="Mapa de Entrada por Municipio" roles="AdmMaster,Admin BI4T,Mapa de Entrada por Municipio" />
+      <siteMapNode url="~/frmUsina/cnEntCana/CanaMapaPropriedades/cnEntCanaEntradasCanaMapaPropriedades.aspx" title="Mapa de Entrada por Propriedade" description="Mapa de Entrada por Propriedade" roles="AdmMaster,Admin BI4T,Mapa de Entrada por Propriedade" />
+      <siteMapNode url="~/frmUsina/cnEntCana/PivotEntradaCanaAgrupJS/pivotEntradaCanaAgrupApp.aspx" title="Pivot Entrada de Cana" description="Pivot Entrada de Cana" roles="AdmMaster,Admin BI4T,Pivot Entrada de Cana" />
+      <siteMapNode url="~/frmUsina/cnEntCana/PlanejamentoColheita/cnEntCanaPlanejamentoColheitaMapa.aspx" title="Planejamento de Colheita" description="Planejamento de Colheita" roles="AdmMaster,Admin BI4T,Planejamento de Colheita" />
+      <siteMapNode url="~/frmUsina/cnEntCana/RelEntradasPropriedades/relEntradasPropriedades.aspx" title="Relatório Entradas por Propriedade" description="Relatório Entradas por Propriedade" roles="AdmMaster,Admin BI4T,Relatório Entradas por Propriedade" />
+      <siteMapNode url="~/frmUsina/cnEntCanaMob/MoagemResumoMensal/cnEntCanaMobMoagemResumoMensal.aspx" title="Resumo de Moagem" description="Resumo de Moagem" roles="AdmMaster,Admin BI4T,Resumo de Moagem" />
+      <siteMapNode url="~/frmUsina/cnEntCana/CanaMapaSeqColheita/cnEntCanaColheitaSeqMapa.aspx" title="Sequência de Colheita" description="Sequência de Colheita" roles="AdmMaster,Admin BI4T,Sequência de Colheita" />
+    </siteMapNode>
+    <siteMapNode url="" title="Colheita de Cana Mobile" description="Colheita de Cana Mobile" roles="AdmMaster,Admin BI4T,Colheita de Cana Mobile">
+      <siteMapNode url="~/frmUsina/cnEntCanaMob/CertificadoHora/cnEntCanaMobEntradasCertificadoHora.aspx" title="Certificado de Cana Hora" description="Certificado de Cana Hora" roles="AdmMaster,Admin BI4T,Certificado de Cana Hora" />
+      <siteMapNode url="~/frmUsina/cnEntCanaMob/EntradaCanaHora/cnEntCanaMobEntradasCanaHoraDualGeralFrente.aspx" title="Entrada de Cana Hora" description="Entrada de Cana Hora" roles="AdmMaster,Admin BI4T,Entrada de Cana Hora" />
+      <siteMapNode url="~/frmUsina/cnEntCanaMob/MoagemCanaHora/cnEntCanaMobMoagemCanaHora.aspx" title="Moagem de Cana Hora" description="Moagem de Cana Hora" roles="AdmMaster,Admin BI4T,Moagem de Cana Hora" />
+    </siteMapNode>
+    <siteMapNode url="" title="Energias Renováveis" description="Energias Renováveis" roles="AdmMaster,Admin BI4T,Energias Renováveis">
+      <siteMapNode url="~/frmUsina/cnEnergiaRenov/ColetaPalha/cnEnRenovColetaPalha.aspx" title="Coleta de Palha" description="Coleta de Palha" roles="AdmMaster,Admin BI4T,Coleta de Palha" />
+    </siteMapNode>
+    <siteMapNode url="" title="Histórico Agrícola" description="Histórico Agrícola" roles="AdmMaster,Admin BI4T,Histórico Agrícola">
+      <siteMapNode url="~/frmUsina/cnGerencial/HistoricoPropriedadeJS/cnGerencialHistoricoPropriedadeJS.aspx" title="Histórico Propriedade" description="Histórico Propriedade" roles="AdmMaster,Admin BI4T,Histórico por Propriedade" />
+    </siteMapNode>
+    <siteMapNode url="" title="Indicadores Desempenho" description="Indicadores Desempenho" roles="AdmMaster,Admin BI4T,Indicadores Desempenho">
+      <siteMapNode url="~/frmUsina/cnIndDesemp/IndAgricolas/cnIndDesempIndAgricolas.aspx" title="Indicadores Agricolas" description="Indicadores Agricolas" roles="AdmMaster,Admin BI4T,Indicadores Agricolas" />
+      <siteMapNode url="~/frmUsina/cnIndDesemp/IndMobile/cnIndDesempMobIndAgricolasFrenteTipo.aspx" title="Indicadores para Mobile" description="Indicadores para Mobile" roles="AdmMaster,Admin BI4T,Indicadores para Mobile" />
+      <siteMapNode url="~/frmUsina/cnIndDesemp/ResAgricolaPerc/cnIndDesempResumoGanho.aspx" title="Resultado Agricola em %" description="Resultado Agricola em %" roles="AdmMaster,Admin BI4T,Resultado Agricola em %" />
+      <siteMapNode url="~/frmUsina/cnAgricola/ColheitaJS/cnAgricolaColheitaJS.aspx" title="KPIs Colheita - Produção" description="KPIs Colheita - Produção" roles="AdmMaster,Admin BI4T,KPIs Colheita - Producao" />
+      <siteMapNode url="~/frmUsina/cnAgricola/ColheitaAdmJS/cnAgricolaColheitaAdmJS.aspx" title="KPIs Colheita - Administrativo" description="KPIs Colheita - Administrativo" roles="AdmMaster,Admin BI4T,KPIs Colheita - Administrativo" />
+      <siteMapNode url="~/frmUsina/cnAgricola/ColheitaOperJS/cnAgricolaColheitaOperJS.aspx" title="KPIs Colheita - Operacional" description="KPIs Colheita - Operacional" roles="AdmMaster,Admin BI4T,KPIs Colheita - Operacional" />
+    </siteMapNode>
+    <siteMapNode url="" title="Indústria" description="Indústria" roles="AdmMaster,Admin BI4T,Indústria">
+      <siteMapNode url="~/frmUsina/cnIndustria/HomeJS/cnIndustriaHomeJS.aspx" title="KPIs Home" description="KPIs Home" roles="AdmMaster,Admin BI4T,Home" />
+      <siteMapNode url="~/frmUsina/cnIndustria/MoagemJS/cnIndustriaMoagemJS.aspx" title="KPIs Industriais" description="KPIs Industriais" roles="AdmMaster,Admin BI4T,KPIs Industriais" />
+      <siteMapNode url="~/frmUsina/cnIndustria/EnergiaBioJS/cnIndustriaEnergiaBioJS.aspx" title="Exportação de Energia - BIO" description="Exportação de Energia - BIO" roles="AdmMaster,Admin BI4T,Exportação de Energia - BIO" />
+      <siteMapNode url="~/frmUsina/cnIndustria/EnergiaUamJS/cnIndustriaEnergiaUamJS.aspx" title="Exportação de Energia - UAM" description="Exportação de Energia - UAM" roles="AdmMaster,Admin BI4T,Exportação de Energia - UAM" />
+      <siteMapNode url="~/frmUsina/cnIndustria/AcucarJS/cnIndustriaAcucarJS.aspx" title="Produção de Açúcar" description="Produção de Açúcar" roles="AdmMaster,Admin BI4T,Produção de Açúcar" />
+      <siteMapNode url="~/frmUsina/cnIndustria/EtanolJS/cnIndustriaEtanolJS.aspx" title="Produção de Etanol" description="Produção de Etanol" roles="AdmMaster,Admin BI4T,Produção de Etanol" />
+    </siteMapNode>
+    <siteMapNode url="" title="Oficina Automotiva" description="Oficina Automotiva" roles="AdmMaster,Admin BI4T,Oficina Automotiva">
+      <siteMapNode url="~/frmUsina/cnOficina/Detalhamento/cnOficinaDetalhamentoTriGeralCmFr.aspx" title="Detalhamento Oficina" description="Detalhamento Oficina" roles="AdmMaster,Admin BI4T,Detalhamento Oficina" />
+      <siteMapNode url="~/frmUsina/cnOficina/ResumoEquip/cnOficinaResumoEquipamentos.aspx" title="Resumo dos Equipamentos na Oficina" description="Resumo dos Equipamentos na Oficina" roles="AdmMaster,Admin BI4T,Resumo dos Equipamentos na Oficina" />
+      <siteMapNode url="~/frmUsina/cnOficina/Resumo/cnOficinaResumoDualGeralFrente.aspx" title="Resumo Oficina" description="Resumo Oficina" roles="AdmMaster,Admin BI4T,Resumo Oficina" />
+    </siteMapNode>
+    <siteMapNode url="" title="Tratos Culturais" description="Tratos Culturais" roles="AdmMaster,Admin BI4T,Tratos Culturais">
+      <siteMapNode url="~/frmUsina/cnGerencial/ControleBrocaJS/cnGerencialControleBrocaJS.aspx?tipo=broca" title="Controle de Brocas" description="Controle de Brocas" roles="AdmMaster,Admin BI4T,Ctrl. Infestação de Brocas" />
+      <siteMapNode url="~/frmUsina/cnGerencial/ControleBrocaJS/cnGerencialControleBrocaJS.aspx?tipo=cigarrinha" title="Controle de Cigarrinha" description="Controle de Cigarrinha" roles="AdmMaster,Admin BI4T,Ctrl. Infestação de Cigarrinha" />
+      <siteMapNode url="~/frmUsina/cnGerencial/ControleBrocaJS/cnGerencialControleBrocaJS.aspx?tipo=sphenophorus" title="Controle de Sphenophorus" description="Controle de Sphenophorus" roles="AdmMaster,Admin BI4T,Ctrl. Infestação de Sphenophorus" />
+      <siteMapNode url="~/frmUsina/cnTratosCult/GerencialBrocas/cnEntCanaGerencialBrocas.aspx" title="Gerencial de Brocas" description="Gerencial de Brocas" roles="AdmMaster,Admin BI4T,Gerencial de Brocas" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

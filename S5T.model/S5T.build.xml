@@ -1,0 +1,1385 @@
+<build startDate="2017-08-04T09:01:03.9962-03:00" commandLine="&quot;C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Build4.exe&quot; &quot;C:\sistemas\s5twebUAM\S5T.model\S5T.cfp&quot; /Log:&quot;C:\sistemas\s5twebUAM\S5T.model\S5T.build.xml&quot; /hostpid:15052 /Results:&quot;C:\Users\Renato\AppData\Local\Temp\S5T.cfp.oop&quot; /DoNotCreateReportsOnException /DoNotShowReportsOnException /NoFlashOnError " machineName="RENATO-LAPTOP" osVersion="Microsoft Windows NT 6.2.9200.0" currentDirectory="C:\sistemas\s5twebUAM\S5T.model" user="RENATO-LAPTOP\Renato" clrVersion="4.0.30319.42000" licenseUsage="Build Expirable [Date:30/12/2099 00:00:00][Licensee:Silva Anderson][Maximum Entities:999999]" processorCount="4" workingSet="24526848 bytes" bitness="32bits" wow64="True" optionsFlags="None" parentProcess="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe" endDate="2017-08-04T09:03:19.5697-03:00" totalElapsedTime="00:02:15.5736358" numberOfEntities="66" numberOfEnumerations="7" numberOfRelations="42">
+  <assemblies>
+    <assembly fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/mscorlib.dll" location="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" buildVersion="4.7.2101.1" fileVersion="4.7.2101.1 built by: NET47REL1LAST" productVersion="4.7.2101.1" />
+    <assembly fullName="CodeFluent.Build4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Build4.exe" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Build4.exe" buildVersion="1.0.61214.0844" fileVersion="1.0.61214.0844" productVersion="1.0.61214.0844" />
+    <assembly fullName="CodeFluent.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Model.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Model.dll" buildVersion="1.0.61214.0844" fileVersion="1.0.61214.0844" productVersion="1.0.61214.0844" />
+    <assembly fullName="CodeFluent.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Runtime.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.dll" buildVersion="1.0.61214.0844" fileVersion="1.0.61214.0844" productVersion="1.0.61214.0844" />
+    <assembly fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll" buildVersion="4.7.2093.0" fileVersion="4.7.2093.0 built by: NET47REL1LAST" productVersion="4.7.2093.0" />
+    <assembly fullName="CodeFluent.Model.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Model.Common.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Model.Common.dll" buildVersion="1.0.61214.0844" fileVersion="1.0.61214.0844" productVersion="1.0.61214.0844" />
+    <assembly fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll" buildVersion="4.7.2046.0" fileVersion="4.7.2046.0 built by: NET47REL1" productVersion="4.7.2046.0" />
+    <assembly fullName="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll" buildVersion="4.7.2046.0" fileVersion="4.7.2046.0 built by: NET47REL1" productVersion="4.7.2046.0" />
+    <assembly fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll" buildVersion="4.7.2099.0" fileVersion="4.7.2099.0 built by: NET47REL1LAST" productVersion="4.7.2099.0" />
+    <assembly fullName="CodeFluent.Producers.CodeDom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Producers.CodeDom.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Producers.CodeDom.dll" buildVersion="1.0.61214.0844" fileVersion="1.0.61214.0844" productVersion="1.0.61214.0844" />
+    <assembly fullName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" buildVersion="4.7.2094.0" fileVersion="4.7.2094.0 built by: NET47REL1LAST" productVersion="4.7.2094.0" />
+    <assembly fullName="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll" buildVersion="4.7.2046.0" fileVersion="4.7.2046.0 built by: NET47REL1" productVersion="4.7.2046.0" />
+    <assembly fullName="SoftFluent.License, Version=1.0.0.0, Culture=neutral, PublicKeyToken=330d9b6ea5e30055" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/SoftFluent.License.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\SoftFluent.License.dll" buildVersion="1.0.0.0" fileVersion="3.0.0.0" productVersion="1.0.0.0" />
+    <assembly fullName="System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Management\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Management.dll" buildVersion="4.7.2096.0" fileVersion="4.7.2096.0 built by: NET47REL1LAST" productVersion="4.7.2096.0" />
+    <assembly fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll" buildVersion="4.7.2046.0" fileVersion="4.7.2046.0 built by: NET47REL1" productVersion="4.7.2046.0" />
+    <assembly fullName="CodeFluent.Producers.SqlServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Producers.SqlServer.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Producers.SqlServer.dll" buildVersion="1.0.61214.0844" fileVersion="1.0.61214.0844" productVersion="1.0.61214.0844" />
+    <assembly fullName="CodeFluent.Runtime.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Runtime.Database.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.Database.dll" buildVersion="1.0.61214.0844" fileVersion="1.0.61214.0844" productVersion="1.0.61214.0844" />
+    <assembly fullName="SoftFluent.AspNetIdentity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/SoftFluent.AspNetIdentity.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\SoftFluent.AspNetIdentity.dll" fileVersion="1.0.0.0" productVersion="1.0.0.0" />
+    <assembly fullName="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll" buildVersion="4.7.2046.0" fileVersion="4.7.2046.0 built by: NET47REL1" productVersion="4.7.2046.0" />
+    <assembly fullName="mscorlib.resources, Version=4.0.0.0, Culture=pt-BR, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/mscorlib.resources/v4.0_4.0.0.0_pt-BR_b77a5c561934e089/mscorlib.resources.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_pt-BR_b77a5c561934e089\mscorlib.resources.dll" fileVersion="4.7.2046.0 built by: NET47REL1" productVersion="4.7.2046.0" />
+    <assembly fullName="System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll" buildVersion="4.7.2046.0" fileVersion="4.7.2046.0 built by: NET47REL1" productVersion="4.7.2046.0" />
+    <assembly fullName="System.resources, Version=4.0.0.0, Culture=pt-BR, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.resources/v4.0_4.0.0.0_pt-BR_b77a5c561934e089/System.resources.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.resources\v4.0_4.0.0.0_pt-BR_b77a5c561934e089\System.resources.dll" fileVersion="4.7.2046.0 built by: NET47REL1" productVersion="4.7.2046.0" />
+    <assembly fullName="CodeFluent.Runtime.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Runtime.Web.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.Web.dll" buildVersion="1.0.61214.0844" fileVersion="1.0.61214.0844" productVersion="1.0.61214.0844" />
+    <assembly fullName="CF_38672002283292361911.tplvb, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" codeBase="file:///C:/Users/Renato/AppData/Local/Temp/CFTemplating.Temp4.0.30319.42000/70844/CF_38672002283292361911.tplvb.dll" location="C:\Users\Renato\AppData\Local\Temp\CFTemplating.Temp4.0.30319.42000\70844\CF_38672002283292361911.tplvb.dll" fileVersion="0.0.0.0" productVersion="0.0.0.0" />
+    <assembly fullName="System.Data.resources, Version=4.0.0.0, Culture=pt-BR, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Data.resources/v4.0_4.0.0.0_pt-BR_b77a5c561934e089/System.Data.resources.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Data.resources\v4.0_4.0.0.0_pt-BR_b77a5c561934e089\System.Data.resources.dll" fileVersion="4.7.2046.0 built by: NET47REL1" productVersion="4.7.2046.0" />
+    <assembly fullName="System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll" buildVersion="4.7.2046.0" fileVersion="4.7.2046.0 built by: NET47REL1" productVersion="4.7.2046.0" />
+    <assembly fullName="System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Runtime.Caching/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Runtime.Caching.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Caching\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Caching.dll" buildVersion="4.7.2046.0" fileVersion="4.7.2046.0" productVersion="4.7.2046.0" />
+    <assembly fullName="System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Numerics/v4.0_4.0.0.0__b77a5c561934e089/System.Numerics.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll" buildVersion="4.7.2046.0" fileVersion="4.7.2046.0 built by: NET47REL1" productVersion="4.7.2046.0" />
+  </assemblies>
+  <variables>
+    <variable name="CF_BUILD_NUMBER" value="70844" />
+    <variable name="CF_PATTERNS_PATH" value="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\Patterns" />
+    <variable name="CF_TEMPLATES_PATH" value="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\Templates" />
+    <variable name="CF_CURRENT_PATH" value="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler" />
+    <variable name="CF_BUILD_CONFIGURATION" value="RELEASE" />
+  </variables>
+  <generatedFiles>
+    <producer name="Business Object Model (BOM)" generatedFilesCount="133" />
+    <producer name="SQL Server" generatedFilesCount="8" />
+    <producer name="Asp.Net Identity" generatedFilesCount="0" />
+  </generatedFiles>
+  <project>
+    <imports>
+      <cf:import path="Default.Surface.cfp" xmlns:cf="http://www.softfluent.com/codefluent/2005/1" />
+      <cf:import path="Instances.cfp" overwrite="false" xmlns:cf="http://www.softfluent.com/codefluent/2005/1" />
+    </imports>
+    <parts>
+      <part filePath="C:\sistemas\s5twebUAM\S5T.model\S5T.cfp" isRootModel="true" relativePath="S5T.cfp" />
+      <part filePath="C:\sistemas\s5twebUAM\S5T.model\Default.Surface.cfp" relativePath="Default.Surface.cfp" />
+      <part filePath="C:\sistemas\s5twebUAM\S5T.model\Instances.cfp" relativePath="Instances.cfp" />
+    </parts>
+  </project>
+  <producer name="Business Object Model (BOM)">
+    <event type="ProducerStart" elapsedTime="00:00:00.0006277">
+      <name>Business Object Model (BOM)</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ParameterValue" name="AllowExternalCode" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="AllowSnippets" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ApplicationName" value="default" />
+    <event type="ParameterValue" name="DumpPath" />
+    <event type="ParameterValue" name="FileCopyFilter" value="*.scc, _cf_md.config" />
+    <event type="ParameterValue" name="FullTargetDirectory" value="C:\sistemas\s5twebUAM\S5TBom\Classes" />
+    <event type="ParameterValue" name="IsTargetRelativeToModelDirectory" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ModelProducerName" />
+    <event type="ParameterValue" name="MustCopyModelFiles" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSkipFileCopyOnError" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="OutputEncoding" value="utf-8" />
+    <event type="ParameterValue" name="OutputEncodingEmitIdentifier" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ProductionFlags" value="Default, Overwrite, RemoveDates" valueType="CodeFluent.Model.ProductionFlags" />
+    <event type="ParameterValue" name="ProductionVerbosity" value="0" valueType="System.Int32" />
+    <event type="ParameterValue" name="SkipExtensions" value="[^\.]*.scc,_cf_md.config" valueType="System.Collections.ArrayList" />
+    <event type="ParameterValue" name="SkipDirectoryExtensions" valueType="System.Collections.ArrayList" />
+    <event type="ParameterValue" name="TargetFramework" value="4.7" />
+    <event type="ParameterValue" name="TargetBaseNamespace" value="S5T" />
+    <event type="ParameterValue" name="TemplateOptions" value="Default" valueType="CodeFluent.Model.Common.Templating.TemplateOptions" />
+    <event type="ParameterValue" name="UseEmptyApplication" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="AssemblyCompileDefaultFileExcludeFilter" value="AssemblyInfo.cs, assemblyversion.cs" />
+    <event type="ParameterValue" name="CodeDomProviderOptions" />
+    <event type="ParameterValue" name="FileExtension" value=".vb" />
+    <event type="ParameterValue" name="LanguageCode" value="VisualBasic" valueType="CodeFluent.Model.Code.LanguageCode" />
+    <event type="ParameterValue" name="MustAddDebugInfo" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustCompile" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustDelaySign" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustIncludeDebugInformation" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustTreatWarningAsErrors" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="WarningLevel" value="-1" valueType="System.Int32" />
+    <event type="ParameterValue" name="TargetProductionOptions" value="Default" valueType="CodeFluent.Producers.CodeDom.TargetProductionOptions" />
+    <event type="ParameterValue" name="VisualStudioProjectPath" />
+    <event type="ParameterValue" name="IsAssemblyClsCompliant" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddDebuggerDisplayAttribute" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddDictionaryMethods" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddRuntimeDesignAttributes" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddRuntimeResourceCheck" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAppendSchema" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustEmbedModelInRuntimeResource" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceResourcesFiles" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebBasicAuthenticationModule" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebHandler" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebMembershipProvider" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebMembershipUser" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebProfileProvider" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebRoleProvider" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceBitsServer" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebTypes" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLegacyStringArrayMode" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ResourceFileFormat" value="ResX" valueType="CodeFluent.Producers.CodeDom.ResourceFileFormat" />
+    <event type="ParameterValue" name="RuntimePrefix" value="_cf_rt" />
+    <event type="ParameterValue" name="RuntimeResourceBaseName" value="S5T" />
+    <event type="ParameterValue" name="FullTargetDirectory" value="C:\sistemas\s5twebUAM\S5TBom\Classes" />
+    <event type="FileWrite" elapsedTime="00:00:10.0379906">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\_cf_rt.vb</path>
+      <fileType>RuntimeCode</fileType>
+      <size>-1</size>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0189443">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\_cf_rt.vb</path>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0191877">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\_cf_rt.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0292554">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5T.pt-BR.ResX</path>
+      <fileType>Resource for Português (Brasil) culture</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0102629">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5T.pt-BR.ResX</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0404582">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5T.ResX</path>
+      <fileType>Embedded resource for Idioma Invariável (País Invariável) culture</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022344">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5T.ResX</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0876668">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_1CORTE.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ACOMP_PROD_1CORTE'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0032560">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_1CORTE.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0254751">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_1CORTE_TALHAO.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ACOMP_PROD_1CORTE_TALHAO'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0506014">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_1CORTE_TALHAO.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0394654">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_1CORTE_TALHAOCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ACOMP_PROD_1CORTE_TALHAOCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0074615">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_1CORTE_TALHAOCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0690397">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_1CORTECollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ACOMP_PROD_1CORTECollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0113272">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_1CORTECollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0615722">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_DCORTE.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ACOMP_PROD_DCORTE'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0174261">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_DCORTE.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0585702">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_DCORTE_TALHAO.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ACOMP_PROD_DCORTE_TALHAO'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0029451">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_DCORTE_TALHAO.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0295166">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_DCORTE_TALHAOCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ACOMP_PROD_DCORTE_TALHAOCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0048750">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_DCORTE_TALHAOCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0260795">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_DCORTECollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ACOMP_PROD_DCORTECollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0031130">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMP_PROD_DCORTECollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0702952">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMPANHAMENTO_PLANTIO.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ACOMPANHAMENTO_PLANTIO'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0028756">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMPANHAMENTO_PLANTIO.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0642863">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMPANHAMENTO_PLANTIOCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ACOMPANHAMENTO_PLANTIOCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021633">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ACOMPANHAMENTO_PLANTIOCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0425516">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppConfig.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppConfig'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0159332">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppConfig.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0684621">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppConfigCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppConfigCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0989897">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppConfigCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0826306">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppRelatorio.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppRelatorio'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0125171">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppRelatorio.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0352572">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppRelatorioCategoria.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppRelatorioCategoria'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0049592">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppRelatorioCategoria.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0693633">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppRelatorioCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppRelatorioCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0251705">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppRelatorioCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0689919">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Cadastro.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Cadastro'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0027093">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Cadastro.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0676479">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0023178">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0183984">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroTipo.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroTipo'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017643">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroTipo.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0241260">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroTipoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroTipoCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020882">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroTipoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0184643">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\CERTIFICADO_PATIO_HORA.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.CERTIFICADO_PATIO_HORA'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0060238">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\CERTIFICADO_PATIO_HORA.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0891222">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\CERTIFICADO_PATIO_HORACollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.CERTIFICADO_PATIO_HORACollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0212649">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\CERTIFICADO_PATIO_HORACollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0985295">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Cidade.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Cidade'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020365">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Cidade.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0446612">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CidadeCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CidadeCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0247778">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CidadeCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0380949">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Empresa.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Empresa'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019259">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Empresa.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0107476">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\EmpresaCodigoRegimeTributario.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmpresaCodigoRegimeTributario'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018374">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\EmpresaCodigoRegimeTributario.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0144766">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\EmpresaCodigoRegimeTributarioNormal.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmpresaCodigoRegimeTributarioNormal'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0025307">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\EmpresaCodigoRegimeTributarioNormal.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0532685">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\EmpresaCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmpresaCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0167956">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\EmpresaCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0305382">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\EmpresaSimplesNacionalCategoria.vb</path>
+      <fileType>BaseTypeFile for 'S5T.EmpresaSimplesNacionalCategoria'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021084">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\EmpresaSimplesNacionalCategoria.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0175498">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_CAMINHAOVIAGENS.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENT_CAMBAL_CAMINHAOVIAGENS'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017793">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_CAMINHAOVIAGENS.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0195788">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_CAMINHAOVIAGENSCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENT_CAMBAL_CAMINHAOVIAGENSCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018022">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_CAMINHAOVIAGENSCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0212392">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_FRENTESPROP.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENT_CAMBAL_FRENTESPROP'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018078">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_FRENTESPROP.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0478561">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_FRENTESPROPCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENT_CAMBAL_FRENTESPROPCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020768">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_FRENTESPROPCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0202536">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_PRINCIPAL.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENT_CAMBAL_PRINCIPAL'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018978">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_PRINCIPAL.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0968437">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_PRINCIPALCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENT_CAMBAL_PRINCIPALCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0242611">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENT_CAMBAL_PRINCIPALCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0278340">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DET.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENTRADA_CANA_DET'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018390">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DET.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0649160">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DET_AGRUP.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENTRADA_CANA_DET_AGRUP'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0057272">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DET_AGRUP.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0485755">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DET_AGRUPCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENTRADA_CANA_DET_AGRUPCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0220614">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DET_AGRUPCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0477795">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DET_MP.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENTRADA_CANA_DET_MP'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0032525">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DET_MP.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0429882">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DET_MPCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENTRADA_CANA_DET_MPCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0025663">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DET_MPCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0462348">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DETCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENTRADA_CANA_DETCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021495">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_DETCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0264805">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_HORA.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENTRADA_CANA_HORA'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0602618">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_HORA.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0351268">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_HORA_FRENTE.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENTRADA_CANA_HORA_FRENTE'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020819">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_HORA_FRENTE.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0269151">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_HORA_FRENTECollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENTRADA_CANA_HORA_FRENTECollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0037210">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_HORA_FRENTECollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0247284">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_HORACollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ENTRADA_CANA_HORACollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021060">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ENTRADA_CANA_HORACollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0245799">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ESCALA_COLAB.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ESCALA_COLAB'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018484">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ESCALA_COLAB.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0355792">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ESCALA_COLABCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.ESCALA_COLABCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0085566">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\ESCALA_COLABCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0769200">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Filial.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Filial'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0223731">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Filial.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0887126">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022324">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0530654">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialConfig.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialConfig'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022937">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialConfig.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.1532921">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialConfigCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialConfigCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0839533">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialConfigCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0525905">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialConfigTipo.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialConfigTipo'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0160438">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialConfigTipo.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0265931">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialTipo.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialTipo'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0081268">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialTipo.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0438830">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\HISTORICO_PROPRIEDADE.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.HISTORICO_PROPRIEDADE'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0035725">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\HISTORICO_PROPRIEDADE.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0422423">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\HISTORICO_PROPRIEDADE_TRATOS.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.HISTORICO_PROPRIEDADE_TRATOS'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0052973">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\HISTORICO_PROPRIEDADE_TRATOS.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0532491">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\HISTORICO_PROPRIEDADE_TRATOSCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.HISTORICO_PROPRIEDADE_TRATOSCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0032165">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\HISTORICO_PROPRIEDADE_TRATOSCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0768370">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\HISTORICO_PROPRIEDADECollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.HISTORICO_PROPRIEDADECollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0030727">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\HISTORICO_PROPRIEDADECollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0570523">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdRole.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdRole'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019140">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdRole.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0420554">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdRoleClaim.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdRoleClaim'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0075049">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdRoleClaim.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0382293">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdRoleClaimCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdRoleClaimCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0507096">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdRoleClaimCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0227982">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdRoleCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdRoleCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019930">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdRoleCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0240070">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUser.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUser'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020464">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUser.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0490219">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUserClaim.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUserClaim'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0090097">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUserClaim.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0507274">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUserClaimCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUserClaimCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0113777">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUserClaimCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0983817">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUserCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUserCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020657">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUserCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0302281">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUserLogin.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUserLogin'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0045957">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUserLogin.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0275270">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUserLoginCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.IdUserLoginCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0029866">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\IdUserLoginCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0311446">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLA.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.INDICADORES_AGRICOLA'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0028535">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLA.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0417386">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLA_EQUIP.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.INDICADORES_AGRICOLA_EQUIP'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021953">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLA_EQUIP.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0393880">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLA_EQUIPCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.INDICADORES_AGRICOLA_EQUIPCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0033931">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLA_EQUIPCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0586346">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLA_TEMPOAPROV.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.INDICADORES_AGRICOLA_TEMPOAPROV'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021009">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLA_TEMPOAPROV.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0394954">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLA_TEMPOAPROVCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.INDICADORES_AGRICOLA_TEMPOAPROVCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0034338">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLA_TEMPOAPROVCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0797834">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLACollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.INDICADORES_AGRICOLACollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0118913">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INDICADORES_AGRICOLACollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0817907">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INFO_GERAIS.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.INFO_GERAIS'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0318427">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INFO_GERAIS.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0348021">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INFO_GERAISCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.INFO_GERAISCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0048090">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\INFO_GERAISCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0399995">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\LoginRegistro.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LoginRegistro'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0095521">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\LoginRegistro.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0521168">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\LoginRegistroCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LoginRegistroCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0212009">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\LoginRegistroCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0556669">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\MAPA_PLANCOLHEITA.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.MAPA_PLANCOLHEITA'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0029266">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\MAPA_PLANCOLHEITA.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0360655">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\MAPA_PLANCOLHEITACollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.MAPA_PLANCOLHEITACollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0152217">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\MAPA_PLANCOLHEITACollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.1445178">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Menu.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Menu'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0177686">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Menu.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0899353">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\MenuCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MenuCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0314994">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\MenuCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.1100095">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\MenuPermissao.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MenuPermissao'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0115673">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\MenuPermissao.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0475918">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\MenuPermissaoCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MenuPermissaoCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0485562">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\MenuPermissaoCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0966719">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\MOAGEM_CANA_HORA.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.MOAGEM_CANA_HORA'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0499266">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\MOAGEM_CANA_HORA.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0987669">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\MOAGEM_CANA_HORACollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.MOAGEM_CANA_HORACollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0354899">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\MOAGEM_CANA_HORACollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0603286">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Pais.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Pais'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0155211">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Pais.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0257548">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\PaisCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.PaisCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0019294">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\PaisCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0779831">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\PROPRIEDADES.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.PROPRIEDADES'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021337">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\PROPRIEDADES.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0355626">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\PROPRIEDADESCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.PROPRIEDADESCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0643523">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\PROPRIEDADESCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0637269">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_ACUMULADA.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.RES_MENSAL_ACUMULADA'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0061195">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_ACUMULADA.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0766968">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_ACUMULADACollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.RES_MENSAL_ACUMULADACollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0213151">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_ACUMULADACollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.1053727">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_DIARIA.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.RES_MENSAL_DIARIA'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0428598">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_DIARIA.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0242864">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_DIARIACollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.RES_MENSAL_DIARIACollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0040351">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_DIARIACollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0183502">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_GRID.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.RES_MENSAL_GRID'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018465">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_GRID.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0541684">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_GRIDCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.RES_MENSAL_GRIDCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0183841">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_GRIDCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0209113">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_SAFRA.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.RES_MENSAL_SAFRA'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0024517">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_SAFRA.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0489532">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_SAFRA_ACUMULADA.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.RES_MENSAL_SAFRA_ACUMULADA'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0470605">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_SAFRA_ACUMULADA.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0788013">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_SAFRA_ACUMULADACollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.RES_MENSAL_SAFRA_ACUMULADACollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0076756">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_SAFRA_ACUMULADACollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0508507">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_SAFRACollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.RES_MENSAL_SAFRACollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0028041">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\RES_MENSAL_SAFRACollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0453325">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\SAFRA_ANO.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.SAFRA_ANO'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0171029">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\SAFRA_ANO.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0458211">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\SAFRA_ANOCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.SAFRA_ANOCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0022222">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\SAFRA_ANOCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0527442">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\SEQUENCIA_COLHEITA.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.SEQUENCIA_COLHEITA'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0597783">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\SEQUENCIA_COLHEITA.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0315302">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\SEQUENCIA_COLHEITACollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.SEQUENCIA_COLHEITACollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0137430">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\SEQUENCIA_COLHEITACollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0349313">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Sistema.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Sistema'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0259673">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Sistema.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0767963">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\SistemaCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.SistemaCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0347527">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\SistemaCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0197562">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\UF.vb</path>
+      <fileType>BaseTypeFile for 'S5T.UF'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017042">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\UF.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0234145">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\UFCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.UFCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018074">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\UFCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0212191">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Usuario.vb</path>
+      <fileType>BaseTypeFile for 'S5T.Usuario'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021989">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Usuario.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.2019743">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\UsuarioCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.UsuarioCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0364396">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\UsuarioCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0453068">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\UsuarioStatus.vb</path>
+      <fileType>BaseTypeFile for 'S5T.UsuarioStatus'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020614">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\UsuarioStatus.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.1004526">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\V_DADOS_TALHAO.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.V_DADOS_TALHAO'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0274931">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\V_DADOS_TALHAO.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0423075">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\V_DADOS_TALHAOCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5TUam.V_DADOS_TALHAOCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0313141">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\S5TUam\V_DADOS_TALHAOCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0462391">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\WebSiteMap.vb</path>
+      <fileType>BaseTypeFile for 'S5T.WebSiteMap'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0195511">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\WebSiteMap.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0254565">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\WebSiteMapCollection.vb</path>
+      <fileType>BaseTypeFile for 'S5T.WebSiteMapCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0344888">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\WebSiteMapCollection.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.1230699">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppRelatorioView.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppRelatorioView'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0100930">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppRelatorioView.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0123997">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppRelatorioUsuarioView.vb</path>
+      <fileType>BaseTypeFile for 'S5T.AppRelatorioUsuarioView'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0028677">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\AppRelatorioUsuarioView.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0141538">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroViewGeral.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroViewGeral'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017560">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroViewGeral.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0161489">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroViewGeralTipo.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroViewGeralTipo'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018038">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroViewGeralTipo.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0107772">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroTipoViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CadastroTipoViewGrid'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0216722">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CadastroTipoViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0153200">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CidadeViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.CidadeViewGrid'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0021447">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\CidadeViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0208687">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialViewGrid'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0047822">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0200118">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialViewUsuarios.vb</path>
+      <fileType>BaseTypeFile for 'S5T.FilialViewUsuarios'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0017355">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\FilialViewUsuarios.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0110960">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\MenuVw.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MenuVw'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0020736">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\MenuVw.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0109696">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\MenuVwPerm.vb</path>
+      <fileType>BaseTypeFile for 'S5T.MenuVwPerm'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0277680">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\MenuVwPerm.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0309921">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\PaisViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.PaisViewGrid'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0200221">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\PaisViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0105580">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\UFViewGrid.vb</path>
+      <fileType>BaseTypeFile for 'S5T.UFViewGrid'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0018196">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\UFViewGrid.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0779432">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\LogAcessoUsuariosViewRaw.vb</path>
+      <fileType>BaseTypeFile for 'S5T.LogAcessoUsuariosViewRaw'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0073260">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\LogAcessoUsuariosViewRaw.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.2234961">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Web\HttpHandler.vb</path>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0267168">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Web\HttpHandler.vb</path>
+    </event>
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.MembershipProviderProducer: No directoryUser entity. Skip production." />
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.RoleProviderProducer: No directoryRole entity. Skip production." />
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.ProfileProviderProducer: No directoryUser entity. Skip production." />
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.BasicAuthenticationModuleProducer: No directoryUser entity. Skip production." />
+    <event type="FileWrite" elapsedTime="00:00:00.2411577">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Web\BitsServer.vb</path>
+      <fileType>CodeFluent.Producers.CodeDom.UI.Web.BitsServerProducer</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0724384">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Web\BitsServer.vb</path>
+    </event>
+  </producer>
+  <producer name="SQL Server">
+    <event type="ProducerStart" elapsedTime="00:00:00.0220365">
+      <name>SQL Server</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ParameterValue" name="AllowSelectDistinct" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="AppendSchemaToProcedures" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="CommandTimeout" value="0" valueType="System.Int32" />
+    <event type="ParameterValue" name="ConnectionString" value="Server=RENATO-LAPTOP\SQLEXPRESS;Database=s5tuam;Integrated Security=true;Application Name=S5T;Password=manager;User ID=RenatoFX" />
+    <event type="ParameterValue" name="CurrentCulture" value="pt-BR" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="CurrentUICulture" value="pt-BR" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="DecimalPrecision" value="28" valueType="System.Int32" />
+    <event type="ParameterValue" name="DecimalScale" value="13" valueType="System.Int32" />
+    <event type="ParameterValue" name="DefaultUnicodeInstancePrefix" value="N" />
+    <event type="ParameterValue" name="FullTargetDirectory" value="C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer" />
+    <event type="ParameterValue" name="IdentityIncrement" value="1" valueType="System.Int32" />
+    <event type="ParameterValue" name="IdentitySeed" value="1" valueType="System.Int32" />
+    <event type="ParameterValue" name="IdentityTempColumnName" value="_cf_id_temp" />
+    <event type="ParameterValue" name="InstanceProductionCulture" value="en-US" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="IsTargetRelativeToModelDirectory" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MaxColumnSize" value="2147483647" valueType="System.Int32" />
+    <event type="ParameterValue" name="MaximumColumnsPerConstraint" value="16" valueType="System.Int32" />
+    <event type="ParameterValue" name="MustCreateBackups" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustCreateDatabase" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustCreateDiffs" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustDropUnusedColumns" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustForceColumnAlter" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceInstances" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceViews" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceSchemas" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSaveInstances" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSaveBlobInstances" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSkipCrossStoreRelations" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateDatabase" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateProcedures" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateRuntime" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateSchema" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustForceUpdateViews" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLocalTransactions" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLegacyStringArrayMode" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLegacyBlobChunkMode" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="OutputEncoding" value="utf-8" />
+    <event type="ParameterValue" name="OutputEncodingEmitIdentifier" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ProcedureProductionCulture" value="en-US" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="ProductionFlags" value="Default, Overwrite, RemoveDates" valueType="CodeFluent.Model.ProductionFlags" />
+    <event type="ParameterValue" name="ProductionOptionsFlags" value="None" valueType="CodeFluent.Model.ProductionOptionsFlags" />
+    <event type="ParameterValue" name="SaveUserName" value="SYSTEM_USER" />
+    <event type="ParameterValue" name="StoreName" />
+    <event type="ParameterValue" name="TargetVersion" value="Sql2014" valueType="CodeFluent.Producers.SqlServer.TargetVersion" />
+    <event type="FileCopy" elapsedTime="00:00:00.0726984">
+      <target>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_runtime.sql</target>
+      <source>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_runtime.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0766186">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_runtime.sql</path>
+      <fileType>RuntimeScript</fileType>
+      <size>1922</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000438">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_runtime.sql</path>
+    </event>
+    <event type="ParameterValue" name="SqlServerVersion" value="13.0.1728.2" />
+    <event type="FileCopy" elapsedTime="00:00:31.6340787">
+      <target>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_tables.sql</target>
+      <source>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_tables.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0038814">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_tables.sql</path>
+      <fileType>TablesScript</fileType>
+      <size>74045</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000537">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_tables.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.0466243">
+      <target>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_views.sql</target>
+      <source>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_views.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0017347">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_views.sql</path>
+      <fileType>ViewsScript</fileType>
+      <size>52598</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000478">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_views.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:44.2252497">
+      <target>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_table_diffs.sql</target>
+      <source>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_table_diffs.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0061795">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_table_diffs.sql</path>
+      <fileType>TablesDiffsScript</fileType>
+      <size>115168</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000612">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_table_diffs.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:04.1147491">
+      <target>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_procedures.sql</target>
+      <source>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_procedures.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0092716">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_procedures.sql</path>
+      <fileType>ProceduresScript</fileType>
+      <size>469876</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000525">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_procedures.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:02.3043900">
+      <target>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_relations_drop.sql</target>
+      <source>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_relations_drop.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0024189">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_relations_drop.sql</path>
+      <fileType>RelationsDropScript</fileType>
+      <size>9918</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000624">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_relations_drop.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.0237740">
+      <target>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_relations_add.sql</target>
+      <source>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_relations_add.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0014992">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_relations_add.sql</path>
+      <fileType>RelationsAddScript</fileType>
+      <size>7435</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000525">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_relations_add.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.1950540">
+      <target>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_instances.sql</target>
+      <source>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_instances.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0047751">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_instances.sql</path>
+      <fileType>InstancesScript</fileType>
+      <size>21470</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000584">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_instances.sql</path>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.0017671">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_runtime.sql</path>
+      <fileType>RuntimeScript</fileType>
+      <size>1922</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:02.2878674">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_relations_drop.sql</path>
+      <fileType>RelationsDropScript</fileType>
+      <size>9918</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.4020650">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_table_diffs.sql</path>
+      <fileType>TablesDiffScript</fileType>
+      <size>115168</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:03.9736486">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_views.sql</path>
+      <fileType>ViewsScript</fileType>
+      <size>52598</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:03.5983829">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_relations_add.sql</path>
+      <fileType>RelationsAddScript</fileType>
+      <size>7435</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.7163605">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_procedures.sql</path>
+      <fileType>ProceduresScript</fileType>
+      <size>469876</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:12.1680255">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Persistence\SqlServer\S5T_instances.sql</path>
+      <fileType>InstancesScript</fileType>
+      <size>21470</size>
+    </event>
+  </producer>
+  <producer name="Asp.Net Identity">
+    <event type="ProducerStart" elapsedTime="00:00:00.9922812">
+      <name>Asp.Net Identity</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0751387">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Web\Security\UserStore.vb</path>
+      <fileType>SoftFluent.AspNetIdentity.UserStoreProducer</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0133854">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Web\Security\UserStore.vb</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0430996">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Web\Security\RoleStore.vb</path>
+      <fileType>SoftFluent.AspNetIdentity.RoleStoreProducer</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0277771">
+      <path>C:\sistemas\s5twebUAM\S5TBom\Classes\Web\Security\RoleStore.vb</path>
+    </event>
+    <event type="ProducerTerminate" elapsedTime="00:00:00.0200446">
+      <name>Business Object Model (BOM)</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ProducerTerminate" elapsedTime="00:00:00.0005080">
+      <name>SQL Server</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ProducerTerminate" elapsedTime="00:00:00.0001485">
+      <name>Asp.Net Identity</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+  </producer>
+</build>

@@ -1,0 +1,51 @@
+﻿#tabFiltroPeriodo .dx-tab-selected {
+    background-color: #808080!important;
+}
+
+#tabFrEntCana .dx-tab-selected {
+    background-color: #808080 !important;
+}
+.dx-button-success {
+    background-color: #a9d08e !important;
+    border-color: #a9d08e !important;
+}
+.panel-body {
+    padding: 2px;
+}
+
+.entregacanatotais {
+    font-size: 14px;
+}
+.tg  {border-collapse:collapse;border-spacing:0;margin: 0 auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-5mgg{font-weight:bold;background-color:#c0c0c0;vertical-align:top;text-align:center;}
+.tg .tg-yw4l{vertical-align:top}
+
+.containerFrente {
+    height: 50px;
+    position:relative;
+    opacity: 100;
+    width: 100%;
+    background-color: #fff;
+}
+.frenteClass {
+    height: 30px;
+    width: 100%;
+    background-color: #fff;
+}
+.containerPeriodo {
+    height: 50px;
+    position:relative;
+    opacity: 100;
+    width: 100%;
+    background-color: #fff;
+}
+.periodoClass {
+    height: 30px;
+    width: 100%;
+    background-color: #fff;
+}
+.dx-tab {
+    background-color: #f4f4f4 !important;
+}

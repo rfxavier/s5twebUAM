@@ -1,0 +1,89 @@
+﻿        .panel-principal {
+            padding-top: 6px!important;
+            padding-bottom: 0!important;
+            padding-left: 2px!important;
+        }
+        div.row.panel-principal {
+            padding-top: 2px!important;
+        }
+        .dx-popup-title {
+            background-color: rgba(169, 208, 142, 0.44)!important; 
+            padding: 0!important;
+        }
+        .popover-title {
+            background-color: rgba(169, 208, 142, 0.24)!important; 
+            padding: 2px 4px 0 4px!important;
+        }
+        .dx-datagrid .dx-datagrid-headers tr:first-child {
+            background-color: rgba(169, 208, 142, 0.47); 
+        }
+        .tratos-header-row {
+            background-color: rgba(0, 38, 255, 0.17)!important; 
+        }
+        .safra-caption {
+            padding-top: 4px;
+            padding-right: 0;
+        }
+        .legenda-caption {
+            padding-top: 4px;
+        }
+        .internal-grid {
+           white-space: normal;
+        }
+        .perc-infestacao {
+            font-size: small;
+            float: right;
+            padding-right: 16px;
+        }
+        .perc-infestacao-numero {
+            color: red;
+        }
+        .popup-titulo {
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+        .reforma-legenda {
+            font-weight: normal;
+            font-size: 12px;
+            font-family: 'Helvetica Neue','Segoe UI',Helvetica,Verdana,sans-serif;
+        }
+        .my-legend .legend-title {
+        text-align: left;
+        margin-bottom: 8px;
+        font-weight: bold;
+        font-size: 90%;
+        }
+        .my-legend .legend-scale ul {
+        margin: 0;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+        .my-legend .legend-scale ul li {
+        display: block;
+        float: left;
+        width: 180px;
+        margin-bottom: 6px;
+        text-align: center;
+        font-size: 80%;
+        list-style: none;
+        }
+        .my-legend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 15px;
+        width: 16px;
+        }
+        .my-legend ul.legend-labels li  {
+            margin-bottom: 0;
+        }
+
+        .my-legend .legend-source {
+        font-size: 70%;
+        color: #999;
+        clear: both;
+        }
+        .my-legend a {
+        color: #777;
+        }
+

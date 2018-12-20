@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D654A0B0-1E18-454B-8857-DD300FC0681D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>S5TBom</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>S5TBom.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>S5TBom.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeFluent.Runtime">
+      <HintPath>C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeFluent.Runtime.Web">
+      <HintPath>C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AppConfig.partial.vb" />
+    <Compile Include="Classes\AppConfig.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\AppConfigCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\AppRelatorio.partial.vb" />
+    <Compile Include="Classes\AppRelatorio.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\AppRelatorioCategoria.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\AppRelatorioCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\AppRelatorioUsuarioView.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\AppRelatorioView.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Cadastro.partial.vb" />
+    <Compile Include="Classes\Cadastro.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\CadastroCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\CadastroTipo.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\CadastroTipoCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\CadastroTipoViewGrid.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\CadastroViewGeral.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\CadastroViewGeralTipo.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Cidade.partial.vb" />
+    <Compile Include="Classes\Cidade.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\CidadeCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\CidadeViewGrid.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Empresa.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\EmpresaCodigoRegimeTributario.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\EmpresaCodigoRegimeTributarioNormal.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\EmpresaCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\EmpresaSimplesNacionalCategoria.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Filial.partial.vb" />
+    <Compile Include="Classes\Filial.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\FilialCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\FilialConfig.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\FilialConfigCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\FilialConfigTipo.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\FilialTipo.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\FilialViewGrid.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\FilialViewUsuarios.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\IdRole.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\IdRoleClaim.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\IdRoleClaimCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\IdRoleCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\IdUser.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\IdUserClaim.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\IdUserClaimCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\IdUserCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\IdUserLogin.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\IdUserLoginCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\LogAcessoUsuariosViewRaw.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\LoginRegistro.partial.vb" />
+    <Compile Include="Classes\LoginRegistro.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\LoginRegistroCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Menu.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\MenuCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\MenuPermissao.partial.vb" />
+    <Compile Include="Classes\MenuPermissao.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\MenuPermissaoCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\MenuVw.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\MenuVwPerm.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Pais.partial.vb" />
+    <Compile Include="Classes\Pais.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\PaisCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\PaisViewGrid.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ACOMPANHAMENTO_PLANTIO.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ACOMPANHAMENTO_PLANTIOCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ACOMP_PROD_1CORTE.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ACOMP_PROD_1CORTECollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ACOMP_PROD_1CORTE_TALHAO.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ACOMP_PROD_1CORTE_TALHAOCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ACOMP_PROD_DCORTE.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ACOMP_PROD_DCORTECollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ACOMP_PROD_DCORTE_TALHAO.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ACOMP_PROD_DCORTE_TALHAOCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\CERTIFICADO_PATIO_HORA.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\CERTIFICADO_PATIO_HORACollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENTRADA_CANA_DET.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENTRADA_CANA_DETCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENTRADA_CANA_DET_AGRUP.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENTRADA_CANA_DET_AGRUPCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENTRADA_CANA_DET_MP.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENTRADA_CANA_DET_MPCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENTRADA_CANA_HORA.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENTRADA_CANA_HORACollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENTRADA_CANA_HORA_FRENTE.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENTRADA_CANA_HORA_FRENTECollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENT_CAMBAL_CAMINHAOVIAGENS.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENT_CAMBAL_CAMINHAOVIAGENSCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENT_CAMBAL_FRENTESPROP.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENT_CAMBAL_FRENTESPROPCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENT_CAMBAL_PRINCIPAL.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ENT_CAMBAL_PRINCIPALCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ESCALA_COLAB.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\ESCALA_COLABCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\HISTORICO_PROPRIEDADE.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\HISTORICO_PROPRIEDADECollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\HISTORICO_PROPRIEDADE_TRATOS.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\HISTORICO_PROPRIEDADE_TRATOSCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\INDICADORES_AGRICOLA.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\INDICADORES_AGRICOLACollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\INDICADORES_AGRICOLA_EQUIP.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\INDICADORES_AGRICOLA_EQUIPCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\INDICADORES_AGRICOLA_TEMPOAPROV.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\INDICADORES_AGRICOLA_TEMPOAPROVCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\INFO_GERAIS.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\INFO_GERAISCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\MAPA_PLANCOLHEITA.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\MAPA_PLANCOLHEITACollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\MOAGEM_CANA_HORA.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\MOAGEM_CANA_HORACollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\PROPRIEDADES.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\PROPRIEDADESCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\RES_MENSAL_ACUMULADA.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\RES_MENSAL_ACUMULADACollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\RES_MENSAL_DIARIA.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\RES_MENSAL_DIARIACollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\RES_MENSAL_GRID.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\RES_MENSAL_GRIDCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\RES_MENSAL_SAFRA.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\RES_MENSAL_SAFRACollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\RES_MENSAL_SAFRA_ACUMULADA.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\RES_MENSAL_SAFRA_ACUMULADACollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\SAFRA_ANO.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\SAFRA_ANOCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\SEQUENCIA_COLHEITA.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\SEQUENCIA_COLHEITACollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\V_DADOS_TALHAO.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\S5TUam\V_DADOS_TALHAOCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Sistema.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\SistemaCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\UF.partial.vb" />
+    <Compile Include="Classes\UF.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\UFCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\UFViewGrid.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Usuario.partial.vb" />
+    <Compile Include="Classes\Usuario.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\UsuarioCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\UsuarioStatus.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\valida_CNPJ_CPF.vb" />
+    <Compile Include="Classes\WebSiteMap.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\WebSiteMapCollection.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Web\BitsServer.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Web\HttpHandler.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Web\Security\RoleStore.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\Web\Security\UserStore.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Classes\_cf_rt.vb">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Classes\S5T.pt-BR.ResX">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\S5T.ResX">
+      <CodeFluentProducer>90fcf2737a08430756ce04c01853bc53</CodeFluentProducer>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Persistence\MySql\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Persistence\SqlServer\S5T_runtime.sql">
+      <CodeFluentProducer>026d108fde8fdb12eaaee3f0f00fc9dd</CodeFluentProducer>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Persistence\SqlServer\S5T_tables.sql">
+      <CodeFluentProducer>026d108fde8fdb12eaaee3f0f00fc9dd</CodeFluentProducer>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Persistence\SqlServer\S5T_views.sql">
+      <CodeFluentProducer>026d108fde8fdb12eaaee3f0f00fc9dd</CodeFluentProducer>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Persistence\SqlServer\S5T_table_diffs.sql">
+      <CodeFluentProducer>026d108fde8fdb12eaaee3f0f00fc9dd</CodeFluentProducer>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Persistence\SqlServer\S5T_procedures.sql">
+      <CodeFluentProducer>026d108fde8fdb12eaaee3f0f00fc9dd</CodeFluentProducer>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Persistence\SqlServer\S5T_relations_drop.sql">
+      <CodeFluentProducer>026d108fde8fdb12eaaee3f0f00fc9dd</CodeFluentProducer>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Persistence\SqlServer\S5T_relations_add.sql">
+      <CodeFluentProducer>026d108fde8fdb12eaaee3f0f00fc9dd</CodeFluentProducer>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Persistence\SqlServer\S5T_instances.sql">
+      <CodeFluentProducer>026d108fde8fdb12eaaee3f0f00fc9dd</CodeFluentProducer>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,170 @@
+﻿        .panel-principal {
+            padding-top: 6px!important;
+            padding-bottom: 0!important;
+            padding-left: 2px!important;
+        }
+        div.row.panel-principal {
+            padding-top: 2px!important;
+        }
+        .dx-popup-title {
+            background-color: rgba(169, 208, 142, 0.44)!important; 
+            padding: 0!important;
+        }
+        .popover-title {
+            background-color: rgba(169, 208, 142, 0.24)!important; 
+            padding: 2px 4px 0 4px!important;
+        }
+        .dx-datagrid .dx-datagrid-headers tr:first-child {
+            background-color: rgba(169, 208, 142, 0.47); 
+        }
+        .internal-grid {
+            white-space: normal;
+        }
+        .centerBlock {
+            display: table;
+            margin: 0 auto;
+        }
+        .dx-button-success {
+            background-color: rgb(138, 207, 91);
+        }
+        .ctrlest-header-row {
+            background-color: rgba(169, 208, 142, 0.44)!important;
+            font-weight: bold;
+        }
+        .col-fixed, .row1 {
+          float: left;
+        }
+
+        .col-fixed {
+          width: 430px;
+        }
+
+        .row1 {
+          width:calc(100% - 430px + 15px * 2);
+          margin-right: -15px;
+          margin-left: -15px;
+        }
+        .tg .tg-lqy6{text-align:right;vertical-align:top}
+        .dx-dashboard-title {
+            color: #5d5d5d;
+            font-family: 'Segoe UI Light','Helvetica Neue Light','Segoe UI','Helvetica Neue',Helvetica,'Trebuchet MS',Verdana,sans-serif;
+            font-weight: 200;
+		        font-size: 30px;
+        }
+
+        #clockdiv{
+	        font-family: sans-serif;
+	        color: #000;
+	        display: inline-block;
+	        font-weight: normal;
+	        text-align: center;
+	        font-size: 12px;
+        }
+
+        #clockdiv > div{
+	        padding: 3px;
+	        border-radius: 3px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #000;
+	        background: #fff;
+	        display: inline-block;
+            height: 22px;
+        }
+
+
+        .divatualiza {
+	        padding: 3px;
+	        border-radius: 3px;
+          border-width: 1px;
+          border-style: none!important;
+	        background: rgb(245, 245, 245)!important;
+	        display: inline-block;  
+        }
+
+        .spanatualiza {
+	        padding: 0;
+	        border-radius: 3px;
+	        background: rgb(245, 245, 245)!important;
+	        display: inline-block;
+        }
+
+        #clockdiv div > span{
+	        padding: 0;
+	        border-radius: 3px;
+	        background: #fff;
+	        display: inline-block;
+        }
+
+        #clockdiv div > div{
+          display: inline-block;
+	        font-weight: normal;
+        }
+
+        .smalltext{
+	        padding-top: 2px;
+	        font-size: 9px;
+          font-weight: bold;
+        }
+
+        .icon {
+            font-size: 12px!important;
+            padding-top: 4px;
+            margin-left: 6px;
+            text-decoration: none;
+        }
+
+        .icon:hover {
+          color: black ;
+          background-color: rgb(138, 207, 91) ;
+          text-decoration: none;
+        }
+
+        .panel-title {
+            margin-top: 2px;
+        }
+
+        .resumo-toggle {
+            margin: auto;
+            text-align:center;
+        }
+
+       .my-legend .legend-title {
+            text-align: left;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 90%;
+        }
+        .my-legend .legend-scale ul {
+            margin: 0;
+            padding: 0;
+            float: left;
+            list-style: none;
+        }
+        .my-legend .legend-scale ul li {
+            display: block;
+            float: left;
+            width: 16px;
+            margin-bottom: 6px;
+            text-align: center;
+            font-size: 80%;
+            list-style: none;
+        }
+        .my-legend ul.legend-labels li span {
+            display: block;
+            float: left;
+            height: 15px;
+            width: 16px;
+        }
+        .my-legend ul.legend-labels li  {
+            margin-bottom: 0;
+        }
+
+        .my-legend .legend-source {
+            font-size: 70%;
+            color: #999;
+            clear: both;
+        }
+        .my-legend a {
+            color: #777;
+        }

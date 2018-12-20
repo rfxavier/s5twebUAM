@@ -1,0 +1,77 @@
+﻿        .historico-safra {
+            padding-top: 10px;
+        }
+        .outra-propriedade-btn{
+            background: rgba(169, 208, 142, 0.47);
+            color: #232323;
+        }
+        .outra-propriedade-btn:hover { 
+          border-color: #C0C0C0; 
+          background-color: rgba(169, 208, 142, 1.00); 
+        }
+        .outra-propriedade {
+            margin-top: 4px;
+            float: right;
+            /*background-color: rgba(169, 208, 142, 0.47)!important;*/
+        }
+        .center-widget {
+            margin: auto;
+        }
+        .modo-pesquisa {
+            margin-bottom: 0;
+        }
+        .dx-switch-on {
+            font-size: 14px;
+        }
+        .dx-switch-off {
+            font-size: 14px;
+            color: #232323;
+        }
+        .dx-switch-container {
+            height: 18px;
+        }
+        .propriedade-template {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .panel-heading {
+            padding-top: 6px;
+            padding-bottom: 4px;
+            height: 50px;
+        }
+        .panel-default {
+            width: 98%;
+        }
+        .dx-datagrid .dx-datagrid-headers tr:first-child {
+            background-color: rgba(169, 208, 142, 0.47); 
+        }
+        .tratos-header-row {
+            background-color: rgba(0, 38, 255, 0.17)!important; 
+        }
+        td.dx-grandtotal.dx-row-total {
+            background-color: white;
+        }
+        .dx-pivotgrid-horizontal-headers {
+            background-color: rgba(0, 38, 255, 0.07);
+        }
+        .subgrupo-agricola {
+            padding-left: 32px;
+            padding-top: 10px;
+        }
+        .historico-plantio-header {
+            padding-top: 7px!important;
+            padding-bottom: 7px!important;
+            background-color: rgba(169, 208, 142, 0.47); 
+        }
+        .historico-produtividade-header {
+            background-color: rgba(169, 208, 142, 0.47); 
+        }
+        .cana-entregue-grid {
+            padding-top: 7px!important;
+        }
+        .resumo-producao-grid {
+            padding-top: 7px!important;
+        }
+        .internal-grid {
+           white-space: normal;
+        }

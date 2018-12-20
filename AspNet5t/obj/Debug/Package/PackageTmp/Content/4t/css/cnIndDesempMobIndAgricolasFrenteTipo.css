@@ -1,0 +1,28 @@
+﻿.titulo-indicadores
+{
+    float:left;
+    font-size:21px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.aspHyperLink:hover {
+    background: url("/Content/Images/hover.png") repeat-x scroll left top #FDDC7F;
+    border: 1px solid #C2762B;
+}
+dxdvControl td.dxdvCtrl {
+    padding: 0 0 0 0!important;
+}
+.dxbButton_iOS {
+    height: 50px!important;
+}
+.dxbButton_iOS div.dxb {
+    padding: 0 0!important;
+}
+.dxflGroupCell {
+    padding: 0 0!important;
+}
+
+.WrapCaption {
+    white-space: normal !important;
+    -ms-word-wrap: break-word !important;
+    word-wrap: break-word !important;
+}
